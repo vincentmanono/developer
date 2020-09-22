@@ -1,5 +1,6 @@
 <?php
 
+use App\Comment;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -19,6 +20,6 @@ class DatabaseSeeder extends Seeder
        $this->call(ContactSeeder::class);
        $this->call(MetadataSeeder::class);
        $this->call(SubscriberSeeder::class);
-
+       $this->call(CommentSeeder::class);
     }
 }

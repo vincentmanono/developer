@@ -12,7 +12,7 @@ $factory->define(Blog::class, function (Faker $faker) {
         'subtitle'=>$faker->realText(10,2),
         'user_id'=>function(){return App\User::all()->random(); },
         'body'=>$faker->realText(300,3),
-        'image'=>$faker->word()
+        'image'=>'https://source.unsplash.com/random'
 
     ];
 });
