@@ -21,7 +21,7 @@ class PageController extends Controller
     }
     public function blogmore($id){
 
-    $blog = Blog::where('id',$id)->firstOrFail();
+        $blog = Blog::where('id',$id)->firstOrFail();
 
         return view('client.blogmore',compact('blog'));
     }

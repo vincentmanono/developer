@@ -9,10 +9,11 @@ $factory->define(Blog::class, function (Faker $faker) {
     $title = $faker->realText(50,2);
     return [
         'title' => $faker->word(),
-        'subtitle'=>$faker->realText(10,2),
+        'subtitle'=>$faker->word(),
         'user_id'=>function(){return App\User::all()->random(); },
         'body'=>$faker->realText(300,3),
-        'image'=>'https://source.unsplash.com/random'
+       // 'image'=>'https://source.unsplash.com/random'
+       'image'=>$faker->image('public/storage/images',640,480, null, false)
 
     ];
 });
