@@ -7,4 +7,5 @@ use Illuminate\Database\Eloquent\Model;
 class Testimonal extends Model
 {
     //
+    protected $guarded= [];
 }
