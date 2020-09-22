@@ -10,7 +10,7 @@ $factory->define(Blog::class, function (Faker $faker) {
     return [
         'title' => $faker->word(),
         'subtitle'=>$faker->sentence($nbWords = 6, $variableNbWords = true) ,
-        'blog_id'=>function(){return App\User::all()->random(); },
+        'user_id'=>function(){return App\User::all()->random(); },
         'body'=>$faker->realText(300,3),
        // 'image'=>'https://source.unsplash.com/random'
        'image'=>$faker->image('public/storage/images',640,480, null, false)
