@@ -99,7 +99,7 @@
                     <div class="person">
                       <ul class="meta">
                         <li class="meta-date">Posted on
-                          <a href="#">12th May, 2018</a>
+                        <a href="#">{{$blog->created_at}}</a>
                         </li>
                       </ul>
                       <h5 class="title">Clara F. Kramer</h5>

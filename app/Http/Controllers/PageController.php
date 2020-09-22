@@ -19,8 +19,11 @@ class PageController extends Controller
 
         return view('client.blog')->with('blogs',$blogs);
     }
-    public function blogmore(){
-        return view('client.blogmore');
+    public function blogmore($id){
+
+    $blog = Blog::where('id',$id)->firstOrFail();
+
+        return view('client.blogmore',compact('blog'));
     }
     public function portfolio(){
         return view('client.portfolio');

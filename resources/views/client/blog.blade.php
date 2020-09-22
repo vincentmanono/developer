@@ -55,7 +55,7 @@
                       <a href="#">{{$blog->subtitle}}</a>
                     </h4>
 
-                      <a href="#" class="color-link">Read more
+                <a href="{{route('blogmore.show',$blog->id)}}" class="color-link">Read more
                         <i class="fa fa-long-arrow-right"></i>
                       </a>
 
