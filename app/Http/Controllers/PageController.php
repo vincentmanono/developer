@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Blog;
 use Illuminate\Http\Request;
 
 class PageController extends Controller
@@ -14,7 +15,9 @@ class PageController extends Controller
     }
 
     public function blog(){
-        return view('client.blog');
+        $blogs = Blog::orderBy('id','Desc')->paginate(9);
+
+        return view('client.blog')->with('blogs',$blogs);
     }
     public function blogmore(){
         return view('client.blogmore');

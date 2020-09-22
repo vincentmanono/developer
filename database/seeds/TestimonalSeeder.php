@@ -12,6 +12,6 @@ class TestimonalSeeder extends Seeder
     public function run()
     {
         //
-        factory(App\Testimonal::class,5)->create();
+        factory(App\Testimonal::class,25)->create();
     }
 }

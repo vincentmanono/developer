@@ -11,6 +11,6 @@ class MetadataSeeder extends Seeder
      */
     public function run()
     {
-        factory(App\Metadata::class,5)->create();
+        factory(App\Metadata::class,25)->create();
     }
 }

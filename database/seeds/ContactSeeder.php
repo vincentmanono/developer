@@ -12,7 +12,7 @@ class ContactSeeder extends Seeder
     public function run()
     {
         //
-        factory(App\Contact::class,5)->create();
-    
+        factory(App\Contact::class,25)->create();
+
     }
 }

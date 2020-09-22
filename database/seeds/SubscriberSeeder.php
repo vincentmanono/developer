@@ -12,6 +12,6 @@ class SubscriberSeeder extends Seeder
     public function run()
     {
         //
-        factory(App\Subscriber::class)->create();
+        factory(App\Subscriber::class,25)->create();
     }
 }

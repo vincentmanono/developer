@@ -17,7 +17,7 @@ Route::get('/portfolio','PageController@portfolio')->name('portfolio');
 Route::get('/contact','PageController@contact')->name('contact');
 Route::get('/contact','PageController@contact')->name('contact');
 Route::get('/blog','PageController@blog')->name('blog');
-Route::get('/blogmore','PageController@blogmore')->name('blogmore');
+Route::get('/blogmore','PageController@blogmore')->name('blogmore.show');
 Route::get('/services','PageController@services')->name('services');
 Route::post('/footer','PageController@footer')->name('footer');
 
