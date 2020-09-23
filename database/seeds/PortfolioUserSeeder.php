@@ -12,6 +12,6 @@ class PortfolioUserSeeder extends Seeder
     public function run()
     {
         //
-        factory(App\PortfolioUser::class,25);
+        factory(App\PortfolioUser::class,25)->create();
     }
 }
