@@ -18,6 +18,8 @@ class CreatePortfoliosTable extends Migration
             $table->string('title');
             $table->string('description');
             $table->string('image');
+            $table->integer('client_id')->nullable();
+            $table->foreign('client_id')->references('id')->on('clients')->onDelete('cascade');
             $table->timestamps();
         });
     }

@@ -19,8 +19,6 @@ class CreateClientsTable extends Migration
             $table->string('lastname');
             $table->string('phone');
             $table->string('email');
-            $table->integer('portfolio_id')->nullable();
-            $table->foreign('portfolio_id')->references('id')->on('portfolios')->onDelete('cascade');
             $table->timestamps();
         });
     }

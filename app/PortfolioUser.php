@@ -7,4 +7,5 @@ use Illuminate\Database\Eloquent\Relations\Pivot;
 class PortfolioUser extends Pivot
 {
     //
+    protected $guarded=[];
 }

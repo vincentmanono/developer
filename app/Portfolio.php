@@ -12,7 +12,7 @@ class Portfolio extends Model
     public function clients(){
         return $this->hasMany(Client::class);
     }
-    public function user(){
+    public function users(){
         return $this->belongsToMany(User::class);
     }
 }

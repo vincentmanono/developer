@@ -15,7 +15,7 @@
                 <a href="/">Home</a>
               </li>
               <li>
-                <a href="/blogmore">blog</a>
+                <a href={{route('blog')}}>blog</a>
               </li>
 
             </ol>
@@ -38,45 +38,18 @@
             <header class="article-header">
               <ul class="meta">
                 <li class="meta-date">Posted on
-                  <a href="#">2th May, 2018</a>
+                  <a href="#">{{$blog->created_at}}</a>
                 </li>
                 <li class="meta-category">in
                   <a href="#">News & Events</a>
                 </li>
               </ul>
 
-              <h2 class="title">How Walton Consulting is going to change your business strategies</h2>
+            <h2 class="title">{{$blog->title}}</h2>
             </header>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas venenatis tellus a nunc lobortis facilisis. Cras ante mauris, aliquam quis mattis in, efficitur vel nisi. Pellentesque vel eros lorem. Praesent ultrices mi sed nunc
-              hendrerit aliquam. Proin tristique lectus eu neque rhoncus, eu euismod dolor malesuada. Etiam aliquet eros sollicitudin pharetra efficitur. Pellentesque ligula lectus, molestie sed iaculis et, sollicitudin ac turpis. Suspendisse
-              vel arcu porta, varius ligula eget, posuere diam. Praesent turpis justo, facilisis vitae diam sit amet, placerat rhoncus neque. Sed rhoncus ac libero eu blandit. </p>
-            <blockquote>
-              <p>" Do the difficult things while they are easy and do the great things while they are small. A jorney of a thousand miles begin with a single step. "</p>
-              <footer>Lao Tzu</footer>
-            </blockquote>
-            <p>Sed porta tincidunt turpis, sed auctor ex vehicula a. Proin cursus, odio ut laoreet fringilla, urna sem mattis turpis, ut sagittis lectus enim vel augue. Curabitur commodo hendrerit justo, sit amet commodo felis. Aenean ac tempus risus.
-              Proin et ex efficitur, euismod justo id, semper arcu. Vestibulum ut magna ac nisl molestie tincidunt non et arcu. Morbi hendrerit augue euismod lacus efficitur, sit amet lobortis lectus rhoncus. Sed faucibus urna id faucibus tristique.
-              Aenean rutrum quam eu orci varius, ac blandit nibh posuere. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec ornare ipsum eget tortor pharetra venenatis. Pellentesque vestibulum
-              turpis sit amet neque tristique, vitae tempus nisl pharetra. Sed ut diam vitae ligula pretium pellentesque at ut augue. Nunc at libero quis sem ornare consequat. </p>
-            <figure class="preview fl-r">
-              <a href="images/big-images/2.jpg" class="lightbox-images">
-                <img  src="assets/images/big-images/2.jpg" alt="">
-              </a>
-              <figcaption>
-                <strong>Figure #2:</strong> We focus on passion and leadership.</figcaption>
-            </figure>
-            <p>Nulla nisl odio, ullamcorper eu placerat nec, bibendum id risus. Nulla vitae dui lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dignissim lorem quam, et condimentum purus tincidunt eget. Nam commodo purus non
-              turpis vestibulum accumsan. In ac rhoncus lectus, vel imperdiet orci. Sed consectetur lectus convallis purus dictum, eu egestas velit fermentum. Cras varius vehicula quam a malesuada.</p>
-            <p>Aliquam erat volutpat. Maecenas eu interdum justo. Cras sagittis, est et malesuada tristique, erat magna eleifend lacus, eget viverra justo mi ac arcu. Integer sit amet nisi eleifend, pretium tortor non, mollis felis. Aenean ullamcorper
-              neque eget imperdiet egestas. Donec et diam faucibus, imperdiet dolor at, tincidunt enim. Aenean fringilla odio ut congue sagittis. Donec eu nisl nec erat ullamcorper vulputate a sed diam. Maecenas vehicula commodo urna tempus gravida.
-              Vivamus lacinia dictum elit, at luctus sem consequat interdum. Mauris sagittis euismod lacus sed aliquam. Phasellus est sapien, ultricies non bibendum et, pellentesque non est. Donec mauris ante, iaculis et accumsan eget, pulvinar
-              vel nibh. </p>
-            <h3>The best advice you coud ever get about consulting services</h3>
-            <p>Etiam convallis tortor ut urna luctus maximus. Sed vestibulum consequat massa, a ultrices libero molestie vel. Sed lacinia dolor laoreet lorem venenatis, a fringilla lacus sagittis. Sed commodo volutpat erat cursus blandit. Suspendisse
-              non nibh nec risus tempor fringilla. Morbi lacinia scelerisque faucibus. Mauris commodo ligula justo, vitae malesuada tortor vestibulum sed. Nunc malesuada ullamcorper enim, sed volutpat eros molestie non. Aliquam imperdiet, lorem
-              vel lacinia pretium, turpis sem viverra odio, id sollicitudin risus nibh id nisl. Fusce dignissim aliquet fringilla. Nunc id urna id metus pellentesque dictum eget pellentesque ipsum. Vestibulum in urna eu urna consectetur mattis.
-              </p>
-            <footer class="article-footer">
+             <p>
+                {{$blog->body}}
+             </p>            <footer class="article-footer">
               <a href="#" class="btn btn-4">
                 <i class="fa fa-angle-left"></i> Prev post</a>
               <a href="#" class="btn btn-4">Next post
@@ -87,8 +60,11 @@
           <!-- Article end -->
 
           <!-- Comments start -->
-          <div class="content-section pb0">
-            <h3>comments (3)</h3>
+          @foreach ($blog->comments as $comment)
+     <div class="content-section pb0">
+              {{-- comments count --}}
+
+     <h3>{{count($blog->comments)}} Comment(s)</h3>
             <ol class="comment-list">
               <li class="comment">
                 <header>
@@ -99,22 +75,24 @@
                     <div class="person">
                       <ul class="meta">
                         <li class="meta-date">Posted on
-                        <a href="#">{{$blog->created_at}}</a>
+                        <a href="#">{{$comment->created_at}}</a>
                         </li>
                       </ul>
-                      <h5 class="title">Clara F. Kramer</h5>
+                      <h5 class="title">{{$comment->name}}</h5>
                     </div>
                   </div>
                   {{-- <a id="reply" href="#" class="color-link">
                     <i class="fa fa-reply"></i> Reply this</a> --}}
                 </header>
                 <div class="comment-content">
-                  <p>Walton has really helped our business. Wow what great service, I love it!</p>
+                <p>{{$comment->body}}</p>
                 </div>
               </li>
 
             </ol>
           </div>
+          @endforeach
+
           <!-- Comments end -->
           <!-- Comment form start -->
           <div class="content-section pb0">

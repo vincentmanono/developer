@@ -10,5 +10,6 @@ $factory->define(Portfolio::class, function (Faker $faker) {
         'title'=>$faker->word,
         'description'=>$faker->sentence(),
         'image'=>$faker->word(),
+        'client_id'=>function(){return App\Client::all()->random();}
     ];
 });

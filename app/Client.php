@@ -9,7 +9,7 @@ class Client extends Model
     //
     protected $guarded=[];
 
-    public function portfolio(){
-        return $this->belongsTo(Portfolio::class);
+    public function portfolios(){
+        return $this->hasMany(Portfolio::class);
     }
 }
