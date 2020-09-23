@@ -11,6 +11,5 @@ $factory->define(Client::class, function (Faker $faker) {
         'lastname'=>$faker->lastName,
         'phone'=>$faker->phoneNumber,
         'email'=>$faker->unique()->safeEmail,
-        'portfolio_id'=>function(){return App\Portfolio::all()->random();}
     ];
 });

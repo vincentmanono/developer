@@ -13,7 +13,8 @@ $factory->define(Blog::class, function (Faker $faker) {
         'user_id'=>function(){return App\User::all()->random(); },
         'body'=>$faker->realText(300,3),
        'slug'=>$faker->word(),
-       'image'=>$faker->image('public/storage/images',640,480, null, false)
+       'image'=> $faker->imageUrl()
+    //    'image'=>$faker->image('public/storage/images',640,480, null, false)
 
     ];
 });

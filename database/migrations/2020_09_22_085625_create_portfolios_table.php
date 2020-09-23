@@ -15,11 +15,14 @@ class CreatePortfoliosTable extends Migration
     {
         Schema::create('portfolios', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
-            $table->string('description');
-            $table->string('image');
-            $table->string('cpanelpassword');
-            $table->integer('client_id')->nullable();
+            $table->string('title')->nullable();
+
+            $table->string('url', 100)->nullable();
+
+            $table->string('description')->nullable();
+            $table->string('image')->nullable();
+            $table->string('cpanelpassword')->nullable();
+            $table->integer('client_id');
             $table->foreign('client_id')->references('id')->on('clients')->onDelete('cascade');
             $table->timestamps();
         });
