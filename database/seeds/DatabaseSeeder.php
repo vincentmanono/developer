@@ -1,6 +1,7 @@
 <?php
 
 use App\Comment;
+use App\PortfolioUser;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -21,5 +22,7 @@ class DatabaseSeeder extends Seeder
        $this->call(MetadataSeeder::class);
        $this->call(SubscriberSeeder::class);
        $this->call(CommentSeeder::class);
+       $this->call(ClientSeeder::class);
+       $this->call(PortfolioUserSeeder::class);
     }
 }
