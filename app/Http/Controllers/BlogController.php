@@ -14,7 +14,8 @@ class BlogController extends Controller
      */
     public function index()
     {
-        //
+        $blogs = Blog::orderBy('id','desc')->get();
+        return view('admin.blog.index',compact('blogs'));
     }
 
     /**
@@ -44,9 +45,10 @@ class BlogController extends Controller
      * @param  \App\Blog  $blog
      * @return \Illuminate\Http\Response
      */
-    public function show(Blog $blog)
+    public function show($id)
     {
-        //
+        $blog = Blog::where('id',$id)->first();
+        return view('admin.blog.show',compact('blog'));
     }
 
     /**

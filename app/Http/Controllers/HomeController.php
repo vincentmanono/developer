@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Portfolio;
+use App\Subscriber;
+use App\User;
 class HomeController extends Controller
 {
     /**
@@ -23,6 +25,13 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $countportfolios= Portfolio::all()->count();
+        $countnewsletters= Portfolio::all()->count();
+        $countusers= User::all()->count();
+        $portfolios= Portfolio::orderBy('id','desc')->paginate(5);
+        $newsletters = Subscriber::orderBy('id','desc')->paginate(5);
+        $users=User::orderBy('id','desc')->paginate(8);
+
+        return view('home',compact('users','countusers','portfolios','countportfolios','newsletters','countnewsletters'));
     }
 }

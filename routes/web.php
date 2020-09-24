@@ -23,4 +23,17 @@ Route::post('/footer','PageController@footer')->name('footer');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Auth::routes([
+    'register'=>false
+]);
+
+
+
+Route::group(['middleware' => ['auth']], function () {
+
+    Route::get('/home', 'HomeController@index')->name('home');
+    Route::get('blogadmin','BlogController@index')->name('blog.index');
+    Route::get('blogshow/{id}','BlogController@show')->name('blog.show');
+
+});
+
