@@ -23,9 +23,9 @@ Route::post('/footer','PageController@footer')->name('footer');
 
 Auth::routes();
 
-Auth::routes([
-    'register'=>false
-]);
+// Auth::routes([
+//     'register'=>false
+// ]);
 
 
 

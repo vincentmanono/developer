@@ -47,8 +47,9 @@ class BlogController extends Controller
      */
     public function show($id)
     {
+        $blogs = Blog::orderBy('id','desc')->get();
         $blog = Blog::where('id',$id)->first();
-        return view('admin.blog.show',compact('blog'));
+        return view('admin.blog.show',compact('blog','blogs'));
     }
 
     /**
