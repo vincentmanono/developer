@@ -63,7 +63,7 @@ class BlogController extends Controller
             $filenameToStore = $filename . '_' . time() . '.' . $extension;
 
             // Uplaod image
-            $path = $request->file('image')->storeAs('storage/blog', $filenameToStore);
+            $path = $request->file('image')->storeAs('public/blog', $filenameToStore);
             $avatar  = $filenameToStore;
             $post->image = $avatar;
         }

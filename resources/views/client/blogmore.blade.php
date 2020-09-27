@@ -33,7 +33,7 @@
           <!-- Article start -->
           <article class="post single">
             <figure class="post-thumbnail">
-            <img  src="storage/images/{{$blog->image}}" alt="">
+            <img  src="/storage/blog/{{$blog->image}}" alt="">
             </figure>
             <header class="article-header">
               <ul class="meta">
