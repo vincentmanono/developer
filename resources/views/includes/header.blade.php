@@ -63,7 +63,7 @@
                     <!-- Logo start -->
                     <a href="index.html" title="Walton" class="site-logo">
                         <div class="logo-img">
-                            <img src="assets/images/logo.png" alt="Walton">
+                            <img src="{{asset('assets/images/logo.png')}}" alt="Walton">
                         </div>
                         <div class="name-and-tagline">
                             <div class="name">Walton</div>
@@ -147,7 +147,7 @@
 
                             </li>
                             <li>
-                                <a href="/blog">blog</a>
+                                <a href="/bloghome">blog</a>
 
                             </li>
                             <li>

@@ -34,9 +34,54 @@ class BlogController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request )
     {
-        //
+        //dd($request);
+      // dd($request->all(), user()->id);
+        $this->validate($request,[
+'title'=>'required',
+'subtitle'=>'required',
+'image'=>'required',
+'body'=>'required'
+        ]);
+
+        $post = new Blog();
+        $post->title = $request->title;
+        $post->subtitle =$request->subtitle;
+        if (file_exists($request->file('image'))) {
+
+            // Get filename with extension
+            $filenameWithExt = $request->file('image')->getClientOriginalName();
+
+            // Get just the filename
+            $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+
+            // Get extension
+            $extension = $request->file('image')->getClientOriginalExtension();
+
+            // Create new filename
+            $filenameToStore = $filename . '_' . time() . '.' . $extension;
+
+            // Uplaod image
+            $path = $request->file('image')->storeAs('storage/blog', $filenameToStore);
+            $avatar  = $filenameToStore;
+            $post->image = $avatar;
+        }
+        $post->body = $request->body;
+        $post->slug = $request->title;
+        $post->user_id=auth()->user()->id;
+
+
+        $validate = $post->save();
+
+        if ($validate) {
+
+            return redirect('home')->with('success','You have successfully added a new blog');
+
+        }
+        else{
+            return redirect('blog.create')->with('error','An error occured');
+        }
     }
 
     /**

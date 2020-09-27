@@ -16,7 +16,7 @@ Route::get('/about','PageController@about')->name('about');
 Route::get('/portfolio','PageController@portfolio')->name('portfolio');
 Route::get('/contact','PageController@contact')->name('contact');
 Route::get('/contact','PageController@contact')->name('contact');
-Route::get('/blog','PageController@blog')->name('blog');
+Route::get('/bloghome','PageController@blog')->name('blog.home');
 Route::get('/blogmore/{id}','PageController@blogmore')->name('blogmore.show');
 Route::get('/services','PageController@services')->name('services');
 Route::post('/footer','PageController@footer')->name('footer');
@@ -32,9 +32,10 @@ Auth::routes();
 Route::group(['middleware' => ['auth']], function () {
 
     Route::get('/home', 'HomeController@index')->name('home');
-    Route::get('blogadmin','BlogController@index')->name('blog.index');
-    Route::get('blogshow/{id}','BlogController@show')->name('blog.show');
-    Route::post('blogcreate','BlogController@store')->name('blog.create');
+    // Route::get('blogadmin','BlogController@index')->name('blog.index');
+    // Route::get('blogshow/{id}','BlogController@show')->name('blog.show');
+    // Route::post('blogcreate','BlogController@store')->name('blog.create');
+    Route::resource('/blog', 'BlogController');
 
 });
 

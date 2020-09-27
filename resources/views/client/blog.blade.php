@@ -38,7 +38,7 @@
                 <div class="post preview st-2">
                   <figure class="post-thumbnail">
 
-                    <img  src="/storage/images/{{$blog->image}}" alt="">
+                    <img  src="/storage/blog/{{$blog->image}}" alt="">
                   </figure>
                   <div class="post-content">
                     <ul class="meta">

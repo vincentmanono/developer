@@ -15,7 +15,7 @@
                 <a href="/">Home</a>
               </li>
               <li>
-                <a href={{route('blog')}}>blog</a>
+                <a href={{route('blog.home')}}>blog</a>
               </li>
 
             </ol>
@@ -33,7 +33,7 @@
           <!-- Article start -->
           <article class="post single">
             <figure class="post-thumbnail">
-              <img  src="assets/images/big-images/1.jpg" alt="">
+            <img  src="storage/images/{{$blog->image}}" alt="">
             </figure>
             <header class="article-header">
               <ul class="meta">
@@ -48,7 +48,10 @@
             <h2 class="title">{{$blog->title}}</h2>
             </header>
              <p>
-                {{$blog->body}}
+                 @php
+                      echo $blog->body;
+                 @endphp
+
              </p>            <footer class="article-footer">
               <a href="#" class="btn btn-4">
                 <i class="fa fa-angle-left"></i> Prev post</a>
