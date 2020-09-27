@@ -76,7 +76,7 @@ class BlogController extends Controller
 
         if ($validate) {
 
-            return redirect('home')->with('success','You have successfully added a new blog');
+            return redirect('blog')->with('success','You have successfully added a new blog');
 
         }
         else{
