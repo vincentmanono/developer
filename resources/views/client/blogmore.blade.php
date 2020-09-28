@@ -1,7 +1,7 @@
 @extends('layouts.mainapp')
 @section('content')
 
-<div style="background-image: url('assets/images/big-images/4.jpg')">
+<div style="background-image: url({{asset('assets/images/big-images/4.jpg')}})">
 
     <div class="content-section  page-titlebar">
       <div class="container">

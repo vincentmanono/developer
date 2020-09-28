@@ -13,7 +13,7 @@
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">DataTables</li>
+              <li class="breadcrumb-item active">Blogs</li>
             </ol>
           </div>
         </div>
@@ -58,7 +58,7 @@
                     <td>{{$blog->title}}</td>
                     <td>{{$blog->subtitle}}</td>
                     <td> {{$blog->created_at}}</td>
-                <td><a href="{{route('blog.show',$blog->id)}}" class="btn btn-sm btn-primary">Read more</a></td>
+                <td><a href="{{route('blog.show',$blog->slug)}}" class="btn btn-sm btn-primary">Read more</a></td>
                   </tr>
 
                 @endforeach

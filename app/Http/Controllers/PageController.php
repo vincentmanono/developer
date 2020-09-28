@@ -19,9 +19,9 @@ class PageController extends Controller
 
         return view('client.blog')->with('blogs',$blogs);
     }
-    public function blogmore($id){
+    public function blogmore($blogmore_slug){
 
-        $blog = Blog::find($id);
+        $blog = Blog::where('slug',$blogmore_slug)->firstOrFail();
         $blogs= Blog::orderBy('id','Desc')->paginate(10);
         return view('client.blogmore',compact('blog','blogs'));
     }

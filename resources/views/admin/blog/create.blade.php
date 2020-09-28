@@ -9,12 +9,16 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>General Form</h1>
+            @if ($param == 'create')
+            <h1>New Blog</h1>
+            @else
+            <h1>Edit Blog</h1>
+            @endif
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">General Form</li>
+            <li class="breadcrumb-item active" ><a href="{{route('blog.index')}}">Back to blogs</a></li>
             </ol>
           </div>
         </div>
@@ -35,41 +39,80 @@
               <!-- /.card-header -->
               @include('messages')
               <!-- form start -->
-            <form role="form" enctype="multipart/form-data" action="{{route('blog.store')}}" method="POST">
-                @csrf
-                @method('POST')
-                <div class="card-body">
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">Blog Titile</label>
-                    <input type="text" class="form-control" required id="exampleInputEmail1" name="title" placeholder="Enter blog title">
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputPassword1">Blog Subtitle</label>
-                    <input type="text" class="form-control" required id="exampleInputPassword1" name="subtitle" placeholder="Enter blog subtittle">
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputFile">Blog Image</label>
-                    <div class="input-group">
-                        <input type="file" name="image" required id="">
-                      </div>
+ @if ($param == 'create')
+ <form role="form" enctype="multipart/form-data" action="{{route('blog.store')}}" method="POST">
+    @csrf
+    @method('POST')
+    <div class="card-body">
+      <div class="form-group">
+        <label for="exampleInputEmail1">Blog Titile</label>
+      <input type="text" class="form-control" required id="exampleInputEmail1"  name="title" placeholder="Enter blog title">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Blog Subtitle</label>
+        <input type="text" class="form-control" required id="exampleInputPassword1" name="subtitle" placeholder="Enter blog subtittle">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputFile">Blog Image</label>
+        <div class="input-group">
+            <input type="file" name="image" required id="">
+          </div>
 
-                    </div>
-                  </div>
+        </div>
+      </div>
 
-                <div class="card-body">
-                    <div class="form-group">
-                      <label for="exampleInputEmail1">Blog Content</label>
-                      <textarea type="textarea" class="form-control"required id="summary-ckeditor" name="body" placeholder=""></textarea>
-                    </div>
+    <div class="card-body">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Blog Content</label>
+          <textarea type="textarea" class="form-control"required id="summary-ckeditor" name="body" placeholder=""></textarea>
+        </div>
 
-                <div class="card-footer">
-                  <button type="submit" class="btn btn-primary">Submit</button>
-                </div>
+    <div class="card-footer">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
 
-              </form>
-            </div>
+  </form>
+</div>
 
 
+@else
+<form role="form" enctype="multipart/form-data" action="{{route('blog.update',$editblog->slug)}}" method="POST">
+    @csrf
+    @method('PUT')
+    <div class="card-body">
+      <div class="form-group">
+        <label for="exampleInputEmail1">Blog Titile</label>
+        <input type="text" class="form-control" required id="exampleInputEmail1" value="{{$editblog->title}}" name="title" placeholder="Enter blog title">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Blog Subtitle</label>
+        <input type="text" class="form-control" required id="exampleInputPassword1" value="{{$editblog->subtitle}}"  name="subtitle" placeholder="Enter blog subtittle">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputFile">Blog Image</label>
+        <div class="input-group">
+        <input type="file" name="image" value="{{old('image')}}" required id="">
+          </div>
+
+        </div>
+      </div>
+
+    <div class="card-body">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Blog Content</label>
+          <textarea type="textarea" class="form-control"required id="summary-ckeditor" name="body" placeholder="">@php
+              echo $editblog->body
+          @endphp </textarea>
+        </div>
+
+    <div class="card-footer">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+
+  </form>
+</div>
+
+@endif
           </div>
 
         </div>

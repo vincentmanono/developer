@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Blog;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
+use Illuminate\Support\Facades\File;
+use Illuminate\Database\QueryException;
 
 class BlogController extends Controller
 {
@@ -25,7 +28,7 @@ class BlogController extends Controller
      */
     public function create()
     {
-        return view('admin.blog.create');
+        return view('admin.blog.create')->with('param','create');
     }
 
     /**
@@ -68,7 +71,7 @@ class BlogController extends Controller
             $post->image = $avatar;
         }
         $post->body = $request->body;
-        $post->slug = $request->title;
+        $post->slug = Str::of($request->title)->slug();
         $post->user_id=auth()->user()->id;
 
 
@@ -90,10 +93,10 @@ class BlogController extends Controller
      * @param  \App\Blog  $blog
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($slug)
     {
         $blogs = Blog::orderBy('id','desc')->get();
-        $blog = Blog::where('id',$id)->first();
+        $blog = Blog::where('slug',$slug)->first();
         return view('admin.blog.show',compact('blog','blogs'));
     }
 
@@ -103,9 +106,10 @@ class BlogController extends Controller
      * @param  \App\Blog  $blog
      * @return \Illuminate\Http\Response
      */
-    public function edit(Blog $blog)
+    public function edit($slug)
     {
-        //
+        $editblog = Blog::where('slug',$slug)->first();
+        return view('admin.blog.create',compact('editblog'))->with('param','edit');
     }
 
     /**
@@ -115,9 +119,63 @@ class BlogController extends Controller
      * @param  \App\Blog  $blog
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Blog $blog)
+    public function update(Request $request ,$slug)
     {
-        //
+
+        request()->validate(array(
+            'title' => 'required|string',
+            'subtitle'=> 'required',
+            'image' => 'image',
+            'body' => 'required|string',
+        ));
+        $upd = Blog::where('slug', $slug)->firstOrFail();
+        $slug = Str::of($request->title)->slug();
+        $upd->title = $request->input('title');
+        $upd->subtitle =$request->input('subtitle');
+        $upd->slug = $slug;
+
+
+
+        if (file_exists($request->file('image'))) {
+
+
+
+            $old_avatar = $upd->image;
+            $avatar = $request->image;
+            if ($old_avatar != 'avatar.png' && !Str::contains($avatar, 'http')) {
+                $imagepath = public_path('/storage/blog') . '/' . $old_avatar;
+                File::delete($imagepath);
+            }
+
+
+
+            // Get filename with extension
+            $filenameWithExt = $request->file('image')->getClientOriginalName();
+
+            // Get just the filename
+            $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+
+            // Get extension
+            $extension = $request->file('image')->getClientOriginalExtension();
+
+            // Create new filename
+            $filenameToStore = $filename . '_' . time() . '.' . $extension;
+
+            // Uplaod image
+            $path = $request->file('image')->storeAs('public/blog', $filenameToStore);
+
+            // Upload image
+            $upd->image = $filenameToStore;
+        }
+
+
+        $upd->body = $request->input('body');
+        if ($upd->save()) {
+
+            return redirect()->route('blog.show', $upd->slug)->with('success','Successfully updated the blog');
+        } else {
+            return redirect()->route('blog.show', $upd->slug)->with('error','An error occured while udating your blog');
+        }
     }
 
     /**
@@ -126,8 +184,29 @@ class BlogController extends Controller
      * @param  \App\Blog  $blog
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Blog $blog)
+    public function destroy($slug)
     {
         //
+        try {
+            $del = Blog::where('slug', $slug)->firstOrFail();
+
+            $old_avatar = $del->image;
+            if ($old_avatar != 'avatar.png') {
+                $imagepath = public_path('/storage/news/')  . $old_avatar;
+                File::delete($imagepath);
+                // Storage::delete('news/'. $old_avatar );
+            }
+
+            if ($del->delete()) {
+
+                return redirect()->route('blog.index')->with('success', "Blog removed successfully");;
+            } else {
+
+                return back()->with('error', 'Error occurred please try gain!!');;
+            }
+        } catch (QueryException $ex) {
+
+            return redirect()->back()->with('error','Blog could not be found');
+        }
     }
 }

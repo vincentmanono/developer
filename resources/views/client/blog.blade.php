@@ -36,14 +36,16 @@
 
               <div class="col-xs-12 col-sm-4">
                 <div class="post preview st-2">
-                  <figure class="post-thumbnail">
+                                <figure class="post-thumbnail">
+                <a href="{{route('blogmore.show',$blog->slug)}}">
+                    <img href="{{route('blogmore.show',$blog->slug)}}"  src="/storage/blog/{{$blog->image}}" alt="">
+                </a>
 
-                    <img  src="/storage/blog/{{$blog->image}}" alt="">
                   </figure>
                   <div class="post-content">
                     <ul class="meta">
                       <li class="meta-date">Posted on
-                      <a href="#">{{$blog->created_at}}</a>
+                      <a href="{{route('blogmore.show',$blog->slug)}}">{{$blog->created_at}}</a>
                       </li>
                       {{-- <li class="meta-category">in
                         <a href="#">News & Events</a>
@@ -51,11 +53,11 @@
                     </ul>
                     <h4
                      class="post-title">
-                      <a href="#">{{$blog->title}}</a><br>
-                      <a href="#">{{$blog->subtitle}}</a>
+                      <a href="{{route('blogmore.show',$blog->slug)}}">{{$blog->title}}</a><br>
+                      <a href="{{route('blogmore.show',$blog->slug)}}">{{$blog->subtitle}}</a>
                     </h4>
 
-                <a href="{{route('blogmore.show',$blog->id)}}" class="color-link">Read more
+                <a href="{{route('blogmore.show',$blog->slug)}}" class="color-link">Read more
                         <i class="fa fa-long-arrow-right"></i>
                       </a>
 

@@ -19,7 +19,7 @@
         </div>
       </div><!-- /.container-fluid -->
     </section>
-
+@include('messages')
     <!-- Main content -->
     <section class="content">
 
@@ -30,7 +30,7 @@
             <div class="col-12 col-sm-6">
               <h3 class="d-inline-block d-sm-none">LOWA Men’s Renegade GTX Mid Hiking Boots Review</h3>
               <div class="col-12">
-                <img src="../../dist/img/prod-1.jpg" class="product-image" alt="Product Image">
+              <img src="/storage/blog/{{$blog->image}}" class="product-image" alt="Blog Image">
               </div>
 
             </div>
@@ -39,16 +39,29 @@
               <h3 class="my-3">{{$blog->title}}</h3>
             <p>{{$blog->subtitle}}</p>
               <hr>
-              <h4>{{$blog->body}}</h4>
-
+              <h4></h4>
+@php
+   echo $blog->body;
+@endphp
             </div>
           </div>
-          <div class="row mt-4">
-            <nav class="w-100">
+          <div class="row">
+            <nav class=>
               <div class="nav nav-tabs" id="product-tab" role="tablist">
-                <a class="nav-item nav-link btn-primary" id="product-desc-tab" href="#" aria-selected="true" role="tab" aria-selected="false">Edit Blog</a>
-                <a class="nav-item nav-link btn-danger" id="product-comments-tab"  href="#"  role="tab" aria-selected="false">Delete blog</a>
-                <a class="nav-item nav-link btn-success" id="product-rating-tab"  href="{{route('blog.index')}}" role="tab" aria-selected="false">Back</a>
+              <a class="nav-item nav-link" id="product-desc-tab" href="{{route('blog.edit',$blog->slug)}}" aria-selected="true" role="tab" aria-selected="false">
+<button class="btn btn-primary " href="{{route('blog.edit',$blog->slug)}}" type="submit"> Edit Blog</button></a>
+<a class="nav-item nav-link" id="product-desc-tab" aria-selected="true" role="tab" aria-selected="false">
+
+<form action="{{ route('blog.destroy', $blog->slug) }}" method="post">
+                    @method("DELETE")
+                    @csrf
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-danger">Delete</button>
+                    </div>
+                </form>
+</a>
+                <a class="nav-item nav-link" id="product-desc-tab" href="{{route('blog.index')}}" aria-selected="true" role="tab" aria-selected="false">
+                    <button class="btn btn-success " href="{{route('blog.edit',$blog->slug)}}" type="submit"> Back</button></a>
               </div>
             </nav>
             <div class="tab-content p-3" id="nav-tabContent">

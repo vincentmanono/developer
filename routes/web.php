@@ -32,9 +32,6 @@ Auth::routes();
 Route::group(['middleware' => ['auth']], function () {
 
     Route::get('/home', 'HomeController@index')->name('home');
-    // Route::get('blogadmin','BlogController@index')->name('blog.index');
-    // Route::get('blogshow/{id}','BlogController@show')->name('blog.show');
-    // Route::post('blogcreate','BlogController@store')->name('blog.create');
     Route::resource('/blog', 'BlogController');
 
 });
