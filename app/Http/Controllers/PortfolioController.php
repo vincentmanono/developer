@@ -15,7 +15,7 @@ class PortfolioController extends Controller
     public function index()
     {
         $portfolios= Portfolio::orderBy('id','desc')->get();
-        return view('admin.index')->with('portfolios',$portfolio);
+        return view('admin.portfolio.index')->with('portfolios',$portfolios);
     }
 
     /**

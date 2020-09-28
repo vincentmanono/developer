@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Client;
+use App\Portfolio;
 use Illuminate\Http\Request;
 
 class ClientController extends Controller
@@ -14,7 +15,8 @@ class ClientController extends Controller
      */
     public function index()
     {
-        //
+         $clients = Client::orderBy('id','desc')->get();
+         return view('admin.clients.index',compact('clients'));
     }
 
     /**
@@ -44,9 +46,12 @@ class ClientController extends Controller
      * @param  \App\Client  $client
      * @return \Illuminate\Http\Response
      */
-    public function show(Client $client)
+    public function show($id)
     {
-        //
+
+        $countprojects = Portfolio::where('id',$id)->count();
+        $client = Client::where('id',$id)->first();
+        return view('admin.clients.show',compact('client','countprojects'));
     }
 
     /**

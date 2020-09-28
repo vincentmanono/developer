@@ -67,7 +67,7 @@
               <p>
                 Blogs
                 <i class="fas fa-angle-left right"></i>
-              <span class="badge badge-info right"></span>
+                {{-- <span class="badge badge-info right">6</span> --}}
               </p>
             </a>
             <ul class="nav nav-treeview">
@@ -242,29 +242,29 @@
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-table"></i>
               <p>
-                Tables
+                Clients
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/tables/simple.html" class="nav-link">
+                <a href="{{route('clients.index')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Simple Tables</p>
+                  <p>View Clients</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/tables/data.html" class="nav-link">
+                <a href="{{route('clients.create')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>DataTables</p>
+                  <p>Add client</p>
                 </a>
               </li>
-              <li class="nav-item">
+              {{-- <li class="nav-item">
                 <a href="pages/tables/jsgrid.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>jsGrid</p>
                 </a>
-              </li>
+              </li> --}}
             </ul>
           </li>
           {{-- <li class="nav-header">EXAMPLES</li>
