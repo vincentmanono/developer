@@ -27,10 +27,10 @@
         <div class="card-header">
           {{-- <h3 class="card-title">Title</h3> --}}
         <a class="btn btn-primary  " href="{{route('portfolios.index')}}">back</a>
-<div  style="float: right;">
-    <a class="btn btn-primary  " style="padding-right: " href="{{route('portfolios.edit',$portfolio->id)}}">edit</a>
-    <a class="btn btn-primary  " href="#">Delete</a>
-</div>
+
+    <a class="btn btn-success  "  href="{{route('portfolios.edit',$portfolio->id)}}">edit</a>
+    <a class="btn btn-danger  " href="#">Delete</a>
+
           <div class="card-tools">
             <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
               <i class="fas fa-minus"></i></button>
@@ -63,7 +63,7 @@
         <label style="block-size: 0%">Cpanel Password</label>
           <li> {{$portfolio->cpanelpassword}}</li>
           <label>Url</label>
-          <li> {{$portfolio->url}}</li>
+          <li> <a href="{{$portfolio->url}}">{{$portfolio->url}}</a></li>
         </ul>
       </div>
 
@@ -71,8 +71,11 @@
     <!-- /.row -->
 
     <!-- Related Projects Row -->
-    {{-- <h3 class="my-4">Related Projects</h3> --}}
-
+    {{-- <h3 class="my-4">Related Projects</h3>
+    @php
+        $customer = {{$client->name}}
+            @endphp
+if() --}}
     {{-- <div class="row">
 
      @foreach ($portfolios as $portfolio)

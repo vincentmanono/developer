@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Portfolio;
+use App\Client;
 use Illuminate\Http\Request;
 
 class PortfolioController extends Controller
@@ -59,7 +60,7 @@ class PortfolioController extends Controller
      */
     public function edit(Portfolio $portfolio)
     {
-        //
+        return view('admin.clients.create');
     }
 
     /**

@@ -50,6 +50,7 @@
                         <th>Name</th>
                         <th>Phone</th>
                         <th>Email</th>
+                        <th>Created At</th>
                         <th>Action</th>
                   </tr>
                   </thead>
@@ -67,11 +68,12 @@
                   </tbody>
                   <tfoot>
                     <tr>
+
                         <th>Name</th>
                         <th>Phone</th>
                         <th>Email</th>
+                        <th>Created At</th>
                         <th>Action</th>
-                      </tr>
                   </tr>
                   </tfoot>
                 </table>
