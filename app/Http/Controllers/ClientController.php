@@ -123,8 +123,14 @@ class ClientController extends Controller
      * @param  \App\Client  $client
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Client $client)
+    public function destroy($id)
     {
-        
+        $del = Client::findOrFail($id);
+        $del->delete();
+
+
+            return redirect('/clients')->with('success','You have successfully deleted the client and the related projets');
+
+
     }
 }

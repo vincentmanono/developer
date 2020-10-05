@@ -177,7 +177,15 @@
               </ul> --}}
 
                 <a href="{{route('clients.edit',$client->id)}}" class="btn  btn-primary">Edit</a>
-                <a href="#" class="btn  btn-danger">Delete</a>
+                <br>
+               <div>
+               <form action="{{route('clients.destroy',$client->id)}}" method="POST">
+                @csrf
+                @method('DELETE')
+                    <button href="#" class="btn  btn-danger">Delete</button>
+               </form>
+
+               </div>
 
             </div>
           </div>
