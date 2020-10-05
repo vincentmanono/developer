@@ -45,9 +45,10 @@ class PortfolioController extends Controller
      * @param  \App\Portfolio  $portfolio
      * @return \Illuminate\Http\Response
      */
-    public function show(Portfolio $portfolio)
+    public function show($id)
     {
-        //
+        $portfolio =Portfolio::find($id);
+        return view('admin.portfolio.show',compact('portfolio'));
     }
 
     /**

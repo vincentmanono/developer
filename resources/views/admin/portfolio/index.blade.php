@@ -46,29 +46,29 @@
                   <tr>
                     <th>ID</th>
                     <th>Title</th>
-                    <th>Subtitle</th>
-                    <th>Date</th>
+                    <th>URL</th>
+                    <th>CpanelPassword</th>
                     <th>Action</th>
                   </tr>
                   </thead>
                   <tbody>
-                {{-- @foreach ($portfolios as $portfolio)
+                @foreach ($portfolios as $portfolio)
                 <tr>
                     <td>{{$portfolio->id}}</td>
                     <td>{{$portfolio->title}}</td>
-                    <td>{{$portfolio->subtitle}}</td>
-                    <td> {{$portfolio->created_at}}</td>
-                <td><a href="{{route('blog.show',$portfolio->slug)}}" class="btn btn-sm btn-primary">Read more</a></td>
+                    <td> <a href="{{$portfolio->url}}">{{$portfolio->url}}</a></td>
+                    <td> {{$portfolio->cpanelpassword}}</td>
+                <td><a href="{{route('portfolios.show',$portfolio->id)}}" class="btn btn-sm btn-primary">Read more</a></td>
                   </tr>
 
-                @endforeach --}}
+                @endforeach
                   </tbody>
                   <tfoot>
                   <tr>
                     <th>ID</th>
                     <th>Title</th>
-                    <th>Subtitle</th>
-                    <th>Date</th>
+                    <th>URL</th>
+                    <th>CpanelPassword</th>
                     <th>Action</th>
                   </tr>
                   </tfoot>
