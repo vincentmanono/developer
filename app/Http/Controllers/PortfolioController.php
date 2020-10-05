@@ -60,7 +60,7 @@ class PortfolioController extends Controller
      */
     public function edit(Portfolio $portfolio)
     {
-        return view('admin.clients.create');
+        // return view('admin.clients.create');
     }
 
     /**
