@@ -29,7 +29,14 @@
         <a class="btn btn-primary  " href="{{route('portfolios.index')}}">back</a>
 
     <a class="btn btn-success  "  href="{{route('portfolios.edit',$portfolio->id)}}">edit</a>
-    <a class="btn btn-danger  " href="#">Delete</a>
+        <form action="{{route('portfolios.destroy',$portfolio->id)}}" method="post">
+            @csrf
+            @method('DELETE')
+
+            <button type="submit" class="btn btn-danger">Delete</button>
+
+        </form>
+
 
           <div class="card-tools">
             <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
@@ -52,7 +59,7 @@
     <div class="row">
 
       <div class="col-md-8">
-        <img class="img-fluid" src="http://placehold.it/750x500" alt="">
+        <img class="img-fluid" src="/storage/portfolio/{{$portfolio->image}}" alt="">
       </div>
 
       <div class="col-md-4">

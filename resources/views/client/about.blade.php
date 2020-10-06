@@ -395,3 +395,36 @@
   <!-- Partners end -->
 </div>
 @endsection
+@section('title')
+<title>About Us</title>
+@endsection
+@section('metatag')
+
+
+<meta name="keywords" content="">
+<meta name="description" content="Check out this free code snippet that provides a ready to use User Profile Page template, no need to download an entire theme!">
+
+
+<meta name="twitter:card" content="product">
+<meta name="twitter:site" content="@creativetim">
+<meta name="twitter:title" content="User Profile Page Snippet for Easier Coding in Bootstrap  @ Creative Tim ">
+
+<meta name="twitter:description" content="Check out this free code snippet that provides a ready to use User Profile Page template, no need to download an entire theme!">
+<meta name="twitter:creator" content="@creativetim">
+
+<meta property="og:image" content="https://www.creative-tim.com/bits/assets/images/user-profile-page-argon-dashboard.jpg" />
+
+
+
+<meta property="fb:app_id" content="655968634437471">
+<meta property="og:title" content="User Profile Page Snippet for Easier Coding in Bootstrap @ Creative Tim " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="" />
+
+<meta property="og:image" content="https://www.creative-tim.com/bits/assets/images/user-profile-page-argon-dashboard.jpg" />
+
+<meta property="og:description" content="Check out this free code snippet that provides a ready to use User Profile Page template, no need to download an entire theme!" />
+<meta property="og:site_name" content="Creative Tim" />
+
+
+@endsection

@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,800" rel="stylesheet"> -->
-    <title>Portfolio Project - Walton Consulting Template</title>
+
+    @yield('title')
+
+@yield('metatag')
     <link rel="stylesheet" href="{{ asset('assets/css/vendor.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/style-1.css') }}" id="template-skin">
 </head>
