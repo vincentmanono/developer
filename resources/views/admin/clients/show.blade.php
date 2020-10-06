@@ -176,7 +176,9 @@
                 </li>
               </ul> --}}
 
+               <div>
                 <a href="{{route('clients.edit',$client->id)}}" class="btn  btn-primary">Edit</a>
+               </div>
                 <br>
                <div>
                <form action="{{route('clients.destroy',$client->id)}}" method="POST">

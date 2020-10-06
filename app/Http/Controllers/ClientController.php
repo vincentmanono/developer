@@ -127,10 +127,9 @@ class ClientController extends Controller
     {
         $del = Client::findOrFail($id);
         $del->delete();
+if($del){
+        return redirect('/clients')->with('success','You have successfully deleted their client and the related projets');
 
-
-            return redirect('/clients')->with('success','You have successfully deleted the client and the related projets');
-
-
+}
     }
 }

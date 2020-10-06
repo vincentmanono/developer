@@ -26,7 +26,7 @@ class PortfolioController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.portfolio.create');
     }
 
     /**
@@ -60,7 +60,8 @@ class PortfolioController extends Controller
      */
     public function edit(Portfolio $portfolio)
     {
-        // return view('admin.clients.create');
+        $portfolioedit = Portfolio::find(1);
+         return view('admin.portfolio.create',compact('portfolioedit'))->with('param','edit');
     }
 
     /**

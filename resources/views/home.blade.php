@@ -122,7 +122,7 @@
                   </div>
                   <!-- /.card-body -->
                   <div class="card-footer text-center">
-                    <a href="javascript::">View All Users</a>
+                    <a href="{{route('users.index')}}">View All Users</a>
                   </div>
                   <!-- /.card-footer -->
                 </div>
@@ -239,8 +239,8 @@
                 </div>
                 <!-- /.card-body -->
                 <div class="card-footer clearfix">
-                  <a href="javascript:void(0)" class="btn btn-sm btn-info float-left">Place New Order</a>
-                  <a href="javascript:void(0)" class="btn btn-sm btn-secondary float-right">View All Orders</a>
+                  <a href="{{route('portfolios.create')}}" class="btn btn-sm btn-info float-left">Add new Project</a>
+                  <a href="{{route('portfolios.index')}}" class="btn btn-sm btn-secondary float-right">View All Projects</a>
                 </div>
                 <!-- /.card-footer -->
               </div>

@@ -35,6 +35,7 @@ Route::group(['middleware' => ['auth']], function () {
     Route::resource('/blog', 'BlogController');
     Route::resource('portfolios', 'PortfolioController');
     Route::resource('/clients', 'ClientController');
+    Route::resource('/users','UserController');
 
 });
 
