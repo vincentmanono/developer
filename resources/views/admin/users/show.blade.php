@@ -115,7 +115,7 @@
 
 
 
-                                                <input class="form-control form-control-sm" type="text" placeholder="Type a comment">
+                                                {{-- <input class="form-control form-control-sm" type="text" placeholder="Type a comment"> --}}
                                             </div>
                                             <!-- /.post -->
                                         </div>

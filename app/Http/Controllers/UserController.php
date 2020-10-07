@@ -99,4 +99,72 @@ class UserController extends Controller
 
 
     }
+    public function update(Request $request,$id){
+        $this->validate($request,[
+
+            'name' => ['required', 'string', 'max:255'],
+            'phone'=>['required','string'],
+            'image'=>[''],
+
+            'email' => ['required', 'string', 'email', 'max:255', ],
+            'password' => [ 'string', 'min:8', 'confirmed'],
+        ]);
+
+        $post = User::where('id',$id)->firstOrFail();
+
+        $post->name = $request->name;
+        $post->phone =$request->phone;
+        $post->email = $request->email;
+        $post->type= $request->type;
+        $post->password =$request->password;
+        $password = Hash::make($request->password);
+        $post->password = $password;
+
+
+
+
+        if (file_exists($request->file('image'))) {
+
+
+
+            $old_avatar = $post->image;
+            $avatar = $request->image;
+            if ($old_avatar != 'avatar.png' && !Str::contains($avatar, 'http')) {
+                $imagepath = public_path('/storage/user') . '/' . $old_avatar;
+                File::delete($imagepath);
+            }
+
+
+
+            // Get filename with extension
+            $filenameWithExt = $request->file('image')->getClientOriginalName();
+
+            // Get just the filename
+            $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+
+            // Get extension
+            $extension = $request->file('image')->getClientOriginalExtension();
+
+            // Create new filename
+            $filenameToStore = $filename . '_' . time() . '.' . $extension;
+
+            // Uplaod image
+            $path = $request->file('image')->storeAs('public/user', $filenameToStore);
+
+            // Upload image
+            $post->image = $filenameToStore;
+        }
+
+
+
+
+
+        if ($post->save()) {
+
+            return redirect()->back()->with('success','User details updated successfully');
+        } else {
+            return redirect()->back()->with('error','An error occured while updating the user details');
+        }
+
+    }
 }

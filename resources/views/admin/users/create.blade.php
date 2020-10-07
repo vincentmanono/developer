@@ -88,34 +88,34 @@
 
       @elseif($param == 'edit')
 
-      <form action="{{route('users.store')}}" enctype="multipart/form-data" method="post">
+      <form action="{{route('users.update',$user->id)}}" enctype="multipart/form-data" method="post">
         @csrf
         @method('PUT')
       <div class="form-group">
         <label for="inputName">Name</label>
-      <input type="name" id="inputName" class="form-control" value="{{$user->name}}" required placeholder="Enter Name">
+      <input type="text" id="inputName" name="name" class="form-control" value="{{$user->name}}" required placeholder="Enter Name">
       </div>
       <div class="form-group">
         <label for="inputName">Phone</label>
-        <input type="phone" id="inputName" class="form-control" value="{{$user->phone}}" required placeholder="Enter Phone Number">
+        <input type="text" id="inputName" name="phone" class="form-control" value="{{$user->phone}}" required placeholder="Enter Phone Number">
       </div>
       <div class="form-group">
         <label for="inputName">Email</label>
 
-      <input type="email" id="inputName" class="form-control" value="{{$user->email}}" required placeholder="email">
+      <input type="email" name="email" id="inputName" class="form-control" value="{{$user->email}}" required placeholder="email">
       </div>
       <div class="form-group">
         <label for="inputName">Image</label>
-        <input type="file" id=""  value="">
+      <input type="file" id="" name="image" value="{{old('image')}}">
       </div>
       <div class="form-group">
         <label for="inputName">Type</label>
-        <input type="type" id="inputName" class="form-control" value="{{$user->type}}" required placeholder="admin/user/super">
+        <input type="text" name="type" id="inputName" class="form-control" value="{{$user->type}}" required placeholder="admin/user/super">
       </div>
 
       <div class="row">
         <div class="col-12">
-          <a href="#" class="btn btn-secondary">Cancel</a>
+          <a href="{{route('users.index')}}" class="btn btn-secondary">Cancel</a>
           <input type="submit" value="Save Changes" class="btn btn-success float-right">
         </div>
     </form>

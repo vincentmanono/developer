@@ -34,10 +34,10 @@
           <span class="badge badge-danger navbar-badge"></span>
         </a>
         <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right" >
-          <a href="#" class="dropdown-item">
+        <a href="{{route('users.show',Auth::user()->id)}}" class="dropdown-item">
             <!-- Message Start -->
             <div class="media">
-              <img src="dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+            <img src="/storage/user/{{Auth::user()->image}}" alt="User Avatar" class="img-size-50 mr-3 img-circle">
               <div class="media-body">
                 <h3 class="dropdown-item-title">
                  {{auth()->user()->name}}
