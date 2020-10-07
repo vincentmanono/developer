@@ -23,9 +23,11 @@
     <!-- Main content Ad ministrator-->
     <section class="content">
 
-      <!-- Default box -->
+      <!-- Default box --> <a href="{{route('users.create')}}" class="btn btn-success btn-sm">Create new user</a>
       <div class="card card-solid">
+
        <LAbel style="padding-left: 42%">     ADMINISTRATORS</LAbel>
+
         <div class="card-body pb-0">
           <div class="row d-flex align-items-stretch">
 
