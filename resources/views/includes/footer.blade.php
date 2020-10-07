@@ -9,9 +9,8 @@
                             <img src="assets/images/logo.png" alt="Walton">
                         </div>
                         <div class="name-and-tagline">
-                            <div class="name">Walton</div>
-                            <div class="tagline">solutions for business</div>
-                        </div>
+                            <div class="name">Lagaster</div>
+                            <div class="tagline">Website solutions </div>                       </div>
                     </a>
                     <!-- Logo end -->
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id nunc auctor nisi efficitur mollis. In vel eleifend ex, vitae vestibulum eros. Vestibulum non nibh non dui tempus vehicula at ut felis. Donec sit amet
@@ -35,7 +34,7 @@
                             <br>Windsor, CT 06095</p>
                         <p class="phone">1 (860) 729-1526</p>
                         <p class="email">
-                            <a href="#">support@walton.com</a>
+                            <a href="#">info@lagaster.com</a>
                         </p>
                     </div>
                 </div>
@@ -66,6 +65,6 @@
     </div>
 
     <p style="text-align: center"> Copyright @ {{date("Y")}}
-        <a href="#">company name</a>, Inc.</p>
+        <a href="">lagaster.com</a></p>
 
 </footer>

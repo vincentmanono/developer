@@ -45,7 +45,7 @@
                     <br>Windsor, CT 06095</p>
                   <p class="phone">1 (860) 729-1526</p>
                   <p class="email">
-                    <a href="#">support@walton.com</a>
+                    <a href="#">info@lagaster.com</a>
                   </p>
                   <p class="links">
                     <a href="#">

@@ -66,8 +66,8 @@
                             <img src="{{asset('assets/images/logo.png')}}" alt="Walton">
                         </div>
                         <div class="name-and-tagline">
-                            <div class="name">Walton</div>
-                            <div class="tagline">solutions for business</div>
+                            <div class="name">Lagaster</div>
+                            <div class="tagline">Website solutions </div>
                         </div>
                     </a>
                     <!-- Logo end -->
@@ -78,7 +78,7 @@
                                 <div class="title">
                                     <span class="wicon-iconmonstr-mail-thin"></span> Drop us a line</div>
                                 <div class="content">
-                                    <a href="#">support@walton.com</a>
+                                    <a href="#">info@lagaster.com</a>
                                 </div>
                             </div>
                             <div class="header-contacts-item hidden-sm hidden-xs">
@@ -118,7 +118,7 @@
 
                             </li>
                             <li>
-                                <a href="#">the company</a>
+                                <a href="#">Lagaster</a>
                                 <ul>
 
                                     <li>

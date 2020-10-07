@@ -29,7 +29,7 @@
         </div>
       </div><!-- /.container-fluid -->
     </section>
-
+@include('messages')
     <!-- Main content -->
     <section class="content">
       <div class="row" style="padding-left: 10%;padding-right: 10%;">
@@ -48,31 +48,31 @@
       @if ($param == 'create')
       <form action="{{route('users.store')}}" enctype="multipart/form-data" method="post">
         @csrf
-        @method('PUT')
+        @method('POST')
       <div class="form-group">
         <label for="inputName">Name</label>
-      <input type="name" id="inputName" class="form-control" required placeholder="Enter Name">
+      <input type="text" name="name" id="inputName" class="form-control" required placeholder="Enter Name">
       </div>
       <div class="form-group">
         <label for="inputName">Phone</label>
-        <input type="phone" id="inputName" class="form-control"  required placeholder="Enter Phone Number">
+        <input type="text" name="phone" id="inputName" class="form-control"  required placeholder="Enter Phone Number">
       </div>
       <div class="form-group">
         <label for="inputName">Email</label>
 
-      <input type="email" id="inputName" class="form-control" required placeholder="email">
+      <input type="email" name="email" id="e" class="form-control" required placeholder="email">
       </div>
       <div class="form-group">
         <label for="inputName">Image</label>
-        <input type="file" id=""  value="">
+        <input type="file" id="" name="image"  value="">
       </div>
       <div class="form-group">
         <label for="inputName">Type</label>
-        <input type="type" id="inputName" class="form-control" required placeholder="admin/user/super">
+        <input type="text" name="type" id="inputName" class="form-control" required placeholder="admin/user/super">
       </div>
       <div class="form-group">
         <label for="inputName">Password</label>
-        <input id="password" type="password" id="inputName" class="form-control" required >
+        <input id="password" type="password" id="email" name="password" class="form-control" required >
       </div>
       <div class="form-group">
         <label for="inputName">Confirm Password</label>

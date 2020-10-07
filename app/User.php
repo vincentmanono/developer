@@ -17,7 +17,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email','phone', 'type','password',
+        'name', 'email','phone','image', 'type','password',
     ];
 
     /**
@@ -25,9 +25,9 @@ class User extends Authenticatable
      *
      * @var array
      */
-    protected $hidden = [
-        'password', 'remember_token',
-    ];
+    // protected $hidden = [
+    //     'password', 'remember_token',
+    // ];
 
     /**
      * The attributes that should be cast to native types.
@@ -44,4 +44,5 @@ class User extends Authenticatable
     public function portfolios(){
         return $this->belongsToMany(Portfolio::class);
     }
+
 }
