@@ -31,7 +31,7 @@
 
             @foreach ($users as $user)
 
-           @if ($user->type == 'admin')
+           {{-- @if ($user->type == 'admin') --}}
 
            <div class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch">
             <div class="card bg-light">
@@ -66,7 +66,7 @@
             </div>
           </div>
 
-           @endif
+           {{-- @endif --}}
             @endforeach
             {{-- <div class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch">
               <div class="card bg-light">
