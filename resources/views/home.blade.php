@@ -110,7 +110,7 @@
                      @foreach ($users as $user)
 
                      <li>
-                        <img src="/storage/user/{{$user->image}}" alt="User Image">
+                        <img src="/storage/user/{{$user->image}}" style=" width:10px; height:2%" alt="User Image">
                         <a class="users-list-name" href="#"><h6>{{$user->name}}</h6></a>
                         <span class="users-list-date"><h6>{{$user->type}}</h6></span>
                       </li>

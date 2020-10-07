@@ -167,4 +167,27 @@ class UserController extends Controller
         }
 
     }
+    public function destroy($id){
+        try {
+            $del = User::where('id', $id)->firstOrFail();
+
+            $old_avatar = $del->image;
+            if ($old_avatar != 'avatar.png') {
+                $imagepath = public_path('/storage/user/')  . $old_avatar;
+                File::delete($imagepath);
+                // Storage::delete('news/'. $old_avatar );
+            }
+
+            if ($del->delete()) {
+
+                return redirect()->route('users.index')->with('success', "User removed successfully");;
+            } else {
+
+                return back()->with('error', 'Error occurred please try gain!!');;
+            }
+        } catch (QueryException $ex) {
+
+            return redirect()->back()->with('error','User could not be found');
+        }
+    }
 }

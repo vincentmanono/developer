@@ -145,7 +145,7 @@ class BlogController extends Controller
             if ($old_avatar != 'avatar.png' && !Str::contains($avatar, 'http')) {
                 $imagepath = public_path('/storage/blog') . '/' . $old_avatar;
                 File::delete($imagepath);
-            }
+            } 
 
 
 

@@ -44,7 +44,7 @@
                   <span class="float-right text-sm text-danger"><i class="fas "></i></span>
                 </h3>
                 <p class="text-sm">My Profile</p>
-                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                <p class="text-sm text-muted"><i class=""></i></p>
 
               </div>
 
@@ -63,8 +63,8 @@
 
                   <span class="float-right text-sm text-muted"><i class="fas "></i></span>
                 </h3>
-                <p class="text-sm">Messages</p>
-                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                <p class="text-sm">Member Since</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> {{Auth::user()->created_at}}</p>
               </div>
             </div>
             <!-- Message End -->

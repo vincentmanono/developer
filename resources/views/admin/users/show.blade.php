@@ -13,7 +13,7 @@
                         </div>
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
-                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item"><a href="{{route('home')}}">Home</a></li>
                                 <li class="breadcrumb-item active">User Profile</li>
                             </ol>
                         </div>
@@ -51,6 +51,20 @@
                                         </li>
                                     </ul>
                                 <a href="{{route('users.edit',$user->id)}}" class="btn btn-success btn-block"><b>Edit Profile</b></a>
+                                <br>
+                                <form action="{{route('users.destroy',$user->id)}}" enctype="multipart/form-data" method="post">
+                                @csrf
+                                @method('DELETE')
+                                @if(Auth::user()->type == 'admin')
+
+                                <button type="submit" class="btn btn-sm btn-danger">Delete User</button>
+                                @elseif(Auth::user()->type == 'user')
+<div style="padding-left:30%" >
+                                    <button type="submit" class="btn btn-lg btn-danger btn-block" disabled>Delete User</button>
+
+</div>
+                                @endif
+                            </form>
                                 </div>
                                 <!-- /.card-body -->
                             </div>
