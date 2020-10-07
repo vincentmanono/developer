@@ -13,8 +13,13 @@
                             <div class="tagline">Website solutions </div>                       </div>
                     </a>
                     <!-- Logo end -->
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id nunc auctor nisi efficitur mollis. In vel eleifend ex, vitae vestibulum eros. Vestibulum non nibh non dui tempus vehicula at ut felis. Donec sit amet
-                        euismod massa.
+                    <p>Lagaster is a Website development company that is
+                         focused on providing user-friendly, customized,
+                         affordable and the best website designs. Over the
+                          past few years Lagaster has managed to develop top
+                           of the arch websites and offering best website
+                            development services. Our reputation in website development
+                             has grown as we dedicate ourselves to meet our client needs.
                     </p>
                 </div>
                 <div>

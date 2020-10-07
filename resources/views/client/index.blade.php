@@ -85,8 +85,9 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <p class="text-decor-1">welcome to company website</p>
-                <p class="text-decor-2">Ideas and breakthroughs fueled by 100+ years of total experience.</p>
+                <p class="text-decor-1"><h4>welcome to Lagaster web development company</h4></p>
+                <p class="text-decor-2">From impressive designs to advanced functionality,
+                     we  design user-friendly and secure websites.</p>
                 <p>
                     <a href="#" class="btn btn-1">
                         <i class="fa fa-file"></i> get a quotation</a>
@@ -94,6 +95,7 @@
                 </p>
             </div>
             <div class="col-md-6">
+                <h3><label for="">About Us</label></h3>
                 <p>Nullam placerat, sapien et eleifend condimentum, felis nisi pretium dolor, in pharetra tellus ipsum eget odio. Maecenas id cursus dui. Duis fermentum tortor id sapien tempor, quis placerat nunc gravida.</p>
                 <p>Integer a diam sem. Vivamus vehicula consequat leo, ut cursus tellus iaculis et. Etiam volutpat bibendum dui at ullamcorper. Etiam dignissim cursus sem quis pharetra. Morbi suscipit placerat odio, id congue arcu consequat
                     quis. Curabitur congue nibh tempus consectetur blandit. Praesent ipsum lectus, tempus sed tellus et, finibus volutpat orci. Vivamus lobortis consectetur sem nec sollicitudin. </p>
@@ -191,7 +193,7 @@
                         <p>Mauris diam urna, egestas in est nec, placerat ornare purus vitae.</p>
                     </div>
                     <div class="icon-box v2">
-                       
+
                         <span class="wicon-iconmonstr-computer-thin"></span>
                         <p class="title">technology & innovations</p>
                         <p>Phasellus vitae dui a nisl lobortis efficitur a nec convallis diam.</p>

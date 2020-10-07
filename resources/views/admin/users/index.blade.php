@@ -20,6 +20,8 @@
       </div><!-- /.container-fluid -->
     </section>
 
+
+
     <!-- Main content Ad ministrator-->
     <section class="content">
 
@@ -51,7 +53,7 @@
                     </ul>
                   </div>
                   <div class="col-5 text-center">
-                    <img src="/storage/user/{{$user->image}}" alt=""  class="img-circle img-fluid">
+                    <img src="/storage/user/{{$user->image}}" alt="" style=" width:90px; height:80%" class="img-circle img-fluid">
                   </div>
                 </div>
               </div>

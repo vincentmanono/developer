@@ -110,10 +110,11 @@
                      @foreach ($users as $user)
 
                      <li>
-                        <img src="/storage/user/{{$user->image}}" style=" width:10px; height:2%" alt="User Image">
-                        <a class="users-list-name" href="#"><h6>{{$user->name}}</h6></a>
+                         <a href="{{route('users.show',$user->id)}}"> <img src="/storage/user/{{$user->image}}" style=" width:80px; height:50%" alt="User Image"></a>
+
+                        <a class="users-list-name" href="{{route('users.show',$user->id)}}"><h6>{{$user->name}}</h6></a>
                         <span class="users-list-date"><h6>{{$user->type}}</h6></span>
-                      </li>
+                    </li>
 
                      @endforeach
 
