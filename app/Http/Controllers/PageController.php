@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Blog;
+use App\Subscriber;
 use Illuminate\Http\Request;
 
 class PageController extends Controller
@@ -34,4 +35,5 @@ class PageController extends Controller
     public function contact(){
         return view('client.contact');
     }
+
 }

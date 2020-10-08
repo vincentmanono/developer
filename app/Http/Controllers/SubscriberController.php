@@ -14,7 +14,8 @@ class SubscriberController extends Controller
      */
     public function index()
     {
-        //
+        $newsletters = Subscriber::orderBy('id','Desc')->get();
+        return view('admin.newsletter.index',compact('newsletters'));
     }
 
     /**
@@ -35,7 +36,19 @@ class SubscriberController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request,[
+            'email'=>['email','required'],
+        ]);
+
+        $post = new Subscriber();
+        $post->email =$request->email;
+
+        $validate = $post->save();
+
+        if($validate){
+            return redirect()->back()->with('success','you have successfully subscribed to our newsletter');
+        }
+
     }
 
     /**

@@ -102,6 +102,7 @@
         </div>
     </div>
     <!-- Main bar end -->
+    @include('messages')
     <!-- Menu bar start -->
     <div id="sticked-bar" class="menu-bar">
         <div class="container">

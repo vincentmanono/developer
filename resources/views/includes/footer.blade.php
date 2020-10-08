@@ -23,9 +23,12 @@
                     </p>
                 </div>
                 <div>
+                   
                     <label for="">Subscribe to our newsletter</label>
-                    <form action="" method="post">
-                        <input type="text" placeholder="Enter your email address" name="" id="">
+                <form action="{{route('subscribe.store')}}" method="post">
+                        @csrf
+                        @method('POST')
+                        <input type="text" placeholder="Enter your email address" name="email" id="">
                         <button type="submit" class="btn  btn-sm btn-primary ">Subscribe</button>
                     </form>
                 </div>

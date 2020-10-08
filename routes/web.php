@@ -17,9 +17,10 @@ Route::get('/portfolio','PageController@portfolio')->name('portfolio');
 Route::get('/contact','PageController@contact')->name('contact');
 Route::get('/contact','PageController@contact')->name('contact');
 Route::get('/bloghome','PageController@blog')->name('blog.home');
-Route::get('/blogmore/{id}','PageController@blogmore')->name('blogmore.show');
+Route::post('/newsletter','PageController@newsletter')->name('newsletter.store');
 Route::get('/services','PageController@services')->name('services');
 Route::post('/footer','PageController@footer')->name('footer');
+Route::post('subscribe','SubscriberController@store')->name('subscribe.store');
 
 Auth::routes();
 
@@ -36,6 +37,7 @@ Route::group(['middleware' => ['auth']], function () {
     Route::resource('portfolios', 'PortfolioController');
     Route::resource('/clients', 'ClientController');
     Route::resource('/users','UserController');
+    Route::get('/newsletters','SubscriberController@index')->name('newsletter');
 
 });
 
