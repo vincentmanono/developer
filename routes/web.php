@@ -42,5 +42,6 @@ Route::group(['middleware' => ['auth']], function () {
     Route::resource('/mailbox', 'MailboxController');
     Route::get('/contactdetails','ContactController@index')->name('contact.index');
     Route::get('contactmore/{id}','ContactController@show')->name('contact.show');
+    Route::delete('contactdelete/{id}','ContactController@destroy')->name('contact.del');
 });
 

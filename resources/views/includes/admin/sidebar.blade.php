@@ -402,7 +402,7 @@
                   <p>Register</p>
                 </a>
               </li>
-              <li class="nav-item">
+              {{-- <li class="nav-item">
                 <a href="pages/examples/forgot-password.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Forgot Password</p>
@@ -443,7 +443,7 @@
                   <i class="far fa-circle nav-icon"></i>
                   <p>Error 500</p>
                 </a>
-              </li>
+              </li> --}}
               <li class="nav-item">
                 <a href="pages/examples/pace.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>

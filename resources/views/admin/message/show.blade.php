@@ -7,7 +7,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Blank Page</h1>
+            <h3>Client Contact  </h3>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -79,7 +79,7 @@
                     <i class="fas fa-user"></i> Delete Message
                   </a> --}}
                 <div style="float: right; margin-left:2%">
-                    <form action="#" method="post">
+                <form action="{{route('contact.del',$message->id)}}" enctype="multipart/form-data" method="POST">
                         @csrf
                         @method('DELETE')
                         <button type="submit" class="btn btn-sm btn-primary ">Delete</button>

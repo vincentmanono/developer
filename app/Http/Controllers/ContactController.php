@@ -100,8 +100,13 @@ class ContactController extends Controller
      * @param  \App\Contact  $contact
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Contact $contact)
+    public function destroy($id)
     {
-        //
+        $del = Contact::where('id',$id);
+        $del->delete();
+
+        if($del){
+            return redirect()->route('contact.index')->with('success','You have successfully deleted the Message');
+        }
     }
 }
