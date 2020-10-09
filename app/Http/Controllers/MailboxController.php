@@ -14,7 +14,8 @@ class MailboxController extends Controller
      */
     public function index()
     {
-        //
+        $mailboxs =Mailbox::orderBy('id','Desc')->paginate(10);
+        return view('admin.mails.sent',compact('mailboxs'));
     }
 
     /**
@@ -24,7 +25,8 @@ class MailboxController extends Controller
      */
     public function create()
     {
-        //
+$mailcount = Mailbox::all()->count();
+        return view('admin.mails.compose',compact('mailcount'));
     }
 
     /**
@@ -35,7 +37,28 @@ class MailboxController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+       // dd($request);
+        $this->validate($request,[
+            'name'=>[''],
+            'subject'=>[''],
+            'email'=>[''],
+            'body'=>[''],
+        ]);
+
+        $post = new Mailbox();
+        $post->name = $request->name;
+        $post->subject =$request->subject;
+        $post->email = $request->email;
+        $post->body = $request->body;
+
+        $validate =$post->save();
+        if($validate){
+            return redirect()->back()->with('success','Your mail was successfully sent');
+        }
+        else{
+            return redirect()->back()->with('error','Sorry an error occured while sending the mail');
+        }
     }
 
     /**
@@ -44,9 +67,10 @@ class MailboxController extends Controller
      * @param  \App\Mailbox  $mailbox
      * @return \Illuminate\Http\Response
      */
-    public function show(Mailbox $mailbox)
+    public function show( $id)
     {
-        //
+        $mailbox= Mailbox::where('id',$id)->first();
+        return view('admin.mails.read',compact('mailbox'));
     }
 
     /**

@@ -297,13 +297,13 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/mailbox/mailbox.html" class="nav-link">
+                <a href="#" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Inbox</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/mailbox/compose.html" class="nav-link">
+                <a href="{{route('mailbox.create')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Compose</p>
                 </a>
@@ -312,6 +312,12 @@
                 <a href="pages/mailbox/read-mail.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Read</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{route('mailbox.index')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Sent</p>
                 </a>
               </li>
             </ul>
