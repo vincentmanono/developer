@@ -23,7 +23,7 @@
                     </p>
                 </div>
                 <div>
-                   
+                    {{-- @include('messages') --}}
                     <label for="">Subscribe to our newsletter</label>
                 <form action="{{route('subscribe.store')}}" method="post">
                         @csrf

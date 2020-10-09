@@ -14,8 +14,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/','PageController@index')->name('index');
 Route::get('/about','PageController@about')->name('about');
 Route::get('/portfolio','PageController@portfolio')->name('portfolio');
-Route::get('/contact','PageController@contact')->name('contact');
-Route::get('/contact','PageController@contact')->name('contact');
+Route::get('/contact-us','PageController@contact')->name('contact-us');
+Route::post('/contact','ContactController@store')->name('contact.post');
 Route::get('/bloghome','PageController@blog')->name('blog.home');
 Route::get('/blogmore/{slug}','PageController@blogmore')->name('blogmore.show');
 Route::post('/newsletter','PageController@newsletter')->name('newsletter.store');
@@ -39,7 +39,7 @@ Route::group(['middleware' => ['auth']], function () {
     Route::resource('/clients', 'ClientController');
     Route::resource('/users','UserController');
     Route::get('/newsletters','SubscriberController@index')->name('newsletter');
-Route::resource('/mailbox', 'MailboxController');
+Route::resource('/mailbox', 'MailController');
 
 });
 

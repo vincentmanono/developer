@@ -8,6 +8,7 @@ use App\Subscriber;
 use App\User;
 use App\Blog;
 use App\Client;
+
 class HomeController extends Controller
 {
     /**

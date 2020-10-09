@@ -102,7 +102,7 @@
         </div>
     </div>
     <!-- Main bar end -->
-    @include('messages')
+   
     <!-- Menu bar start -->
     <div id="sticked-bar" class="menu-bar">
         <div class="container">
@@ -127,7 +127,7 @@
                                     </li>
 
                                     <li>
-                                        <a style="text-decoration: none;"  href="/contact">contacts</a>
+                                        <a style="text-decoration: none;"  href="/contact-us">contacts</a>
                                     </li>
                                     <li>
                                         <a style="text-decoration: none;"  href="/faq">faq</a>
@@ -152,7 +152,7 @@
 
                             </li>
                             <li>
-                                <a style="text-decoration: none;"  href="/contact">contacts</a>
+                                <a style="text-decoration: none;"  href="/contact-us">contacts</a>
                             </li>
                         </ul>
                     </nav>

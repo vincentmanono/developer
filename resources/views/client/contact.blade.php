@@ -31,6 +31,7 @@
   <div id="map-canvas" class="map-canvas content-section"></div>
   <!-- Map end --> --}}
   <!-- Contacts start -->
+
   <div class="content-section contacts-page-section">
     <div class="container">
       <div class="row">
@@ -71,7 +72,10 @@
               <h3>send us a message</h3>
               <p>Feel free to drop us a line below.</p>
               <div class="row">
-                <form id="contact-form">
+                @include('messages')
+              <form  enctype="multipart/form-data" action="{{route('contact.post')}}" method="post">
+                @csrf
+                @method('POST')
                   <div class="form-group contacts-form-result">
                     <div class="col-xs-12">
                       <strong></strong>
@@ -79,32 +83,35 @@
                   </div>
                   <div class="form-group clearfix">
                     <div class="col-xs-12 col-sm-6">
-                      <input type="text" placeholder="Your name *" name="comment-name" class="form-control">
+                      <input type="text" placeholder="Your names *" name="name"  required class="form-control">
                     </div>
                     <div class="col-xs-12 col-sm-6">
-                      <input type="email" placeholder="Your e-mail address *" name="comment-email" class="form-control">
+                      <input type="email" placeholder="Your e-mail address *" required name="email" class="form-control">
                     </div>
                   </div>
                   <div class="form-group clearfix">
                     <div class="col-xs-12 col-sm-6">
-                      <input type="tel" placeholder="Phone number..." name="comment-phone" class="form-control">
+                      <input type="tel" placeholder="Phone number..." required name="phone" class="form-control">
                     </div>
                     <div class="col-xs-12 col-sm-6">
-                      <input type="text" placeholder="Company name..." name="comment-company" class="form-control">
+                      <input type="text" placeholder="Subject..." required name="subject" class="form-control">
+                    </div>
+                  </div>
+                  <div class="form-group clearfix">
+
+                    <div class="col-xs-12">
+                        Message
+                      <textarea placeholder="Your message *" id="summary-ckeditor" required  name="message" class="form-control"> </textarea>
                     </div>
                   </div>
                   <div class="form-group clearfix">
                     <div class="col-xs-12">
-                      <textarea placeholder="Your message *" rows="7" name="comment-message" class="form-control"></textarea>
-                    </div>
-                  </div>
-                  <div class="form-group clearfix">
-                    <div class="col-xs-12">
-                      <button type="submit" class="btn btn-2">Send your request</button>
+                      <button type="submit" class="btn btn-2">Send</button>
                     </div>
                   </div>
                 </form>
               </div>
+
             </div>
           </div>
         </div>
@@ -112,4 +119,8 @@
     </div>
   </div>
 
+  <script src="{{ asset('ckeditor/ckeditor.js') }}"></script>
+<script>
+CKEDITOR.replace( 'summary-ckeditor' );
+</script>
 @endsection

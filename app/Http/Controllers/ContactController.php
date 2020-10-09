@@ -35,7 +35,27 @@ class ContactController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request,[
+            'name'=>['required'],
+            'subject'=>['required'],
+            'phone'=>['required'],
+            'email'=>['required','email'],
+            'message'=>['required']
+
+        ]);
+
+        $post = new Contact();
+        $post->name =$request->name;
+        $post->subject =$request->subject;
+        $post->email =$request->email;
+        $post->message =$request->message;
+        $post->phone =$request->phone;
+
+        $validate= $post->save();
+
+        if($validate){
+            return redirect()->back()->with('success','Your message has been successfully sent. We shall get back to you.');
+        }
     }
 
     /**

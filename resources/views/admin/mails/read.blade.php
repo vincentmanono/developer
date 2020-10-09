@@ -12,7 +12,7 @@
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Compose</li>
+              <li class="breadcrumb-item active">Read Mail</li>
             </ol>
           </div>
         </div>
@@ -24,7 +24,7 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-3">
-            <a href="mailbox.html" class="btn btn-primary btn-block mb-3">Back to Inbox</a>
+            <a href="{{route('mailbox.index')}}" class="btn btn-primary btn-block mb-3">Back to Inbox</a>
 
             <div class="card">
               <div class="card-header">
@@ -68,7 +68,7 @@
               </div>
               <!-- /.card-body -->
             </div>
-            <!-- /.card -->
+            {{-- <!-- /.card -->
             <div class="card">
               <div class="card-header">
                 <h3 class="card-title">Labels</h3>
@@ -94,7 +94,7 @@
               </div>
               <!-- /.card-body -->
             </div>
-            <!-- /.card -->
+            <!-- /.card --> --}}
           </div>
           <!-- /.col -->
         <div class="col-md-9">
@@ -110,24 +110,24 @@
             <!-- /.card-header -->
             <div class="card-body p-0">
               <div class="mailbox-read-info">
-                <h5>Message Subject Is Placed Here</h5>
+                <h5>{{$mailbox->subject}}</h5>
                 <h6>To: {{$mailbox->email}}
                 <span class="mailbox-read-time float-right">Sent on {{$mailbox->created_at}}</span></h6>
               </div>
               <!-- /.mailbox-read-info -->
               <div class="mailbox-controls with-border text-center">
-                <div class="btn-group">
+                {{-- <div class="btn-group">
                   <button type="button" class="btn btn-default btn-sm" data-toggle="tooltip" data-container="body" title="Delete">
                     <i class="far fa-trash-alt"></i></button>
                   <button type="button" class="btn btn-default btn-sm" data-toggle="tooltip" data-container="body" title="Reply">
                     <i class="fas fa-reply"></i></button>
                   <button type="button" class="btn btn-default btn-sm" data-toggle="tooltip" data-container="body" title="Forward">
                     <i class="fas fa-share"></i></button>
-                </div>
+                </div> --}}
                 <!-- /.btn-group -->
-                <button type="button" class="btn btn-default btn-sm" data-toggle="tooltip" title="Print">
+                {{-- <button type="button" class="btn btn-default btn-sm" data-toggle="tooltip" title="Print">
                   <i class="fas fa-print"></i></button>
-              </div>
+              </div> --}}
               <!-- /.mailbox-controls -->
               <div class="mailbox-read-message">
                @php

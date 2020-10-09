@@ -24,8 +24,10 @@ class MailboxController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function create()
+
     {
-$mailcount = Mailbox::all()->count();
+
+        $mailcount = Mailbox::all()->count();
         return view('admin.mails.compose',compact('mailcount'));
     }
 

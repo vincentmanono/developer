@@ -28,6 +28,7 @@
             <div class="card">
               <div class="card-header">
                 <h3 class="card-title">DataTable with minimal features & hover style</h3>
+              <a href="{{route('portfolios.create')}}" class="btn btn-warning">Create a new project</a>
               </div>
               <!-- /.card-header -->
 
