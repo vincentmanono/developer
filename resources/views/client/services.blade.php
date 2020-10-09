@@ -12,10 +12,10 @@
             <h1 style="color: white">service</h1>
             <ol class="breadcrumb">
               <li>
-                <a href="/">Home</a>
+                <a style="text-decoration: none;"  href="/">Home</a>
               </li>
               <li>
-                <a href="/services">service</a>
+                <a style="text-decoration: none;"  href="/services">service</a>
               </li>
 
             </ol>
@@ -41,7 +41,7 @@
                   <div class="icon-box v4 with-image">
                     <figure class="post-thumbnail">
                       <div class="hover">
-                        <a href="images/big-images/1.jpg" class="lightbox-images">
+                        <a style="text-decoration: none;"  href="images/big-images/1.jpg" class="lightbox-images">
                           <span class="wicon-iconmonstr-zoom-in-thin"></span>
                         </a>
                       </div>
@@ -53,7 +53,7 @@
                     </header>
                     <p>Aliquam aliquam, libero ac pellentesque suscipit, enim urna sollicitudin diam, vitae gravida leo dui vitae libero.</p>
                     <p>
-                      <a href="#" class="color-link">Learn more
+                      <a style="text-decoration: none;"  href="#" class="color-link">Learn more
                         <i class="fa fa-long-arrow-right"></i>
                       </a>
                     </p>
@@ -63,7 +63,7 @@
                   <div class="icon-box v4 with-image">
                     <figure class="post-thumbnail">
                       <div class="hover">
-                        <a href="images/big-images/2.jpg" class="lightbox-images">
+                        <a style="text-decoration: none;"  href="images/big-images/2.jpg" class="lightbox-images">
                           <span class="wicon-iconmonstr-zoom-in-thin"></span>
                         </a>
                       </div>
@@ -75,7 +75,7 @@
                     </header>
                     <p>Praesent hendrerit pulvinar ex, in commodo orci sagittis non. Vestibulum vehicula viverra aliquam. </p>
                     <p>
-                      <a href="#" class="color-link">Learn more
+                      <a style="text-decoration: none;"  href="#" class="color-link">Learn more
                         <i class="fa fa-long-arrow-right"></i>
                       </a>
                     </p>
@@ -86,7 +86,7 @@
                   <div class="icon-box v4 with-image">
                     <figure class="post-thumbnail">
                       <div class="hover">
-                        <a href="images/big-images/3.jpg" class="lightbox-images">
+                        <a style="text-decoration: none;"  href="images/big-images/3.jpg" class="lightbox-images">
                           <span class="wicon-iconmonstr-zoom-in-thin"></span>
                         </a>
                       </div>
@@ -98,7 +98,7 @@
                     </header>
                     <p>Phasellus sollicitudin a sem ac placerat. Morbi vulputate eget dolor et pretium. Proin eu posuere justo. </p>
                     <p>
-                      <a href="#" class="color-link">Learn more
+                      <a style="text-decoration: none;"  href="#" class="color-link">Learn more
                         <i class="fa fa-long-arrow-right"></i>
                       </a>
                     </p>
@@ -109,7 +109,7 @@
                   <div class="icon-box v4 with-image">
                     <figure class="post-thumbnail">
                       <div class="hover">
-                        <a href="images/big-images/7.jpg" class="lightbox-images">
+                        <a style="text-decoration: none;"  href="images/big-images/7.jpg" class="lightbox-images">
                           <span class="wicon-iconmonstr-zoom-in-thin"></span>
                         </a>
                       </div>
@@ -121,7 +121,7 @@
                     </header>
                     <p>Cras maximus tortor nec quam euismod semper. Aenean volutpat orci lectus, vitae ultricies eros tempus in. </p>
                     <p>
-                      <a href="#" class="color-link">Learn more
+                      <a style="text-decoration: none;"  href="#" class="color-link">Learn more
                         <i class="fa fa-long-arrow-right"></i>
                       </a>
                     </p>
@@ -132,7 +132,7 @@
                   <div class="icon-box v4 with-image">
                     <figure class="post-thumbnail">
                       <div class="hover">
-                        <a href="images/big-images/8.jpg" class="lightbox-images">
+                        <a style="text-decoration: none;"  href="images/big-images/8.jpg" class="lightbox-images">
                           <span class="wicon-iconmonstr-zoom-in-thin"></span>
                         </a>
                       </div>
@@ -144,7 +144,7 @@
                     </header>
                     <p>Etiam lacinia ex ut magna consectetur, sit amet congue lacus feugiat. Mauris vel tortor tincidunt. </p>
                     <p>
-                      <a href="#" class="color-link">Learn more
+                      <a style="text-decoration: none;"  href="#" class="color-link">Learn more
                         <i class="fa fa-long-arrow-right"></i>
                       </a>
                     </p>
@@ -154,7 +154,7 @@
                   <div class="icon-box v4 with-image">
                     <figure class="post-thumbnail">
                       <div class="hover">
-                        <a href="images/big-images/9.jpg" class="lightbox-images">
+                        <a style="text-decoration: none;"  href="images/big-images/9.jpg" class="lightbox-images">
                           <span class="wicon-iconmonstr-zoom-in-thin"></span>
                         </a>
                       </div>
@@ -166,7 +166,7 @@
                     </header>
                     <p>In rhoncus eget erat placerat lacinia. Pellentesque a porttitor nisi, a placerat nisi.</p>
                     <p>
-                      <a href="#" class="color-link">Learn more
+                      <a style="text-decoration: none;"  href="#" class="color-link">Learn more
                         <i class="fa fa-long-arrow-right"></i>
                       </a>
                     </p>
@@ -184,9 +184,9 @@
                   <p class="text-decor-1">welcome to walton consulting</p>
                   <p class="text-decor-2 text-white">Ideas and breakthroughs fueled by 100+ years of total experience.</p>
                   <p>
-                    <a href="#" class="btn btn-1">
+                    <a style="text-decoration: none;"  href="#" class="btn btn-1">
                       <i class="fa fa-file"></i> get a quotation</a>
-                    <a href="#" class="btn btn-2">get in touch</a>
+                    <a style="text-decoration: none;"  href="#" class="btn btn-2">get in touch</a>
                   </p>
                 </div>
                 <div class="col-md-6">
@@ -198,7 +198,7 @@
             </div>
           </div>
           <!-- Text end -->
-          
+
         </div>
 
 @endsection

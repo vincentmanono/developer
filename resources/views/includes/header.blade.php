@@ -6,45 +6,45 @@
                 <div class="col-lg-12 top-bar-content">
                     <ul>
                         <li>
-                            <a href="#">our team</a>
+                            <a style="text-decoration: none;"  href="#">our team</a>
                         </li>
                         <li>
-                            <a href="#">case studies</a>
+                            <a style="text-decoration: none;"  href="#">case studies</a>
                         </li>
                         <li>
-                            <a href="#">newsroom</a>
+                            <a style="text-decoration: none;"  href="#">newsroom</a>
                         </li>
                         <li>
-                            <a href="#">careers</a>
+                            <a style="text-decoration: none;"  href="#">careers</a>
                         </li>
                         <li>
-                            <a href="#">contact us</a>
+                            <a style="text-decoration: none;"  href="#">contact us</a>
                         </li>
                     </ul>
                     <div class="lang-and-social-buttons">
                         <ul>
                             <li>
-                                <a href="#">
+                                <a style="text-decoration: none;"  href="#">
                                     <i class="fa fa-facebook"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a style="text-decoration: none;"  href="#">
                                     <i class="fa fa-twitter"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a style="text-decoration: none;"  href="#">
                                     <i class="fa fa-linkedin"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a style="text-decoration: none;"  href="#">
                                     <i class="fa fa-google-plus"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a style="text-decoration: none;"  href="#">
                                     <i class="fa fa-instagram"></i>
                                 </a>
                             </li>
@@ -61,7 +61,7 @@
             <div class="row">
                 <div class="col-lg-12 main-bar-content">
                     <!-- Logo start -->
-                    <a href="index.html" title="Walton" class="site-logo">
+                    <a style="text-decoration: none;"  href="/" title="Walton" class="site-logo">
                         <div class="logo-img">
                             <img src="{{asset('assets/images/logo.png')}}" alt="Walton">
                         </div>
@@ -78,13 +78,13 @@
                                 <div class="title">
                                     <span class="wicon-iconmonstr-mail-thin"></span> Drop us a line</div>
                                 <div class="content">
-                                    <a href="#">info@lagaster.com</a>
+                                    <a href="mailto:info@lagaster.com" style="text-decoration: none;">info@lagaster.com</a>
                                 </div>
                             </div>
                             <div class="header-contacts-item hidden-sm hidden-xs">
                                 <div class="title">
                                     <span class="wicon-iconmonstr-phone-thin"></span> Give us a call</div>
-                                <div class="content">1 (860) 729-1526</div>
+                                <div class="content"><a style="text-decoration: none;"  href="tel:1 (860) 729-1526">1 (860) 729-1526</a></div>
                             </div>
                             <div class="header-contacts-item">
                                 <div class="title">
@@ -94,7 +94,7 @@
                         </div>
                         <!-- Contacts end -->
                         <!-- Button start -->
-                        <a href="#" class="btn btn-primary">get a quotation</a>
+                        <a style="text-decoration: none;"  href="#" class="btn btn-primary">get a quotation</a>
                         <!-- Button end -->
                     </div>
                 </div>
@@ -115,44 +115,44 @@
                     <nav id="site-menu" class="site-menu hidden-sm hidden-xs hidden-md">
                         <ul>
                             <li class="active">
-                                <a href="/">home</a>
+                                <a style="text-decoration: none;"  href="/">home</a>
 
                             </li>
                             <li>
-                                <a href="#">Lagaster</a>
+                                <a style="text-decoration: none;"  href="#">Lagaster</a>
                                 <ul>
 
                                     <li>
-                                        <a href="/about">about </a>
+                                        <a style="text-decoration: none;"  href="/about">about </a>
                                     </li>
 
                                     <li>
-                                        <a href="/contact">contacts</a>
+                                        <a style="text-decoration: none;"  href="/contact">contacts</a>
                                     </li>
                                     <li>
-                                        <a href="/faq">faq</a>
+                                        <a style="text-decoration: none;"  href="/faq">faq</a>
                                     </li>
                                     <li>
-                                        <a href="/services">services</a>
+                                        <a style="text-decoration: none;"  href="/services">services</a>
 
                                     </li>
 
                                 </ul>
                             </li>
                             <li>
-                                <a href="/services">services</a>
+                                <a style="text-decoration: none;"  href="/services">services</a>
 
                             </li>
                             <li>
-                                <a href="/portfolio">portfolio</a>
+                                <a style="text-decoration: none;"  href="/portfolio">portfolio</a>
 
                             </li>
                             <li>
-                                <a href="/bloghome">blog</a>
+                            <a style="text-decoration: none;"  href="/bloghome">blog</a>
 
                             </li>
                             <li>
-                                <a href="/contact">contacts</a>
+                                <a style="text-decoration: none;"  href="/contact">contacts</a>
                             </li>
                         </ul>
                     </nav>

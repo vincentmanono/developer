@@ -12,10 +12,10 @@
             <h1 style="color: white">service</h1>
             <ol class="breadcrumb">
               <li>
-                <a href="/">Home</a>
+                <a style="text-decoration: none;"  href="/">Home</a>
               </li>
               <li>
-                <a href="/servicemore">service</a>
+                <a style="text-decoration: none;"  href="/servicemore">service</a>
               </li>
 
             </ol>

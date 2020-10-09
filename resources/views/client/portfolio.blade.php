@@ -12,10 +12,10 @@
             <h1 style="color: white">Portfolio</h1>
             <ol class="breadcrumb">
               <li>
-                <a href="/">Home</a>
+                <a style="text-decoration: none;"  href="/">Home</a>
               </li>
               <li>
-                <a href="/portfolio">Portfolio</a>
+                <a style="text-decoration: none;"  href="/portfolio">Portfolio</a>
               </li>
 
             </ol>
@@ -53,7 +53,7 @@
                   </figure>
                   <div class="details">
                     <p class="title">
-                      <a href="#">Jeans Unlilmited</a>
+                      <a style="text-decoration: none;"  href="#">Jeans Unlilmited</a>
                     </p>
                     <p class="text-decor-1">Windsor, OH 44099</p>
                   </div>
@@ -67,7 +67,7 @@
                   </figure>
                   <div class="details">
                     <p class="title">
-                      <a href="#">Best Products</a>
+                      <a style="text-decoration: none;"  href="#">Best Products</a>
                     </p>
                     <p class="text-decor-1">Vienna, VA 22181 </p>
                   </div>
@@ -81,7 +81,7 @@
                   </figure>
                   <div class="details">
                     <p class="title">
-                      <a href="#">Blockbuster Music</a>
+                      <a style="text-decoration: none;"  href="#">Blockbuster Music</a>
                     </p>
                     <p class="text-decor-1">Phoenix, AZ 85012</p>
                   </div>
@@ -95,7 +95,7 @@
                   </figure>
                   <div class="details">
                     <p class="title">
-                      <a href="#">H. J. Wilson & Company</a>
+                      <a style="text-decoration: none;"  href="#">H. J. Wilson & Company</a>
                     </p>
                     <p class="text-decor-1">Thousand Oaks, CA 91362</p>
                   </div>
@@ -109,7 +109,7 @@
                   </figure>
                   <div class="details">
                     <p class="title">
-                      <a href="#">Fedco</a>
+                      <a style="text-decoration: none;"  href="#">Fedco</a>
                     </p>
                     <p class="text-decor-1">Chicago, IL 60639</p>
                   </div>
@@ -123,7 +123,7 @@
                   </figure>
                   <div class="details">
                     <p class="title">
-                      <a href="#">Crazy Eddie</a>
+                      <a style="text-decoration: none;"  href="#">Crazy Eddie</a>
                     </p>
                     <p class="text-decor-1">New York, NY 10013</p>
                   </div>
@@ -133,7 +133,7 @@
           </div>
           <div class="row">
             <div class="col-lg-12">
-             
+
             </div>
           </div>
         </div>
@@ -150,7 +150,7 @@
                 <p>We help our clients grow their revenue & profits. Faster, better and sustainably than anyone else.</p>
               </div>
               <p class="right">
-                <a href="#" class="btn btn-1">
+                <a style="text-decoration: none;"  href="#" class="btn btn-1">
                   <i class="fa fa-file"></i> get a quotation</a>
               </p>
             </div>

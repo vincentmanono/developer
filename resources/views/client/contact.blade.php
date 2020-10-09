@@ -13,10 +13,10 @@
           <h1 style="color: white">contact us</h1>
           <ol class="breadcrumb">
             <li>
-              <a href="/">Home</a>
+              <a style="text-decoration: none;"  href="/">Home</a>
             </li>
             <li>
-              <a href="/contact">Contact</a>
+              <a style="text-decoration: none;"  href="/contact">Contact</a>
             </li>
 
           </ol>
@@ -45,22 +45,22 @@
                     <br>Windsor, CT 06095</p>
                   <p class="phone">1 (860) 729-1526</p>
                   <p class="email">
-                    <a href="#">info@lagaster.com</a>
+                    <a style="text-decoration: none;"  href="#">info@lagaster.com</a>
                   </p>
                   <p class="links">
-                    <a href="#">
+                    <a style="text-decoration: none;"  href="#">
                       <i class="fa fa-facebook"></i>
                     </a>
-                    <a href="#">
+                    <a style="text-decoration: none;"  href="#">
                       <i class="fa fa-twitter"></i>
                     </a>
-                    <a href="#">
+                    <a style="text-decoration: none;"  href="#">
                       <i class="fa fa-linkedin"></i>
                     </a>
-                    <a href="#">
+                    <a style="text-decoration: none;"  href="#">
                       <i class="fa fa-google-plus"></i>
                     </a>
-                    <a href="#">
+                    <a style="text-decoration: none;"  href="#">
                       <i class="fa fa-vimeo"></i>
                     </a>
                   </p>

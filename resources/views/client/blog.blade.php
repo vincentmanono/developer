@@ -12,10 +12,10 @@
             <h1 style="color: white">blog</h1>
             <ol class="breadcrumb">
               <li>
-                <a href="/">Home</a>
+                <a style="text-decoration: none;"  href="/">Home</a>
               </li>
               <li>
-                <a href="/blog">blog</a>
+                <a style="text-decoration: none;"  href="/blog">blog</a>
               </li>
 
             </ol>
@@ -37,7 +37,7 @@
               <div class="col-xs-12 col-sm-4">
                 <div class="post preview st-2">
                                 <figure class="post-thumbnail">
-                <a href="{{route('blogmore.show',$blog->slug)}}">
+                <a style="text-decoration: none;"  href="{{route('blogmore.show',$blog->slug)}}">
                     <img href="{{route('blogmore.show',$blog->slug)}}"  src="/storage/blog/{{$blog->image}}" alt="">
                 </a>
 
@@ -45,19 +45,19 @@
                   <div class="post-content">
                     <ul class="meta">
                       <li class="meta-date">Posted on
-                      <a href="{{route('blogmore.show',$blog->slug)}}">{{$blog->created_at}}</a>
+                      <a style="text-decoration: none;"  href="{{route('blogmore.show',$blog->slug)}}">{{$blog->created_at}}</a>
                       </li>
                       {{-- <li class="meta-category">in
-                        <a href="#">News & Events</a>
+                        <a style="text-decoration: none;"  href="#">News & Events</a>
                       </li> --}}
                     </ul>
                     <h4
                      class="post-title">
-                      <a href="{{route('blogmore.show',$blog->slug)}}">{{$blog->title}}</a><br>
-                      <a href="{{route('blogmore.show',$blog->slug)}}">{{$blog->subtitle}}</a>
+                      <a style="text-decoration: none;"  href="{{route('blogmore.show',$blog->slug)}}">{{$blog->title}}</a><br>
+                      <a style="text-decoration: none;"  href="{{route('blogmore.show',$blog->slug)}}">{{$blog->subtitle}}</a>
                     </h4>
 
-                <a href="{{route('blogmore.show',$blog->slug)}}" class="color-link">Read more
+                <a style="text-decoration: none;"  href="{{route('blogmore.show',$blog->slug)}}" class="color-link">Read more
                         <i class="fa fa-long-arrow-right"></i>
                       </a>
 
@@ -76,17 +76,17 @@
                     <div class="post-content">
                       <ul class="meta">
                         <li class="meta-date">Posted on
-                          <a href="#">4th May, 2018</a>
+                          <a style="text-decoration: none;"  href="#">4th May, 2018</a>
                         </li>
                         <li class="meta-category">in
-                          <a href="#">News & Events</a>
+                          <a style="text-decoration: none;"  href="#">News & Events</a>
                         </li>
                       </ul>
                       <h4 class="post-title">
-                        <a href="#">Why is Walton Consulting the most trending thing now?</a>
+                        <a style="text-decoration: none;"  href="#">Why is Walton Consulting the most trending thing now?</a>
                       </h4>
 
-                        <a href="#" class="color-link">Read more
+                        <a style="text-decoration: none;"  href="#" class="color-link">Read more
                           <i class="fa fa-long-arrow-right"></i>
                         </a>
 
@@ -102,17 +102,17 @@
                       <div class="post-content">
                         <ul class="meta">
                           <li class="meta-date">Posted on
-                            <a href="#">4th May, 2018</a>
+                            <a style="text-decoration: none;"  href="#">4th May, 2018</a>
                           </li>
                           <li class="meta-category">in
-                            <a href="#">News & Events</a>
+                            <a style="text-decoration: none;"  href="#">News & Events</a>
                           </li>
                         </ul>
                         <h4 class="post-title">
-                          <a href="#">Why is Walton Consulting the most trending thing now?</a>
+                          <a style="text-decoration: none;"  href="#">Why is Walton Consulting the most trending thing now?</a>
                         </h4>
 
-                          <a href="#" class="color-link">Read more
+                          <a style="text-decoration: none;"  href="#" class="color-link">Read more
                             <i class="fa fa-long-arrow-right"></i>
                           </a>
 

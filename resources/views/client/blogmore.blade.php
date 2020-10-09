@@ -12,10 +12,10 @@
             <h1 style="color: white">blog </h1>
             <ol class="breadcrumb">
               <li>
-                <a href="/">Home</a>
+                <a style="text-decoration: none;"  href="/">Home</a>
               </li>
               <li>
-                <a href={{route('blog.home')}}>blog</a>
+                <a style="text-decoration: none;"  href={{route('blog.home')}}>blog</a>
               </li>
 
             </ol>
@@ -38,10 +38,10 @@
             <header class="article-header">
               <ul class="meta">
                 <li class="meta-date">Posted on
-                  <a href="#">{{$blog->created_at}}</a>
+                  <a style="text-decoration: none;"  href="#">{{$blog->created_at}}</a>
                 </li>
                 <li class="meta-category">in
-                  <a href="#">News & Events</a>
+                  <a style="text-decoration: none;"  href="#">News & Events</a>
                 </li>
               </ul>
 
@@ -53,9 +53,9 @@
                  @endphp
 
              </p>            <footer class="article-footer">
-              <a href="#" class="btn btn-4">
+              <a style="text-decoration: none;"  href="#" class="btn btn-4">
                 <i class="fa fa-angle-left"></i> Prev post</a>
-              <a href="#" class="btn btn-4">Next post
+              <a style="text-decoration: none;"  href="#" class="btn btn-4">Next post
                 <i class="fa fa-angle-right"></i>
               </a>
             </footer>
@@ -78,7 +78,7 @@
                     <div class="person">
                       <ul class="meta">
                         <li class="meta-date">Posted on
-                        <a href="#">{{$comment->created_at}}</a>
+                        <a style="text-decoration: none;"  href="#">{{$comment->created_at}}</a>
                         </li>
                       </ul>
                       <h5 class="title">{{$comment->name}}</h5>
@@ -142,7 +142,7 @@
                 <div class="post preview">
                   <figure class="post-thumbnail">
                     <div class="hover">
-                      <a href="images/big-images/4.jpg" class="lightbox-images">
+                      <a style="text-decoration: none;"  href="images/big-images/4.jpg" class="lightbox-images">
                         <span class="wicon-iconmonstr-zoom-in-thin"></span>
                       </a>
                     </div>
@@ -150,14 +150,14 @@
                   </figure>
                   <div class="post-content">
                     <p class="post-title">
-                      <a href="#">Five great lessons you can learn from Walton Consulting</a>
+                      <a style="text-decoration: none;"  href="#">Five great lessons you can learn from Walton Consulting</a>
                     </p>
                   </div>
                 </div>
                 <div class="post preview">
                   <figure class="post-thumbnail">
                     <div class="hover">
-                      <a href="images/big-images/5.jpg" class="lightbox-images">
+                      <a style="text-decoration: none;"  href="images/big-images/5.jpg" class="lightbox-images">
                         <span class="wicon-iconmonstr-zoom-in-thin"></span>
                       </a>
                     </div>
@@ -165,14 +165,14 @@
                   </figure>
                   <div class="post-content">
                     <p class="post-title">
-                      <a href="#">Why is Walton Consulting the most trending thing now?</a>
+                      <a style="text-decoration: none;"  href="#">Why is Walton Consulting the most trending thing now?</a>
                     </p>
                   </div>
                 </div>
                 <div class="post preview">
                   <figure class="post-thumbnail">
                     <div class="hover">
-                      <a href="images/big-images/6.jpg" class="lightbox-images">
+                      <a style="text-decoration: none;"  href="images/big-images/6.jpg" class="lightbox-images">
                         <span class="wicon-iconmonstr-zoom-in-thin"></span>
                       </a>
                     </div>
@@ -180,7 +180,7 @@
                   </figure>
                   <div class="post-content">
                     <p class="post-title">
-                      <a href="#">How Walton Consulting is going to change your business strategies</a>
+                      <a style="text-decoration: none;"  href="#">How Walton Consulting is going to change your business strategies</a>
                     </p>
                   </div>
                 </div>
@@ -193,7 +193,7 @@
               <div class="widget-content">
                 <p>Fusce finibus metus in dolor pharetra, sed efficitur libero pulvinar. Ut ac nunc mi. Donec ut ligula lorem. Phasellus lacinia pulvinar volutpat.</p>
                 <p>
-                  <a href="#" class="btn btn-1">join our team</a>
+                  <a style="text-decoration: none;"  href="#" class="btn btn-1">join our team</a>
                 </p>
               </div>
             </div>

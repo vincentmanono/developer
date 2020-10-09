@@ -20,7 +20,7 @@
                             <div class="text-1">for your business</div>
                             <p class="text-3">Empowering business through people.</p>
                             <p class="homepage-slider-item-link">
-                                <a href="#">Learn more
+                                <a style="text-decoration: none;"  href="#">Learn more
             <i class="fa fa-long-arrow-right"></i>
           </a>
                             </p>
@@ -41,7 +41,7 @@
                             <div class="text-2">passion & leadership</div>
                             <p class="text-3">We transform organisations once at a time.</p>
                             <p class="homepage-slider-item-link">
-                                <a href="#">Learn more
+                                <a style="text-decoration: none;"  href="#">Learn more
             <i class="fa fa-long-arrow-right"></i>
           </a>
                             </p>
@@ -62,7 +62,7 @@
                             <div class="text-2">manage changes</div>
                             <p class="text-3">Independent global bisuness advisory firm.</p>
                             <p class="homepage-slider-item-link">
-                                <a href="#">Learn more
+                                <a style="text-decoration: none;"  href="#">Learn more
             <i class="fa fa-long-arrow-right"></i>
           </a>
                             </p>
@@ -89,9 +89,9 @@
                 <p class="text-decor-2">From impressive designs to advanced functionality,
                      we  design user-friendly and secure websites.</p>
                 <p>
-                    <a href="#" class="btn btn-1">
+                    <a style="text-decoration: none;"  href="#" class="btn btn-1">
                         <i class="fa fa-file"></i> get a quotation</a>
-                    <a href="#" class="btn btn-2">get in touch</a>
+                    <a style="text-decoration: none;"  href="#" class="btn btn-2">get in touch</a>
                 </p>
             </div>
             <div class="col-md-6">
@@ -116,7 +116,7 @@
                     <h4 class="title">who we are</h4>
                     <p>Vivamus porta vulputate nisl, nec consectetur est ornare pharetra arcu erat sit amet. </p>
                     <p>
-                        <a href="#" class="color-link">Read more...</a>
+                        <a style="text-decoration: none;"  href="#" class="color-link">Read more...</a>
                     </p>
                 </div>
             </div>
@@ -128,7 +128,7 @@
                     <h4 class="title">what we do</h4>
                     <p>Nullam hendrerit, metus porttitor placerat tincidunt, ante ex venenatis amet lectus. </p>
                     <p>
-                        <a href="#" class="color-link">Read more...</a>
+                        <a style="text-decoration: none;"  href="#" class="color-link">Read more...</a>
                     </p>
                 </div>
             </div>
@@ -140,7 +140,7 @@
                     <h4 class="title">how we do it</h4>
                     <p>Vestibulum vitae turpis ut nibh scelerisque neque tincidunt pharetra sollicitudin orci. </p>
                     <p>
-                        <a href="#" class="color-link">Read more...</a>
+                        <a style="text-decoration: none;"  href="#" class="color-link">Read more...</a>
                     </p>
                 </div>
             </div>
@@ -219,7 +219,7 @@
                 <p>Fusce aliquam mollis velit a ornare. Aenean lobortis sem sed dapibus laoreet. Fusce ac luctus velit.
                     <br>Donec tempor, diam a rutrum vestibulum, tortor metus pulvinar diam, ac eleifend ligula dolor non enim. </p>
                 <p>
-                    <a href="#" class="btn btn-1">
+                    <a style="text-decoration: none;"  href="#" class="btn btn-1">
                         <i class="fa fa-file"></i> get a quotation</a>
                 </p>
             </div>
@@ -245,7 +245,7 @@
                         <div class="recent-cases-item v1">
                             <figure>
                                 <div class="hover">
-                                    <a href="assets/images/big-images/13.jpg" class="lightbox-images">
+                                    <a style="text-decoration: none;"  href="assets/images/big-images/13.jpg" class="lightbox-images">
                                         <span class="wicon-iconmonstr-zoom-in-thin"></span>
                                     </a>
                                 </div>
@@ -254,20 +254,20 @@
                             <div class="details">
                                 <div>
                                     <p class="title">
-                                        <a href="#">Jeans Unlilmited</a>
+                                        <a style="text-decoration: none;"  href="#">Jeans Unlilmited</a>
                                     </p>
                                     <p class="text-decor-1">baton rouge, la</p>
                                     <p>Morbi enim neque, condimentum quis interdum ac, consectetur quis nibh. </p>
                                 </div>
                                 <p>
-                                    <a href="#" class="color-link">Learn more...</a>
+                                    <a style="text-decoration: none;"  href="#" class="color-link">Learn more...</a>
                                 </p>
                             </div>
                         </div>
                         <div class="recent-cases-item v1">
                             <figure>
                                 <div class="hover">
-                                    <a href="assets/images/big-images/12.jpg" class="lightbox-images">
+                                    <a style="text-decoration: none;"  href="assets/images/big-images/12.jpg" class="lightbox-images">
                                         <span class="wicon-iconmonstr-zoom-in-thin"></span>
                                     </a>
                                 </div>
@@ -276,20 +276,20 @@
                             <div class="details">
                                 <div>
                                     <p class="title">
-                                        <a href="#">Monmax</a>
+                                        <a style="text-decoration: none;"  href="#">Monmax</a>
                                     </p>
                                     <p class="text-decor-1">Rehoboth, MA 02769 </p>
                                     <p>Suspendisse ut metus tellus. Phasellus viverra vitae nunc non consequat. </p>
                                 </div>
                                 <p>
-                                    <a href="#" class="color-link">Learn more...</a>
+                                    <a style="text-decoration: none;"  href="#" class="color-link">Learn more...</a>
                                 </p>
                             </div>
                         </div>
                         <div class="recent-cases-item v1">
                             <figure>
                                 <div class="hover">
-                                    <a href="assets/images/big-images/14.jpg" class="lightbox-images">
+                                    <a style="text-decoration: none;"  href="assets/images/big-images/14.jpg" class="lightbox-images">
                                         <span class="wicon-iconmonstr-zoom-in-thin"></span>
                                     </a>
                                 </div>
@@ -298,13 +298,13 @@
                             <div class="details">
                                 <div>
                                     <p class="title">
-                                        <a href="#">Pomeroy's</a>
+                                        <a style="text-decoration: none;"  href="#">Pomeroy's</a>
                                     </p>
                                     <p class="text-decor-1">Norris City, IL 62869</p>
                                     <p>Pellentesque vitae nisl eros. Ut convallis ipsum et diam sagittis suscipit. </p>
                                 </div>
                                 <p>
-                                    <a href="#" class="color-link">Learn more...</a>
+                                    <a style="text-decoration: none;"  href="#" class="color-link">Learn more...</a>
                                 </p>
                             </div>
                         </div>
@@ -331,7 +331,7 @@
                 <div class="post big-preview">
                     <figure class="post-thumbnail">
                         <div class="hover">
-                            <a href="assets/images/big-images/6.jpg" class="lightbox-images">
+                            <a style="text-decoration: none;"  href="assets/images/big-images/6.jpg" class="lightbox-images">
                                 <span class="wicon-iconmonstr-zoom-in-thin"></span>
                             </a>
                         </div>
@@ -339,17 +339,17 @@
                     </figure>
                     <ul class="meta">
                         <li class="meta-date">Posted on
-                            <a href="#">8th May, 2018</a>
+                            <a style="text-decoration: none;"  href="#">8th May, 2018</a>
                         </li>
                         <li class="meta-category">in
-                            <a href="#">News & Events</a>
+                            <a style="text-decoration: none;"  href="#">News & Events</a>
                         </li>
                     </ul>
                     <h3 class="post-title">
-                        <a href="#">How company website is going to change your business strategy</a>
+                        <a style="text-decoration: none;"  href="#">How company website is going to change your business strategy</a>
                     </h3>
                     <p class="read-link">
-                        <a href="#">Read more
+                        <a style="text-decoration: none;"  href="#">Read more
         <i class="fa"></i>
       </a>
                     </p>
@@ -359,7 +359,7 @@
                 <div class="post preview">
                     <figure class="post-thumbnail">
                         <div class="hover">
-                            <a href="assets/images/big-images/4.jpg" class="lightbox-images">
+                            <a style="text-decoration: none;"  href="assets/images/big-images/4.jpg" class="lightbox-images">
                                 <span class="wicon-iconmonstr-zoom-in-thin"></span>
                             </a>
                         </div>
@@ -368,21 +368,21 @@
                     <div class="post-content">
                         <ul class="meta">
                             <li class="meta-date">Posted on
-                                <a href="#">2th May, 2018</a>
+                                <a style="text-decoration: none;"  href="#">2th May, 2018</a>
                             </li>
                             <li class="meta-category">in
-                                <a href="#">News & Events</a>
+                                <a style="text-decoration: none;"  href="#">News & Events</a>
                             </li>
                         </ul>
                         <h4 class="post-title">
-                            <a href="#">Five great lessons you can learn from company website</a>
+                            <a style="text-decoration: none;"  href="#">Five great lessons you can learn from company website</a>
                         </h4>
                     </div>
                 </div>
                 <div class="post preview">
                     <figure class="post-thumbnail">
                         <div class="hover">
-                            <a href="assets/images/big-images/3.jpg" class="lightbox-images">
+                            <a style="text-decoration: none;"  href="assets/images/big-images/3.jpg" class="lightbox-images">
                                 <span class="wicon-iconmonstr-zoom-in-thin"></span>
                             </a>
                         </div>
@@ -391,21 +391,21 @@
                     <div class="post-content">
                         <ul class="meta">
                             <li class="meta-date">Posted on
-                                <a href="#">5th May, 2018</a>
+                                <a style="text-decoration: none;"  href="#">5th May, 2018</a>
                             </li>
                             <li class="meta-category">in
-                                <a href="#">News & Events</a>
+                                <a style="text-decoration: none;"  href="#">News & Events</a>
                             </li>
                         </ul>
                         <h4 class="post-title">
-                            <a href="#">Why is company website the most trending thing right now?</a>
+                            <a style="text-decoration: none;"  href="#">Why is company website the most trending thing right now?</a>
                         </h4>
                     </div>
                 </div>
                 <div class="post preview">
                     <figure class="post-thumbnail">
                         <div class="hover">
-                            <a href="assets/images/big-images/12.jpg" class="lightbox-images">
+                            <a style="text-decoration: none;"  href="assets/images/big-images/12.jpg" class="lightbox-images">
                                 <span class="wicon-iconmonstr-zoom-in-thin"></span>
                             </a>
                         </div>
@@ -414,19 +414,19 @@
                     <div class="post-content">
                         <ul class="meta">
                             <li class="meta-date">Posted on
-                                <a href="#">12th May, 2018</a>
+                                <a style="text-decoration: none;"  href="#">12th May, 2018</a>
                             </li>
                             <li class="meta-category">in
-                                <a href="#">News & Events</a>
+                                <a style="text-decoration: none;"  href="#">News & Events</a>
                             </li>
                         </ul>
                         <h4 class="post-title">
-                            <a href="#">This is how company website will look like in 10 years time</a>
+                            <a style="text-decoration: none;"  href="#">This is how company website will look like in 10 years time</a>
                         </h4>
                     </div>
                 </div>
                 <p>
-                    <a href="#" class="btn btn-2">Read The Blog</a>
+                    <a style="text-decoration: none;"  href="#" class="btn btn-2">Read The Blog</a>
                 </p>
             </div>
         </div>
@@ -560,7 +560,7 @@
                 <p class="text-2">making benefits higher</p>
                 <p>A leading provider of website services.</p>
                 <p>
-                    <a href="#" class="btn btn-1">
+                    <a style="text-decoration: none;"  href="#" class="btn btn-1">
                         <i class="fa fa-file"></i> get a quotation</a>
                 </p>
             </div>

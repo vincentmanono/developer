@@ -12,10 +12,10 @@
             <h1 style="color: white">About Us</h1>
             <ol class="breadcrumb">
               <li>
-                <a href="/">Home</a>
+                <a style="text-decoration: none;"  href="/">Home</a>
               </li>
               <li>
-                <a href="/about">About</a>
+                <a style="text-decoration: none;"  href="/about">About</a>
               </li>
 
             </ol>
@@ -35,7 +35,7 @@
           <p class="text-decor-2">We are a leading global provider of advisory and consultancy serices.</p>
           <p>Maecenas id cursus dui. Duis fermentum tortor id sapien tempor, quis placerat nunc gravida. Integer a diam sem. Vivamus vehicula consequat leo, ut cursus tellus iaculis et. Etiam volutpat bibendum dui at ullamcorper.</p>
           <p>
-            <a href="#" class="btn btn-2">discover our advantages
+            <a style="text-decoration: none;"  href="#" class="btn btn-2">discover our advantages
               <i class="fa fa-long-arrow-right"></i>
             </a>
           </p>
@@ -61,7 +61,7 @@
             <h4 class="title">who we are</h4>
             <p>Vivamus porta vulputate nisl, nec consectetur est ornare pharetra arcu erat sit amet. </p>
             <p>
-              <a href="#" class="color-link">Read more...</a>
+              <a style="text-decoration: none;"  href="#" class="color-link">Read more...</a>
             </p>
           </div>
         </div>
@@ -73,7 +73,7 @@
             <h4 class="title">what we do</h4>
             <p>Nullam hendrerit, metus porttitor placerat tincidunt, ante ex venenatis amet lectus. </p>
             <p>
-              <a href="#" class="color-link">Read more...</a>
+              <a style="text-decoration: none;"  href="#" class="color-link">Read more...</a>
             </p>
           </div>
         </div>
@@ -85,7 +85,7 @@
             <h4 class="title">how we do it</h4>
             <p>Vestibulum vitae turpis ut nibh scelerisque neque tincidunt pharetra sollicitudin orci. </p>
             <p>
-              <a href="#" class="color-link">Read more...</a>
+              <a style="text-decoration: none;"  href="#" class="color-link">Read more...</a>
             </p>
           </div>
         </div>
@@ -102,7 +102,7 @@
           <p class="text-2">manage changes</p>
           <p>Independent global business advisory firm.</p>
           <p>
-            <a href="#" class="btn btn-1">
+            <a style="text-decoration: none;"  href="#" class="btn btn-1">
               <i class="fa fa-file"></i> get a quotation</a>
           </p>
         </div>
@@ -185,7 +185,7 @@
             <div class="team-item">
               <figure>
                 <div class="hover">
-                  <a href="images/faces/5.jpg" class="lightbox-images">
+                  <a style="text-decoration: none;"  href="images/faces/5.jpg" class="lightbox-images">
                     <span class="wicon-iconmonstr-zoom-in-thin"></span>
                   </a>
                 </div>
@@ -198,18 +198,18 @@
               <p>Morbi quis dolor sed elit ultrices maximus. Phasellus accumsan neque in porta malesuada.</p>
               <ul>
                 <li class="facebook">
-                  <a href="#">http://www.facebook.com/alex.hopkins</a>
+                  <a style="text-decoration: none;"  href="#">http://www.facebook.com/alex.hopkins</a>
                 </li>
                 <li class="phone">1 516-634-8047</li>
                 <li class="envelope">
-                  <a href="#">alex.hopkins@walton.com</a>
+                  <a style="text-decoration: none;"  href="#">alex.hopkins@walton.com</a>
                 </li>
               </ul>
             </div>
             <div class="team-item">
               <figure>
                 <div class="hover">
-                  <a href="images/faces/1.jpg" class="lightbox-images">
+                  <a style="text-decoration: none;"  href="images/faces/1.jpg" class="lightbox-images">
                     <span class="wicon-iconmonstr-zoom-in-thin"></span>
                   </a>
                 </div>
@@ -222,18 +222,18 @@
               <p>Fusce venenatis libero ac neque rutrum consequat vitae id mi. Sed eget luctus justo, at blandit velit. </p>
               <ul>
                 <li class="facebook">
-                  <a href="#">http://www.facebook.com/Brandon.Brunner</a>
+                  <a style="text-decoration: none;"  href="#">http://www.facebook.com/Brandon.Brunner</a>
                 </li>
                 <li class="phone">1 718-734-2848</li>
                 <li class="envelope">
-                  <a href="#">Brandon.Brunner@walton.com</a>
+                  <a style="text-decoration: none;"  href="#">Brandon.Brunner@walton.com</a>
                 </li>
               </ul>
             </div>
             <div class="team-item">
               <figure>
                 <div class="hover">
-                  <a href="images/faces/2.jpg" class="lightbox-images">
+                  <a style="text-decoration: none;"  href="images/faces/2.jpg" class="lightbox-images">
                     <span class="wicon-iconmonstr-zoom-in-thin"></span>
                   </a>
                 </div>
@@ -246,18 +246,18 @@
               <p>Aliquam dictum ornare felis sit amet rutrum. Nunc et mi vel sem dignissim commodo.</p>
               <ul>
                 <li class="facebook">
-                  <a href="#">http://www.facebook.com/Danielle.Peeples</a>
+                  <a style="text-decoration: none;"  href="#">http://www.facebook.com/Danielle.Peeples</a>
                 </li>
                 <li class="phone">1 804-501-8416</li>
                 <li class="envelope">
-                  <a href="#">Danielle.Peeples@walton.com</a>
+                  <a style="text-decoration: none;"  href="#">Danielle.Peeples@walton.com</a>
                 </li>
               </ul>
             </div>
             <div class="team-item">
               <figure>
                 <div class="hover">
-                  <a href="images/faces/3.jpg" class="lightbox-images">
+                  <a style="text-decoration: none;"  href="images/faces/3.jpg" class="lightbox-images">
                     <span class="wicon-iconmonstr-zoom-in-thin"></span>
                   </a>
                 </div>
@@ -270,18 +270,18 @@
               <p>Fusce eu mi dictum, sodales ipsum et, consectetur diam consequat et lectus ut malesuada.</p>
               <ul>
                 <li class="facebook">
-                  <a href="#">http://www.facebook.com/Clarence.White</a>
+                  <a style="text-decoration: none;"  href="#">http://www.facebook.com/Clarence.White</a>
                 </li>
                 <li class="phone">1 559-748-2680</li>
                 <li class="envelope">
-                  <a href="#">Clarence.White@walton.com</a>
+                  <a style="text-decoration: none;"  href="#">Clarence.White@walton.com</a>
                 </li>
               </ul>
             </div>
             <div class="team-item">
               <figure>
                 <div class="hover">
-                  <a href="images/faces/4.jpg" class="lightbox-images">
+                  <a style="text-decoration: none;"  href="images/faces/4.jpg" class="lightbox-images">
                     <span class="wicon-iconmonstr-zoom-in-thin"></span>
                   </a>
                 </div>
@@ -294,11 +294,11 @@
               <p>Integer nec orci nec orci commodo blandit at in nunc. Nunc non orci nec dui consectetur blandit eget non nisi.</p>
               <ul>
                 <li class="facebook">
-                  <a href="#">http://www.facebook.com/Donna.Kingston</a>
+                  <a style="text-decoration: none;"  href="#">http://www.facebook.com/Donna.Kingston</a>
                 </li>
                 <li class="phone">1 978-534-7960</li>
                 <li class="envelope">
-                  <a href="#">Donna.Kingston@walton.com</a>
+                  <a style="text-decoration: none;"  href="#">Donna.Kingston@walton.com</a>
                 </li>
               </ul>
             </div>
