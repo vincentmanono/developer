@@ -14,7 +14,8 @@ class ContactController extends Controller
      */
     public function index()
     {
-        //
+        $messages = Contact::orderBy('id','Desc')->get();
+        return view('admin.message.index',compact('messages'));
     }
 
     /**
@@ -64,9 +65,10 @@ class ContactController extends Controller
      * @param  \App\Contact  $contact
      * @return \Illuminate\Http\Response
      */
-    public function show(Contact $contact)
+    public function show( $id)
     {
-        //
+        $message = Contact::where('id',$id)->first();
+        return view('admin.message.show',compact('message'));
     }
 
     /**

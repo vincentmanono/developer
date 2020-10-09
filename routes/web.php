@@ -39,7 +39,8 @@ Route::group(['middleware' => ['auth']], function () {
     Route::resource('/clients', 'ClientController');
     Route::resource('/users','UserController');
     Route::get('/newsletters','SubscriberController@index')->name('newsletter');
-Route::resource('/mailbox', 'MailController');
-
+    Route::resource('/mailbox', 'MailboxController');
+    Route::get('/contactdetails','ContactController@index')->name('contact.index');
+    Route::get('contactmore/{id}','ContactController@show')->name('contact.show');
 });
 
