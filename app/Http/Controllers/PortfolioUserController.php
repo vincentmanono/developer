@@ -14,7 +14,7 @@ class PortfolioUserController extends Controller
      */
     public function index()
     {
-        //
+        
     }
 
     /**

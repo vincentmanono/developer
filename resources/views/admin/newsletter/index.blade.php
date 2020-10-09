@@ -43,22 +43,21 @@
               <div class="card-body">
                 <table id="example1" class="table table-bordered table-striped">
                   <thead>
-                  <tr>
-                    <th>ID</th>
-                    <th>Title</th>
-                    <th>URL</th>
-                    <th>CpanelPassword</th>
-                    <th>Action</th>
-                  </tr>
+                    <tr>
+                        <th>ID</th>
+                        <th>Email</th>
+                        <th>Created At</th>
+                        <th>Action</th>
+                      </tr>
                   </thead>
                   <tbody>
                 @foreach ($newsletters as $newsletter)
                 <tr>
                     <td>{{$newsletter->id}}</td>
-                    <td>{{$newsletter->title}}</td>
-                    <td> <a href="{{$newsletter->url}}">{{$newsletter->url}}</a></td>
-                    <td> {{$newsletter->cpanelpassword}}</td>
-                {{-- <td><a href="{{route('portfolios.show',$newsletter->id)}}" class="btn btn-sm btn-primary">Read more</a></td> --}}
+                    <td><a href="{{$newsletter->email}}">{{$newsletter->email}}</a></td>
+                    <td>{{$newsletter->created_at}}</td>
+
+                <td><a href="#" class="btn btn-sm btn-primary">Read more</a></td>
                   </tr>
 
                 @endforeach
@@ -66,9 +65,8 @@
                   <tfoot>
                   <tr>
                     <th>ID</th>
-                    <th>Title</th>
-                    <th>URL</th>
-                    <th>CpanelPassword</th>
+                    <th>Email</th>
+                    <th>Created At</th>
                     <th>Action</th>
                   </tr>
                   </tfoot>
