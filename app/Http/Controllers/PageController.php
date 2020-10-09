@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Blog;
 use App\Contact;
 use App\Subscriber;
+use App\portfolio;
 use Illuminate\Http\Request;
 
 
@@ -29,7 +30,9 @@ class PageController extends Controller
         return view('client.blogmore',compact('blog','blogs'));
     }
     public function portfolio(){
-        return view('client.portfolio');
+
+        $portfolios = Portfolio::orderBy('id','Desc')->paginate(9);
+        return view('client.portfolio',compact('portfolios'));
     }
     public function services(){
         return view('client.services');

@@ -32,105 +32,43 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="button-group filter-button-group">
-                <button data-filter="*">show all</button>
-                <button data-filter=".automotive">automotive</button>
-                <button data-filter=".chemicals">chemicals</button>
-                <button data-filter=".energy">energy</button>
-                <button data-filter=".healthcare">healthcare</button>
-                <button data-filter=".manufacturing">manufacturing</button>
-                <button data-filter=".telecom">telecommunications</button>
+                <label data-filter="*" style="margin-left: 50%">show all</label>
+
               </div>
             </div>
           </div>
           <!-- Portfolio filter end -->
           <div class="row">
             <div class="grid">
+              @foreach ($portfolios as $portfolio)
+
               <div class="col-xs-12 col-sm-6 col-md-4 grid-item automotive">
                 <div class="recent-cases-item v2 mtl portfolio">
                   <figure>
 
-                    <img src="assets/images/big-images/1.jpg" alt="">
+                   <a  href="{{$portfolio->url}}"> <img src="/storage/portfolio/{{$portfolio->image}}"   alt="lagaster" ></a>
                   </figure>
                   <div class="details">
                     <p class="title">
-                      <a style="text-decoration: none;"  href="#">Jeans Unlilmited</a>
+                      <a style="text-decoration: none;"   href="{{$portfolio->url}}">{{$portfolio->title}}</a>
                     </p>
-                    <p class="text-decor-1">Windsor, OH 44099</p>
+                <p class="text-decor-1"><a href="{{$portfolio->url}}" style="text-decoration: none">Visit</a></p>
                   </div>
                 </div>
               </div>
-              <div class="col-xs-12 col-sm-6 col-md-4 grid-item chemicals">
-                <div class="recent-cases-item v2 mtl portfolio">
-                  <figure>
 
-                    <img src="assets/images/big-images/2.jpg" alt="">
-                  </figure>
-                  <div class="details">
-                    <p class="title">
-                      <a style="text-decoration: none;"  href="#">Best Products</a>
-                    </p>
-                    <p class="text-decor-1">Vienna, VA 22181 </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xs-12 col-sm-6 col-md-4 grid-item energy">
-                <div class="recent-cases-item v2 mtl portfolio">
-                  <figure>
 
-                    <img src="assets/images/big-images/3.jpg" alt="">
-                  </figure>
-                  <div class="details">
-                    <p class="title">
-                      <a style="text-decoration: none;"  href="#">Blockbuster Music</a>
-                    </p>
-                    <p class="text-decor-1">Phoenix, AZ 85012</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xs-12 col-sm-6 col-md-4 grid-item healthcare">
-                <div class="recent-cases-item v2 mtl portfolio">
-                  <figure>
 
-                    <img src="assets/images/big-images/4.jpg" alt="">
-                  </figure>
-                  <div class="details">
-                    <p class="title">
-                      <a style="text-decoration: none;"  href="#">H. J. Wilson & Company</a>
-                    </p>
-                    <p class="text-decor-1">Thousand Oaks, CA 91362</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xs-12 col-sm-6 col-md-4 grid-item manufacturing">
-                <div class="recent-cases-item v2 mtl portfolio">
-                  <figure>
+              @endforeach
 
-                    <img src="assets/images/big-images/5.jpg" alt="">
-                  </figure>
-                  <div class="details">
-                    <p class="title">
-                      <a style="text-decoration: none;"  href="#">Fedco</a>
-                    </p>
-                    <p class="text-decor-1">Chicago, IL 60639</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xs-12 col-sm-6 col-md-4 grid-item telecom">
-                <div class="recent-cases-item v2 mtl portfolio">
-                  <figure>
 
-                    <img src="assets/images/big-images/6.jpg" alt="">
-                  </figure>
-                  <div class="details">
-                    <p class="title">
-                      <a style="text-decoration: none;"  href="#">Crazy Eddie</a>
-                    </p>
-                    <p class="text-decor-1">New York, NY 10013</p>
-                  </div>
-                </div>
-              </div>
             </div>
+
           </div>
+          <div style="margin-left: 30%">
+
+            {{$portfolios->links()}}
+            </div>
           <div class="row">
             <div class="col-lg-12">
 
