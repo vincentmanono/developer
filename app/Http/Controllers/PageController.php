@@ -12,7 +12,10 @@ use Illuminate\Http\Request;
 class PageController extends Controller
 {
     public function index(){
-        return view('client.index');
+
+        $bloggers =Blog::orderBy('id','Desc')->paginate(1);
+        $blogs =Blog::orderBy('id','Desc')->paginate(3);
+        return view('client.index',compact('blogs','bloggers'));
     }
     public function about(){
         return view('client.about');

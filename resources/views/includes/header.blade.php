@@ -76,7 +76,7 @@
                         <div class="header-contacts">
                             <div class="header-contacts-item hidden-md hidden-sm hidden-xs">
                                 <div class="title">
-                                    <span class="wicon-iconmonstr-mail-thin"></span> Drop us a line</div>
+                                    <span class="wicon-iconmonstr-mail-thin"></span> Drop us a mail</div>
                                 <div class="content">
                                     <a href="mailto:info@lagaster.com" style="text-decoration: none;">info@lagaster.com</a>
                                 </div>
@@ -88,7 +88,7 @@
                             </div>
                             <div class="header-contacts-item">
                                 <div class="title">
-                                    <span class="wicon-iconmonstr-location-pin-thin"></span> Windsor, CT 06095</div>
+                                    <span class="wicon-iconmonstr-location-pin-thin"></span> Juja</div>
                                 <div class="content">1064 Maxwell Street</div>
                             </div>
                         </div>

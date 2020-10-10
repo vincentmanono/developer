@@ -41,12 +41,12 @@
               <h3>our contacts</h3>
               <div class="widget widget-contacts">
                 <div class="widget-content">
-                  <p class="title text-heading">Walton Consulting Inc.</p>
+                  <p class="title text-heading">Lagaster Web Developers</p>
                   <p class="address">1064 Maxwell Street
                     <br>Windsor, CT 06095</p>
                   <p class="phone">1 (860) 729-1526</p>
                   <p class="email">
-                    <a style="text-decoration: none;"  href="#">info@lagaster.com</a>
+                    <a style="text-decoration: none;"  href="mailto:info@lagaster.com">info@lagaster.com</a>
                   </p>
                   <p class="links">
                     <a style="text-decoration: none;"  href="#">
@@ -70,7 +70,7 @@
             </div>
             <div class="content-block palette-4-bg right">
               <h3>send us a message</h3>
-              <p>Feel free to drop us a line below.</p>
+              <p>Feel free to contact us today.</p>
               <div class="row">
                 @include('messages')
               <form  enctype="multipart/form-data" action="{{route('contact.post')}}" method="post">

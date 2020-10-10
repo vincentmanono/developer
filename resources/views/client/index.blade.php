@@ -233,8 +233,8 @@
         <div class="row index-1-recent-cases-content">
             <div class="col-md-12 col-lg-4">
                 <div class="content-section-header left">
-                    <h2 class="title">recent cases</h2>
-                    <p class="description">We offer a wide range of staffing solutions.</p>
+                    <h2 class="title">Website Solutions</h2>
+                    <p class="description">We offer a wide range of website solutions.</p>
                 </div>
                 <div class="clearfix"></div>
                 <div id="index-1-recent-cases-nav" class="owl-nav left"></div>
@@ -320,66 +320,73 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
+
                 <div class="content-section-header center">
                     <h2 class="title">latest blog posts</h2>
                     <p class="description">Stay informed about what is happening.</p>
                 </div>
+
+
             </div>
         </div>
         <div class="row">
             <div class="col-md-6">
-                <div class="post big-preview">
-                    <figure class="post-thumbnail">
-                        <div class="hover">
-                            <a style="text-decoration: none;"  href="assets/images/big-images/6.jpg" class="lightbox-images">
-                                <span class="wicon-iconmonstr-zoom-in-thin"></span>
-                            </a>
-                        </div>
-                        <img src="assets/images/big-images/6.jpg" alt="">
-                    </figure>
-                    <ul class="meta">
-                        <li class="meta-date">Posted on
-                            <a style="text-decoration: none;"  href="#">8th May, 2018</a>
-                        </li>
-                        <li class="meta-category">in
-                            <a style="text-decoration: none;"  href="#">News & Events</a>
-                        </li>
-                    </ul>
-                    <h3 class="post-title">
-                        <a style="text-decoration: none;"  href="#">How company website is going to change your business strategy</a>
-                    </h3>
-                    <p class="read-link">
-                        <a style="text-decoration: none;"  href="#">Read more
-        <i class="fa"></i>
-      </a>
-                    </p>
-                </div>
+     @foreach ($bloggers as $blogger)
+     <div class="post big-preview">
+        <figure class="post-thumbnail">
+            <div class="hover">
+                <a style="text-decoration: none;"  href="/storage/blog/{{$blogger->image}}" class="lightbox-images">
+                    <span class="wicon-iconmonstr-zoom-in-thin"></span>
+                </a>
+            </div>
+            <img src="/storage/blog/{{$blogger->image}}" alt="lagaster">
+        </figure>
+        <ul class="meta">
+            <li class="meta-date">
+                <a style="text-decoration: none;"  href="{{route('blogmore.show',$blogger->slug)}}">Posted on {{$blogger->created_at}}</a>
+            </li>
+
+        </ul>
+        <h3 class="post-title">
+            <a style="text-decoration: none;"  href="{{route('blogmore.show',$blogger->slug)}}">{{$blogger->title}}</a><br>
+            <a style="text-decoration: none;"  href="{{route('blogmore.show',$blogger->slug)}}">{{$blogger->subtitle}}</a>
+        </h3>
+        <p class="read-link">
+            <a style="text-decoration: none;"  href="{{route('blogmore.show',$blogger->slug)}}">Read more
+<i class="fa"></i>
+</a>
+        </p>
+    </div>
+     @endforeach
             </div>
             <div class="col-md-6">
+
+                @foreach ($blogs as $blog)
                 <div class="post preview">
                     <figure class="post-thumbnail">
                         <div class="hover">
-                            <a style="text-decoration: none;"  href="assets/images/big-images/4.jpg" class="lightbox-images">
+                            <a style="text-decoration: none;"  href="/storage/blog/{{$blog->image}}" class="lightbox-images">
                                 <span class="wicon-iconmonstr-zoom-in-thin"></span>
                             </a>
                         </div>
-                        <img src="assets/images/big-images/4.jpg" alt="">
+                        <a href="{{route('blogmore.show',$blog->slug)}}"><img src="/storage/blog/{{$blog->image}}" alt=""></a>
+
                     </figure>
                     <div class="post-content">
                         <ul class="meta">
-                            <li class="meta-date">Posted on
-                                <a style="text-decoration: none;"  href="#">2th May, 2018</a>
+                            <li class="meta-date">
+                                <a style="text-decoration: none;"  href="{{route('blogmore.show',$blog->slug)}}">Posted on {{$blog->created_at}}</a>
                             </li>
-                            <li class="meta-category">in
-                                <a style="text-decoration: none;"  href="#">News & Events</a>
-                            </li>
+
                         </ul>
                         <h4 class="post-title">
-                            <a style="text-decoration: none;"  href="#">Five great lessons you can learn from company website</a>
+                            <a style="text-decoration: none;"  href="{{route('blogmore.show',$blog->slug)}}"><label for="">{{$blog->title}}</label></a><br>
+                        <a style="text-decoration: none;"  href="{{route('blogmore.show',$blog->slug)}}">{{$blog->subtitle}}</a>
                         </h4>
                     </div>
                 </div>
-                <div class="post preview">
+                @endforeach
+                {{-- <div class="post preview">
                     <figure class="post-thumbnail">
                         <div class="hover">
                             <a style="text-decoration: none;"  href="assets/images/big-images/3.jpg" class="lightbox-images">
@@ -424,9 +431,9 @@
                             <a style="text-decoration: none;"  href="#">This is how company website will look like in 10 years time</a>
                         </h4>
                     </div>
-                </div>
+                </div> --}}
                 <p>
-                    <a style="text-decoration: none;"  href="#" class="btn btn-2">Read The Blog</a>
+                    <a style="text-decoration: none;"  href="/bloghome" class="btn btn-2">Read The Blogs</a>
                 </p>
             </div>
         </div>

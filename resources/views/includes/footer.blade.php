@@ -37,12 +37,12 @@
                 <div class="widget widget-contacts">
                     <h4 class="widget-title">Contact Us</h4>
                     <div class="widget-content">
-                        <p class="title text-heading">Walton Consulting Inc.</p>
+                        <p class="title text-heading">Lagaster Web Developers</p>
                         <p class="address">1064 Maxwell Street
                             <br>Windsor, CT 06095</p>
                         <p class="phone">1 (860) 729-1526</p>
                         <p class="email">
-                            <a href="#">info@lagaster.com</a>
+                            <a href="mailto:info@lagaster.com" style="text-decoration: none;">info@lagaster.com</a>
                         </p>
                     </div>
                 </div>
@@ -73,6 +73,6 @@
     </div>
 
     <p style="text-align: center"> Copyright @ {{date("Y")}}
-        <a href="">lagaster.com</a></p>
+        <a href="https://www.lagaster.com" style="text-decoration: none;">lagaster.com</a></p>
 
 </footer>
