@@ -124,3 +124,8 @@
 CKEDITOR.replace( 'summary-ckeditor' );
 </script>
 @endsection
+
+@section('title')
+<title>Contact|Lagaster Website Developers</title>
+@endsection
+@section('metatag')

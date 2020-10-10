@@ -206,3 +206,7 @@
   <!-- Page content end -->
 
 @endsection
+@section('title')
+<title>Blog|Lagaster Website Developers</title>
+@endsection
+@section('metatag')

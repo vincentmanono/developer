@@ -26,3 +26,7 @@
   </div>
 
 @endsection
+@section('title')
+<title>Services|Lagaster Website Developers</title>
+@endsection
+@section('metatag')

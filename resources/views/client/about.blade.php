@@ -396,7 +396,7 @@
 </div>
 @endsection
 @section('title')
-<title>About Us</title>
+<title>About Us|Lagaster Website Developers</title>
 @endsection
 @section('metatag')
 

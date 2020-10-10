@@ -32,7 +32,7 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="button-group filter-button-group">
-                <label data-filter="*" style="margin-left: 50%">show all</label>
+                <label data-filter="*" style="margin-left: 45%">Our Projects</label>
 
               </div>
             </div>
@@ -99,3 +99,7 @@
     </div>
 
 @endsection
+@section('title')
+<title>Portfolio|Lagaster Website Developers</title>
+@endsection
+@section('metatag')

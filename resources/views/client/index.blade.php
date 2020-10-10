@@ -432,18 +432,20 @@
                         </h4>
                     </div>
                 </div> --}}
-                <p>
-                    <a style="text-decoration: none;"  href="/bloghome" class="btn btn-2">Read The Blogs</a>
-                </p>
+
             </div>
         </div>
     </div>
 </div>
 <!-- Latest blog posts end -->
 <!-- Partners start -->
+
 <div class="content-section palette-4-bg">
     <div class="container">
         <div class="row">
+            <p>
+                <a style="text-decoration: none; margin-left:40%"   class="btn btn-2">Our Partners</a>
+            </p>
             <div class="col-lg-12">
                 <div class="partners-wrapper">
                     <div class="partners-nav left owl-nav">
@@ -479,8 +481,8 @@
         <div class="row">
             <div class="col-md-6 col-lg-6">
                 <div class="content-section-header left">
-                    <h2 class="title">quick faq</h2>
-                    <p class="description">The most common questions.</p>
+                    <h2 class="title">quick website faq</h2>
+                    <p class="description">The most common questions on website development.</p>
                 </div>
                 <div class="clearfix"></div>
                 <div data-rt-accordion data-rt-accordion-toggle="on" data-rt-accordion-active="2" class="rt-accordion">
@@ -584,3 +586,8 @@
 </div>
 
 @endsection
+
+@section('title')
+<title>Home|Lagaster Website Developers</title>
+@endsection
+@section('metatag')

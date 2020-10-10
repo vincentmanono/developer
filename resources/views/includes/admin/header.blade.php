@@ -37,7 +37,7 @@
         <a href="{{route('users.show',Auth::user()->id)}}" class="dropdown-item">
             <!-- Message Start -->
             <div class="media">
-            <img src="/storage/user/{{Auth::user()->image}}" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+            <img src="/storage/user/{{Auth::user()->image}}" alt="User" class="img-size-50 mr-3 img-circle">
               <div class="media-body">
                 <h3 class="dropdown-item-title">
                  {{auth()->user()->name}}
