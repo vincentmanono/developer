@@ -28,6 +28,7 @@ class PageController extends Controller
     }
     public function blogmore($blogmore_slug){
 
+        
         $blog = Blog::where('slug',$blogmore_slug)->firstOrFail();
         $blogs= Blog::orderBy('id','Desc')->paginate(10);
         return view('client.blogmore',compact('blog','blogs'));

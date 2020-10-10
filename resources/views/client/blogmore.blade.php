@@ -63,17 +63,18 @@
           <!-- Article end -->
 
           <!-- Comments start -->
-          @foreach ($blog->comments as $comment)
-     <div class="content-section pb0">
-              {{-- comments count --}}
+          <div class="content-section pb0">
+            {{-- comments count --}}
 
-     <h3>{{count($blog->comments)}} Comment(s)</h3>
+   <h5>{{count($blog->comments)}} Comment(s)</h5>
+          @foreach ($blog->comments as $comment)
+
             <ol class="comment-list">
               <li class="comment">
                 <header>
                   <div>
                     <figure>
-                      <img  src="assets/images/faces/10.jpg" alt="">
+                      <img  src="{{ asset('assets/images/comment.png') }}"  alt="">
                     </figure>
                     <div class="person">
                       <ul class="meta">
@@ -88,43 +89,47 @@
                     <i class="fa fa-reply"></i> Reply this</a> --}}
                 </header>
                 <div class="comment-content">
-                <p>{{$comment->body}}</p>
+<p>   @php
+                      echo  $comment->body;
+                    @endphp
+</p>
+
                 </div>
               </li>
 
             </ol>
-          </div>
-          @endforeach
 
+          @endforeach
+        </div>
           <!-- Comments end -->
           <!-- Comment form start -->
           <div class="content-section pb0">
             <h3>add your comment</h3>
             <div class="row d-flex justify-content-center" >
-              <form style="border:solid; content-align:center; padding-top:30px; padding-bottom:30px; " class="d-flex align-items-center" >
+            <form action="{{route('comment.post')}}" method="post" enctype="multipart/form-data" style="border:solid; content-align:center; padding-top:30px; padding-bottom:30px; " class="d-flex align-items-center" >
+
+                @csrf
+                @method('POST')
+
                 <div class="form-group clearfix">
                   <div class="col-xs-12 col-sm-6">
-                    <input style="border:solid; " type="text" placeholder="Your name *" class="form-control">
+                    <input style="border:solid; " name="name" type="text" placeholder="Your name *" class="form-control">
                   </div>
                 </div>
+            <input type="hidden" name="blog_id" value="{{$blog->id}}">
                 <div class="form-group clearfix">
                   <div class="col-xs-12 col-sm-6">
-                    <input type="tel"style="border:solid; " style="border:solid; "  placeholder="Your e-mail *" class="form-control">
-                  </div>
-                </div>
-                <div class="form-group clearfix">
-                  <div class="col-xs-12 col-sm-6">
-                    <input type="url" style="border:solid; " style="border:solid; " placeholder="Website..." class="form-control">
+                    <input type="tel"style="border:solid; " name="email" style="border:solid; "  placeholder="Your e-mail *" class="form-control">
                   </div>
                 </div>
                 <div class="form-group clearfix">
                   <div class="col-xs-12">
-                    <textarea placeholder="Your message *" rows="7" class="form-control" style="border:solid; " style="border:solid; " ></textarea>
+                    <textarea id="summary-ckeditor" placeholder="Your message *" name="body" rows="7" class="form-control" style="border:solid; " style="border:solid; " ></textarea>
                   </div>
                 </div>
                 <div class="form-group clearfix">
                   <div class="col-xs-12">
-                    <button type="submit" class="btn btn-2">Send your comment</button>
+                    <button type="submit" class="btn btn-2">Post your comment</button>
                   </div>
                 </div>
               </form>
@@ -202,6 +207,12 @@
         </div>
       </div>
     </div>
+
+
+  <script src="{{ asset('ckeditor/ckeditor.js') }}"></script>
+  <script>
+  CKEDITOR.replace( 'summary-ckeditor' );
+  </script>
   </div>
   <!-- Page content end -->
 

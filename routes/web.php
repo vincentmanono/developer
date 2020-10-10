@@ -16,6 +16,7 @@ Route::get('/about','PageController@about')->name('about');
 Route::get('/portfolio','PageController@portfolio')->name('portfolio');
 Route::get('/contact-us','PageController@contact')->name('contact-us');
 Route::post('/contact','ContactController@store')->name('contact.post');
+Route::post('/comment','CommentController@store')->name('comment.post');
 Route::get('/bloghome','PageController@blog')->name('blog.home');
 Route::get('/blogmore/{slug}','PageController@blogmore')->name('blogmore.show');
 Route::post('/newsletter','PageController@newsletter')->name('newsletter.store');
