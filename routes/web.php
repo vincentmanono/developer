@@ -15,6 +15,7 @@ Route::get('/','PageController@index')->name('index');
 Route::get('/about','PageController@about')->name('about');
 Route::get('/portfolio','PageController@portfolio')->name('portfolio');
 Route::get('/contact-us','PageController@contact')->name('contact-us');
+Route::get('/faq','PageController@faq')->name('faq');
 Route::post('/contact','ContactController@store')->name('contact.post');
 Route::post('/comment','CommentController@store')->name('comment.post');
 Route::get('/bloghome','PageController@blog')->name('blog.home');

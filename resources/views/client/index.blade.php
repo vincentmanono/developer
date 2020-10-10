@@ -485,10 +485,10 @@
                     <p class="description">The most common questions on website development.</p>
                 </div>
                 <div class="clearfix"></div>
-                <div data-rt-accordion data-rt-accordion-toggle="on" data-rt-accordion-active="2" class="rt-accordion">
+                <div data-rt-accordion data-rt-accordion-toggle="on" data-rt-accordion-active="" class="rt-accordion">
                     <div data-rt-accordion-item class="rt-accordion-item">
                         <header>
-                            <p class="title">How Walton Became A Globally Well-Known Brand</p>
+                            <p class="title">How much does a new website cost?</p>
                         </header>
                         <div class="content">
                             <p>Etiam vel leo lacus. Fusce vestibulum viverra justo, vel dictum lorem venenatis at. Sed eleifend, quam sed commodo varius, mauris magna tristique justo, et volutpat leo urna eget justo. Mauris iaculis dolor
@@ -499,7 +499,8 @@
                     </div>
                     <div data-rt-accordion-item class="rt-accordion-item">
                         <header>
-                            <p class="title">Why Is Everyone Talking About Walton?</p>
+                            <p class="title">
+                                How long does it take to develop a website?</p>
                         </header>
                         <div class="content">
                             <p>Etiam vel leo lacus. Fusce vestibulum viverra justo, vel dictum lorem venenatis at. Sed eleifend, quam sed commodo varius, mauris magna tristique justo, et volutpat leo urna eget justo. Mauris iaculis dolor
@@ -509,7 +510,8 @@
                     </div>
                     <div data-rt-accordion-item class="rt-accordion-item">
                         <header>
-                            <p class="title">7 Unexpected Ways Walton Can Make Your Life Better</p>
+                            <p class="title">
+                                When do i pay?</p>
                         </header>
                         <div class="content">
                             <p>Etiam vel leo lacus. Fusce vestibulum viverra justo, vel dictum lorem venenatis at. Sed eleifend, quam sed commodo varius, mauris magna tristique justo, et volutpat leo urna eget justo. Mauris iaculis dolor
@@ -520,7 +522,7 @@
                     </div>
                     <div data-rt-accordion-item class="rt-accordion-item">
                         <header>
-                            <p class="title">Seven Latest Developments In Walton</p>
+                            <p class="title">Can my website be hosted immediately after development?</p>
                         </header>
                         <div class="content">
                             <p>Etiam vel leo lacus. Fusce vestibulum viverra justo, vel dictum lorem venenatis at. Sed eleifend, quam sed commodo varius, mauris magna tristique justo, et volutpat leo urna eget justo. Mauris iaculis dolor
