@@ -29,12 +29,12 @@ class HomeController extends Controller
     public function index()
     {
         $countportfolios= Portfolio::all()->count();
-        $countnewsletters= Portfolio::all()->count();
+        $countnewsletters= Subscriber::all()->count();
         $countusers= User::all()->count();
         $countblog=Blog::all()->count();
         $countclient=Client::all()->count();
         $portfolios= Portfolio::orderBy('id','desc')->paginate(5);
-        $newsletters = Subscriber::orderBy('id','desc')->paginate(5);
+        $newsletters = Subscriber::orderBy('id','desc')->paginate(3);
         $users=User::orderBy('id','desc')->paginate(8);
 
         return view('home',compact('countclient','countblog','users','countusers','portfolios','countportfolios','newsletters','countnewsletters'));

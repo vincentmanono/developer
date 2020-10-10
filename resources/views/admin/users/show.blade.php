@@ -136,9 +136,18 @@
                                         <!-- /.tab-pane -->
                                         <div class="tab-pane" id="timeline">
                                             <!-- The timeline -->
+                                            <div class="post">
+                                                <div class="user-block">
+
+                                                </div>
+                                                <div>
+
+                                                </div>
+                                                <!-- /.user-block -->
+                                                <div class="row mb-3">
 
                                             @foreach ($user->portfolios as $portfolio) <div class="col-sm-6">
-                                                <img class="img-fluid" src="../../dist/img/photo1.png" alt="Photo">
+                                            <img class="img-fluid" src="storage/portfolio/{{$portfolio->image}}" alt="Photo">
                                                 <span class="username">
                                                   <a href="#"><label for="">{{$portfolio->title}}</label></a>
                                                     {{-- <a href="#" class="float-right btn-tool"><i class="fas fa-times"></i></a> --}}
@@ -150,6 +159,7 @@
                                                 <!-- END timeline item -->
 
                                             </div>
+                                        </div>
                                         </div>
                                         <!-- /.tab-pane -->
 

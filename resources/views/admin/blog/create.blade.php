@@ -11,6 +11,7 @@
           <div class="col-sm-6">
             @if ($param == 'create')
             <h1>New Blog</h1>
+
             @else
             <h1>Edit Blog</h1>
             @endif
@@ -18,12 +19,36 @@
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item active" ><a href="{{route('blog.index')}}">Back to blogs</a></li>
+            <li class="breadcrumb-item active" >Blogs</li>
             </ol>
           </div>
         </div>
       </div><!-- /.container-fluid -->
     </section>
+
+    <!-- Main content -->
+    <section class="content">
+
+ <!-- Default box -->
+ <div class="card">
+    <div class="card-header">
+        <a href="{{route('blog.index')}}" class="btn btn-sm btn-warning">Back</a>
+
+      <div class="card-tools">
+        <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
+          <i class="fas fa-minus"></i></button>
+        <button type="button" class="btn btn-tool" data-card-widget="remove" data-toggle="tooltip" title="Remove">
+          <i class="fas fa-times"></i></button>
+      </div>
+    </div>
+    <div class="card-body">
+
+
+
+
+
+
+
 
     <!-- Main content -->
     <section class="content">
@@ -113,7 +138,31 @@
 </div>
 
 @endif
-          </div>
+
+
+
+
+
+
+
+</div>
+<!-- /.card-body -->
+<div class="card-footer">
+  Footer
+</div>
+<!-- /.card-footer-->
+</div>
+<!-- /.card -->
+</section>
+<!-- /.content -->
+
+
+
+
+
+
+
+</div>
 
         </div>
         <!-- /.row -->

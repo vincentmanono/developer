@@ -8,7 +8,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>DataTables</h1>
+            <h1>Lagaster Blogs</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -27,7 +27,7 @@
           <div class="col-12">
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">DataTable with minimal features & hover style</h3>
+                <h3 class="card-title">Lagaster Blogs</h3>
               </div>
               <!-- /.card-header -->
 
@@ -37,7 +37,7 @@
 @include('messages')
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">DataTable with default features</h3>
+              <a href="{{route('blog.create')}}" class="btn btn-sm btn-warning">Create Blog</a>
               </div>
               <!-- /.card-header -->
               <div class="card-body">

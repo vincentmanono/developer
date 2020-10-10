@@ -51,7 +51,7 @@
               <div class="icon">
                 <i class="ion ion-stats-bars"></i>
               </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+              <a href="{{route('mailbox.index')}}" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
@@ -140,6 +140,7 @@
                     <h3 class="card-title">Newsletter Emails</h3>
 
                     <div class="card-tools">
+                        <span class="badge badge-danger">{{$countnewsletters}}</span>
                       <button type="button" class="btn btn-tool" data-card-widget="collapse">
                         <i class="fas fa-minus"></i>
                       </button>
@@ -193,6 +194,7 @@
                   <h3 class="card-title">Projects</h3>
 
                   <div class="card-tools">
+                    <span class="badge badge-danger">{{$countportfolios}}</span>
                     <button type="button" class="btn btn-tool" data-card-widget="collapse">
                       <i class="fas fa-minus"></i>
                     </button>
@@ -203,6 +205,7 @@
                 </div>
                 <!-- /.card-header -->
                 <div class="card-body p-0">
+
                   <div class="table-responsive">
                     <table class="table m-0">
                       <thead>
@@ -241,7 +244,7 @@
                 <!-- /.card-body -->
                 <div class="card-footer clearfix">
                   <a href="{{route('portfolios.create')}}" class="btn btn-sm btn-info float-left">Add new Project</a>
-                  <a href="{{route('portfolios.index')}}" class="btn btn-sm btn-secondary float-right">View All Projects</a>
+                  <a href="{{route('portfolios.index')}}" class="btn btn-sm btn-warning float-right">View All Projects</a>
                 </div>
                 <!-- /.card-footer -->
               </div>

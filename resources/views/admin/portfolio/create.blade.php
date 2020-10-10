@@ -10,17 +10,34 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>General Form</h1>
+            <h1>Portfolio</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">General Form</li>
+              <li class="breadcrumb-item active">Portfolio edit</li>
             </ol>
           </div>
         </div>
       </div><!-- /.container-fluid -->
     </section>
+  <!-- Main content -->
+  <section class="content">
+
+    <!-- Default box -->
+    <div class="card">
+      <div class="card-header">
+        <h3 class="card-title">Portfolio</h3>
+
+        <div class="card-tools">
+          <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
+            <i class="fas fa-minus"></i></button>
+          <button type="button" class="btn btn-tool" data-card-widget="remove" data-toggle="tooltip" title="Remove">
+            <i class="fas fa-times"></i></button>
+        </div>
+      </div>
+      <div class="card-body">
+
 
     <!-- Main content -->
     <section class="content">
@@ -29,7 +46,7 @@
 
             @if ($param == 'create')
 
-            <div class="col-md-9">
+            <div class="col-md-9" style="margin-left: 10%">
                 <!-- general form elements -->
                 <div class="card card-primary">
                   <div class="card-header">
@@ -43,15 +60,15 @@
                     <div class="card-body">
                       <div class="form-group">
                         <label for="exampleInputEmail1">Title</label>
-                        <input type="text" name="title" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                        <input type="text" name="title" class="form-control" id="exampleInputEmail1" placeholder="Enter title">
                       </div>
                       <div class="form-group">
                         <label for="exampleInputEmail1">Url</label>
-                        <input type="text" name="url" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                        <input type="text" name="url" class="form-control" id="exampleInputEmail1" placeholder="Enter Url">
                       </div>
                       <div class="form-group">
                         <label for="exampleInputEmail1">Description</label>
-                        <textarea type="textarea"  rows="6" cols="300" name="description" class="form-control" id="exampleInputEmail1" placeholder="Enter email"></textarea>
+                        <textarea type="textarea"  rows="6" cols="300" name="description" class="form-control" id="exampleInputEmail1" placeholder="Description"></textarea>
                       </div>
                       <div class="form-group">
                         <label for="exampleInputPassword1">CPanelPassword</label>
@@ -74,7 +91,7 @@
                       <select name="client_id" >
                       @foreach ($clients as $client)
 
-                      <option >{{$client->id}}</option>
+                      <option value="{{$client->id}}" >{{$client->name}}</option>
 
                       @endforeach
 
@@ -98,11 +115,11 @@
             @elseif($param == 'edit')
 
               <!-- right column -->
-          <div class="col-md-9">
+          <div class="col-md-9" style="margin-left: 10%">
             <!-- general form elements disabled -->
             <div class="card card-warning">
               <div class="card-header">
-                <h3 class="card-title">General Elements</h3>
+                <h3 class="card-title">Edit Portfolio</h3>
               </div>
                 <!-- form start -->
 
@@ -168,7 +185,15 @@
         </div>
         <!-- /.row -->
       </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.card-body -->
+    <div class="card-footer">
+      Footer
+    </div>
+    <!-- /.card-footer-->
+      <div>
     </section>
+
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
