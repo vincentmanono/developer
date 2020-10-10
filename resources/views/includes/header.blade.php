@@ -94,7 +94,7 @@
                         </div>
                         <!-- Contacts end -->
                         <!-- Button start -->
-                        <a style="text-decoration: none;"  href="#" class="btn btn-primary">get a quotation</a>
+                        <a style="text-decoration: none;"  href="/contact-us" class="btn btn-primary">Contact Us</a>
                         <!-- Button end -->
                     </div>
                 </div>
@@ -102,7 +102,7 @@
         </div>
     </div>
     <!-- Main bar end -->
-   
+
     <!-- Menu bar start -->
     <div id="sticked-bar" class="menu-bar">
         <div class="container">

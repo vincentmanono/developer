@@ -1,6 +1,6 @@
 @extends('layouts.mainapp')
 @section('content')
-
+@include('messages')
 <div class="homepage-slider">
     <div class="homepage-slider-nav">
         <a id="homepage-slider-left" href="#">
@@ -89,9 +89,9 @@
                 <p class="text-decor-2">From impressive designs to advanced functionality,
                      we  design user-friendly and secure websites.</p>
                 <p>
-                    <a style="text-decoration: none;"  href="#" class="btn btn-1">
-                        <i class="fa fa-file"></i> get a quotation</a>
-                    <a style="text-decoration: none;"  href="#" class="btn btn-2">get in touch</a>
+                    <a style="text-decoration: none;"  href="/contact-us" class="btn btn-1">
+                        <i class="fa fa-file"></i> Contact Us</a>
+                    {{-- <a style="text-decoration: none;"  href="#" class="btn btn-2">get in touch</a> --}}
                 </p>
             </div>
             <div class="col-md-6">
@@ -219,8 +219,8 @@
                 <p>Fusce aliquam mollis velit a ornare. Aenean lobortis sem sed dapibus laoreet. Fusce ac luctus velit.
                     <br>Donec tempor, diam a rutrum vestibulum, tortor metus pulvinar diam, ac eleifend ligula dolor non enim. </p>
                 <p>
-                    <a style="text-decoration: none;"  href="#" class="btn btn-1">
-                        <i class="fa fa-file"></i> get a quotation</a>
+                    <a style="text-decoration: none;"  href="/contact-us" class="btn btn-1">
+                        <i class="fa fa-file"></i> Contact Us</a>
                 </p>
             </div>
         </div>
@@ -470,7 +470,7 @@
 <div class="content-section">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 col-lg-7">
+            <div class="col-md-6 col-lg-6">
                 <div class="content-section-header left">
                     <h2 class="title">quick faq</h2>
                     <p class="description">The most common questions.</p>
@@ -522,24 +522,29 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-5 subsection-fix-sm subsection-fix-xs">
+            <div class="col-md-6 col-lg-6 subsection-fix-sm subsection-fix-xs">
                 <div class="content-block palette-2-bg">
-                    <h3 class="text-center">request a quotation</h3>
-                    <form id="contact-form">
+                    <h3 class="text-center">request service</h3>
+                <form  method="post" action="{{route('contact.post')}}" enctype="multipart/form-data">
+                        @csrf
+                        @method('POST')
                         <div class="form-group contacts-form-result">
                             <strong></strong>
                         </div>
                         <div class="form-group">
-                            <input type="text" placeholder="Your name..." name="comment-name" class="form-control">
+                            <input type="text" placeholder="Your name..." required name="name" class="form-control">
                         </div>
                         <div class="form-group">
-                            <input type="email" placeholder="Your e-mail..." name="comment-email" class="form-control">
+                            <input type="email" placeholder="Your e-mail..." required name="email" class="form-control">
                         </div>
                         <div class="form-group">
-                            <input type="tel" placeholder="Your phone..." name="comment-phone" class="form-control">
+                            <input type="text" placeholder="subject..." required name="subject" class="form-control">
                         </div>
                         <div class="form-group">
-                            <textarea rows="10" placeholder="Your message..." name="comment-message" class="form-control"></textarea>
+                            <input type="tel" placeholder="Your phone..." required name="phone" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <textarea rows="10" placeholder="Your message..." required name="message" class="form-control"></textarea>
                         </div>
                         <div class="form-group text-center">
                             <button type="submit" class="btn btn-1">Send Your Request</button>
@@ -547,6 +552,7 @@
                     </form>
                 </div>
             </div>
+
         </div>
     </div>
 </div>
@@ -560,8 +566,8 @@
                 <p class="text-2">making benefits higher</p>
                 <p>A leading provider of website services.</p>
                 <p>
-                    <a style="text-decoration: none;"  href="#" class="btn btn-1">
-                        <i class="fa fa-file"></i> get a quotation</a>
+                    <a style="text-decoration: none;"  href="/contact-us" class="btn btn-1">
+                        <i class="fa fa-file"></i> Contact Us</a>
                 </p>
             </div>
         </div>
