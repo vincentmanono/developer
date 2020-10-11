@@ -111,7 +111,9 @@
 
       <!-- /.content -->
   </div>
+        </div>
   <!-- /.content-wrapper -->
-
+    </section>
+ </div>
 
 @endsection

@@ -98,7 +98,12 @@
             <h1 class="display-4"></h1>
             <p class="lead">{{$message->subject}}</p>
             <hr class="my-4">
-            <p>{{$message->message}}</p>
+            <p>
+                @php
+                    $message->message
+                @endphp
+
+            </p>
         </div>
 
     </div>

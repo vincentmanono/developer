@@ -44,7 +44,7 @@ class CommentController extends Controller
 'blog_id'=>['required']
         ]);
 
-      
+
 
         $post = new Comment();
 
@@ -100,8 +100,14 @@ class CommentController extends Controller
      * @param  \App\Comment  $comment
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Comment $comment)
+    public function destroy($id)
     {
-        //
+
+        $delete = Comment::where('id',$id)->first();
+        $delete->delete();
+
+        if($delete){
+            return redirect()->back()->with('success','you have successfuly deleted the comment');
+        }
     }
 }

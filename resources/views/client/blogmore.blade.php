@@ -32,7 +32,9 @@
         <div class="col-md-8">
           <!-- Article start -->
           <article class="post single">
+            @include('messages')
             <figure class="post-thumbnail">
+
             <img  src="/storage/blog/{{$blog->image}}" alt="">
             </figure>
             <header class="article-header">
@@ -53,9 +55,9 @@
                  @endphp
 
              </p>            <footer class="article-footer">
-              <a style="text-decoration: none;"  href="#" class="btn btn-4">
+              <a style="text-decoration: none;" href="{{ URL::to( 'blogmore/'.$previous->slug ) }}" class="btn btn-4">
                 <i class="fa fa-angle-left"></i> Prev post</a>
-              <a style="text-decoration: none;"  href="#" class="btn btn-4">Next post
+              <a style="text-decoration: none;"  href="{{ URL::to( 'blogmore/'.$next->slug ) }}" class="btn btn-4">Next post
                 <i class="fa fa-angle-right"></i>
               </a>
             </footer>
@@ -144,22 +146,25 @@
             <div class="widget widget-recent-posts">
               <h4 class="widget-title">recent posts</h4>
               <div class="widget-content">
-                <div class="post preview">
-                  <figure class="post-thumbnail">
-                    <div class="hover">
-                      <a style="text-decoration: none;"  href="images/big-images/4.jpg" class="lightbox-images">
-                        <span class="wicon-iconmonstr-zoom-in-thin"></span>
-                      </a>
-                    </div>
-                    <img  src="assets/images/big-images/4.jpg" alt="">
-                  </figure>
-                  <div class="post-content">
-                    <p class="post-title">
-                      <a style="text-decoration: none;"  href="#">Five great lessons you can learn from Walton Consulting</a>
-                    </p>
-                  </div>
+               @foreach ($recents as $recent)
+               <div class="post preview">
+                <figure class="post-thumbnail">
+                  {{-- <div class="hover"> --}}
+                  {{-- <a style="text-decoration: none;"  href="/storage/blog/{{$recent->image}}" class="lightbox-images">
+                      <span class="wicon-iconmonstr-zoom-in-thin"></span>
+                    </a> --}}
+                  {{-- </div> --}}
+                  <a href="{{route('blogmore.show',$recent->slug)}}">  <img  src="/storage/blog/{{$recent->image}}" alt=""></a>
+
+                </figure>
+                <div class="post-content">
+                  <p class="post-title">
+                  <a style="text-decoration: none;"  href="{{route('blogmore.show',$recent->slug)}}">{{$recent->title}}</a>
+                  </p>
                 </div>
-                <div class="post preview">
+              </div>
+               @endforeach
+                {{-- <div class="post preview">
                   <figure class="post-thumbnail">
                     <div class="hover">
                       <a style="text-decoration: none;"  href="images/big-images/5.jpg" class="lightbox-images">
@@ -188,17 +193,19 @@
                       <a style="text-decoration: none;"  href="#">How Walton Consulting is going to change your business strategies</a>
                     </p>
                   </div>
-                </div>
+                </div> --}}
               </div>
             </div>
 
 
             <div class="widget image-bg image-bg-7">
-              <h4 class="widget-title">we are hire</h4>
+              <h4 class="widget-title">Lagaster</h4></h4>
               <div class="widget-content">
-                <p>Fusce finibus metus in dolor pharetra, sed efficitur libero pulvinar. Ut ac nunc mi. Donec ut ligula lorem. Phasellus lacinia pulvinar volutpat.</p>
                 <p>
-                  <a style="text-decoration: none;"  href="#" class="btn btn-1">join our team</a>
+                    From impressive designs to advanced functionality, we design user-friendly and secure websites.
+                </p>
+                 <p>
+                  <a style="text-decoration: none;"  href="/contact-us" class="btn btn-1">Contact Us Today</a>
                 </p>
               </div>
             </div>

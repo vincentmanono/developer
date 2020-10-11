@@ -29,15 +29,17 @@
 
 <!-- Quick faq & contact form start -->
 <div class="content-section">
-    <div class="container">
+    <div class="container" >
+        <div class=" left"style="margin-left: 10%;" >
+            <h2 class="title">Common questions on website development</h2>
+
+        </div>
         <div class="row">
+            {{-- first column --}}
             <div class="col-md-6 col-lg-6">
-                <div class="content-section-header left">
-                    <h2 class="title">quick website faq</h2>
-                    <p class="description">The most common questions on website development.</p>
-                </div>
+
                 <div class="clearfix"></div>
-                <div data-rt-accordion data-rt-accordion-toggle="on" data-rt-accordion-active="" class="rt-accordion">
+                <div data-rt-accordion data-rt-accordion-toggle="on" data-rt-accordion-active="2" class="rt-accordion">
                     <div data-rt-accordion-item class="rt-accordion-item">
                         <header>
                             <p class="title">How much does a new website cost?</p>
@@ -85,43 +87,11 @@
                     </div>
                 </div>
             </div>
-            {{-- <div class="col-md-6 col-lg-6 subsection-fix-sm subsection-fix-xs">
-                <div class="content-block palette-2-bg">
-                    <h3 class="text-center">request service</h3>
-                <form  method="post" action="{{route('contact.post')}}" enctype="multipart/form-data">
-                        @csrf
-                        @method('POST')
-                        <div class="form-group contacts-form-result">
-                            <strong></strong>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" placeholder="Your name..." required name="name" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <input type="email" placeholder="Your e-mail..." required name="email" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" placeholder="subject..." required name="subject" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <input type="tel" placeholder="Your phone..." required name="phone" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <textarea rows="10" placeholder="Your message..." required name="message" class="form-control"></textarea>
-                        </div>
-                        <div class="form-group text-center">
-                            <button type="submit" class="btn btn-1">Send Your Request</button>
-                        </div>
-                    </form>
-                </div>
-            </div> --}}
+            {{-- second column --}}
             <div class="col-md-6 col-lg-6">
-                <div class="content-section-header left">
-                    <h2 class="title">quick website faq</h2>
-                    <p class="description">The most common questions on website development.</p>
-                </div>
+
                 <div class="clearfix"></div>
-                <div data-rt-accordion data-rt-accordion-toggle="on" data-rt-accordion-active="" class="rt-accordion">
+                <div data-rt-accordion data-rt-accordion-toggle="on" data-rt-accordion-active="2" class="rt-accordion">
                     <div data-rt-accordion-item class="rt-accordion-item">
                         <header>
                             <p class="title">

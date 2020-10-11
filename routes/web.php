@@ -45,5 +45,6 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('/contactdetails','ContactController@index')->name('contact.index');
     Route::get('contactmore/{id}','ContactController@show')->name('contact.show');
     Route::delete('contactdelete/{id}','ContactController@destroy')->name('contact.del');
+    Route::delete('/commentdelete/{id}','CommentController@destroy')->name('comment.del');
 });
 

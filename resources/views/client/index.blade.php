@@ -485,7 +485,7 @@
                     <p class="description">The most common questions on website development.</p>
                 </div>
                 <div class="clearfix"></div>
-                <div data-rt-accordion data-rt-accordion-toggle="on" data-rt-accordion-active="" class="rt-accordion">
+                <div data-rt-accordion data-rt-accordion-toggle="on" data-rt-accordion-active="2" class="rt-accordion">
                     <div data-rt-accordion-item class="rt-accordion-item">
                         <header>
                             <p class="title">How much does a new website cost?</p>

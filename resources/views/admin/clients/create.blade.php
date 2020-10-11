@@ -9,7 +9,7 @@
     <section class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
-          <div class="col-sm-6">
+          <div class="col-sm-9">
             @if ($param == 'create')
 
             <h1> Client Adding Platform</h1>

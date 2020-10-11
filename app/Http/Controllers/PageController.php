@@ -29,10 +29,15 @@ class PageController extends Controller
     public function blogmore($blogmore_slug){
 
 
+         $next = Blog::where('slug', '>', $blogmore_slug)->orderBy('id','Desc')->first();
+         $previous = Blog::where('slug', '<', $blogmore_slug)->orderBy('id','Desc')->first();
+
+        $recents =Blog::orderBy('id','Desc')->paginate(5);
         $blog = Blog::where('slug',$blogmore_slug)->firstOrFail();
         $blogs= Blog::orderBy('id','Desc')->paginate(10);
-        return view('client.blogmore',compact('blog','blogs'));
+        return view('client.blogmore',compact('blog','blogs','recents','next','previous'));
     }
+
     public function portfolio(){
 
         $portfolios = Portfolio::orderBy('id','Desc')->paginate(9);
