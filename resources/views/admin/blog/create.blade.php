@@ -5,6 +5,7 @@
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
+    @include('messages')
     <section class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
@@ -62,7 +63,7 @@
                 <h3 class="card-title">Create Blog</h3>
               </div>
               <!-- /.card-header -->
-              @include('messages')
+             
               <!-- form start -->
  @if ($param == 'create')
  <form role="form" enctype="multipart/form-data" action="{{route('blog.store')}}" method="POST">

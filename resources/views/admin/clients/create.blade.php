@@ -37,6 +37,30 @@
       </div><!-- /.container-fluid -->
     </section>
 
+
+
+
+
+     <!-- Main content -->
+     <section class="content">
+
+        <!-- Default box -->
+        <div class="card">
+           <div class="card-header">
+               <a href="{{route('clients.index')}}" class="btn btn-sm btn-warning">Back</a>
+
+             <div class="card-tools">
+               <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
+                 <i class="fas fa-minus"></i></button>
+               <button type="button" class="btn btn-tool" data-card-widget="remove" data-toggle="tooltip" title="Remove">
+                 <i class="fas fa-times"></i></button>
+             </div>
+           </div>
+           <div class="card-body">
+
+
+
+
     <!-- Main content -->
     <section class="content">
       <div class="container-fluid">
@@ -45,7 +69,7 @@
           <!-- right column -->
          @if ($param == 'create')
          <!-- left column -->
-         <div class="col-md-6" style="margin-left: 10%">
+         <div class="col-md-9" style="margin-left: 10%">
             <!-- general form elements -->
             <div class="card card-primary">
               <div class="card-header">
@@ -87,7 +111,7 @@
           <!--/.col (left) -->
 
          @else
-         <div class="col-md-6" style="margin-left: 10%">
+         <div class="col-md-9" style="margin-left: 10%">
             <!-- general form elements disabled -->
             <div class="card card-warning">
               <div class="card-header">
@@ -135,13 +159,33 @@
           </div>
 
          @endif
-          <!--/.col (right) -->
+
+
+
+</div>
+<!-- /.card-body -->
+<div class="card-footer">
+  Footer
+</div>
+<!-- /.card-footer-->
+</div>
+<!-- /.card -->
+</section>
+<!-- /.content -->
+
+
+
+
+
+
+
+</div>
+
         </div>
         <!-- /.row -->
       </div><!-- /.container-fluid -->
     </section>
     <!-- /.content -->
-  </div>
-  <!-- /.content-wrapper -->
+  
 
 @endsection
