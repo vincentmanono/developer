@@ -11,9 +11,9 @@
           <div class="col-sm-6">
             <div>
             @if ($param == 'create')
-            <h1>Project Edit</h1>
+            <h1>User Details Create</h1>
             @elseif($param == 'edit')
-            <h1>Project Edit</h1>
+            <h1>User Details Edit</h1>
             @endif
           </div>
           <div class="col-sm-6">

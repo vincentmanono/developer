@@ -51,10 +51,15 @@ class UserController extends Controller
         $post->name = $request->name;
         $post->phone =$request->phone;
         $post->email = $request->email;
-        $post->type= $request->type;
-        $post->password =$request->password;
+        if($request->type !=''){
+            $post->type= $request->type;
+        }
+       if($request->password !=''){
+     
         $password = Hash::make($request->password);
+
         $post->password = $password;
+       }
 
         if (file_exists($request->file('image'))) {
 
