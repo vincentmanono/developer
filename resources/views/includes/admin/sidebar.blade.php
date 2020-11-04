@@ -402,13 +402,13 @@
                   <p>Register</p>
                 </a>
               </li>
-              {{-- <li class="nav-item">
-                <a href="pages/examples/forgot-password.html" class="nav-link">
+             <li class="nav-item">
+                <a href="{{route('port.index')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Forgot Password</p>
+                  <p>Project Users</p>
                 </a>
               </li>
-              <li class="nav-item">
+               {{-- <li class="nav-item">
                 <a href="pages/examples/recover-password.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Recover Password</p>

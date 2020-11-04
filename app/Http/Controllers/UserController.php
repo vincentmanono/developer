@@ -55,43 +55,31 @@ class UserController extends Controller
             $post->type= $request->type;
         }
        if($request->password !=''){
-     
+
         $password = Hash::make($request->password);
 
         $post->password = $password;
        }
 
-        if (file_exists($request->file('image'))) {
+       if (file_exists($request->file('image'))) {
 
+        // Get filename with extension
+        $filenameWithExt = $request->file('image')->getClientOriginalName();
 
+        // Get just the filename
+        $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
 
-            $old_avatar = $post->image;
-            $avatar = $request->image;
-            if ($old_avatar != 'avatar.png' && !Str::contains($avatar, 'http')) {
-                $imagepath = public_path('/storage/blog') . '/' . $old_avatar;
-                File::delete($imagepath);
-            }
+        // Get extension
+        $extension = $request->file('image')->getClientOriginalExtension();
 
+        // Create new filename
+        $filenameToStore = $filename . '_' . time() . '.' . $extension;
 
-
-            // Get filename with extension
-            $filenameWithExt = $request->file('image')->getClientOriginalName();
-
-            // Get just the filename
-            $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
-
-            // Get extension
-            $extension = $request->file('image')->getClientOriginalExtension();
-
-            // Create new filename
-            $filenameToStore = $filename . '_' . time() . '.' . $extension;
-
-            // Uplaod image
-            $path = $request->file('image')->storeAs('public/user', $filenameToStore);
-
-            // Upload image
-            $post->image = $filenameToStore;
-        }
+        // Uplaod image
+        $path = $request->file('image')->storeAs('public/user', $filenameToStore);
+        $avatar  = $filenameToStore;
+        $post->image = $avatar;
+    }
 
 
 

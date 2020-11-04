@@ -14,7 +14,7 @@ class PortfolioUserController extends Controller
      */
     public function index()
     {
-        
+
     }
 
     /**
@@ -44,9 +44,10 @@ class PortfolioUserController extends Controller
      * @param  \App\PortfolioUser  $portfolioUser
      * @return \Illuminate\Http\Response
      */
-    public function show(PortfolioUser $portfolioUser)
+    public function show( $id)
     {
-        //
+        $portfolio =Portfolio::find($id);
+        return view('portfolioshow');
     }
 
     /**
