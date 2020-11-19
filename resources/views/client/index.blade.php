@@ -10,7 +10,7 @@
     <div id="homepage-slider" class="owl-theme owl-carousel">
         <!-- Homepage slider item start -->
         <div class="homepage-slider-item">
-            <img src="assets/images/big-images/1.jpg" alt="" class="homepage-slider-item-image">
+            <img src="{{ asset('assets/images/big-images/1.jpg') }}" alt="" class="homepage-slider-item-image">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
