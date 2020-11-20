@@ -1,7 +1,7 @@
 @extends('layouts.mainapp')
 @section('content')
 @include('messages')
-<div class="homepage-slider">
+{{--  <div class="homepage-slider">
     <div class="homepage-slider-nav">
         <a id="homepage-slider-left" href="#">
             <span class="wicon-iconmonstr-angel-left-circle-thin"></span>
@@ -78,7 +78,44 @@
             <span class="wicon-iconmonstr-angel-right-circle-thin"></span>
         </a>
     </div>
+</div>  --}}
+
+{{--  slider  --}}
+
+<div class="slideshow-container">
+
+    <div class="mySlides ">
+      <div class="numbertext">1 / 3</div>
+      <img src="{{ asset('assets\images\slider1.jpg') }}" height="490" style="width:100%">
+      <div class="text">Caption Text</div>
+    </div>
+
+    <div class="mySlides ">
+      <div class="numbertext">2 / 3</div>
+      <img src="{{ asset('assets\images\slider2.jpg') }}" height="490" style="width:100%">
+      <div class="text">Caption Two</div>
+    </div>
+
+    <div class="mySlides ">
+      <div class="numbertext">3 / 3</div>
+      <img src="{{ asset('assets\images\slider3.jpg') }}" height="490" style="width:100%">
+      <div class="text">Caption Three</div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
 </div>
+{{--  end slider  --}}
+
 <!-- Homepage slider end -->
 <!-- Intro start -->
 <div class="content-section">
@@ -298,7 +335,7 @@
                             <div class="details">
                                 <div>
                                     <p class="title">
-                                        <a style="text-decoration: none;"  href="#">Pomeroy's</a>
+                                        <a style="text-decoration: none;"  href="#">Pomeroys</a>
                                     </p>
                                     <p class="text-decor-1">Norris City, IL 62869</p>
                                     <p>Pellentesque vitae nisl eros. Ut convallis ipsum et diam sagittis suscipit. </p>
@@ -573,7 +610,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <p class="text-1">we're knowledgeable about</p>
+                <p class="text-1">were knowledgeable about</p>
                 <p class="text-2">making benefits higher</p>
                 <p>A leading provider of website services.</p>
                 <p>
@@ -588,6 +625,39 @@
 </div>
 
 @endsection
+
+{{--  slider  --}}
+
+
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+{{--  end slider  --}}
 
 @section('title')
 <title>Home|Lagaster Website Developers</title>
