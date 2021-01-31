@@ -18,13 +18,14 @@ class PageController extends Controller
         return view('client.index',compact('blogs','bloggers'));
     }
     public function about(){
-        return view('client.about');
+        return view('client.about_us');
     }
 
     public function blog(){
         $blogs = Blog::orderBy('id','Desc')->paginate(9);
 
         return view('client.blog')->with('blogs',$blogs);
+        // return view('client.blog');
     }
     public function blogmore($blogmore_slug){
 

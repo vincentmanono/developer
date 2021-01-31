@@ -1,173 +1,54 @@
-<header class="site-header site-header-1">
-    <!-- Top bar start -->
-    {{-- <div class="top-bar">
+<header class="top-header">
+    <div class="header_top">
+
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 top-bar-content">
+                <div class="logo_section">
+                    <a class="navbar-brand" href="index.html"><img src="{{asset('assets/images/logo.png')}}" alt="image"></a>
+                </div>
+                <div class="site_information">
                     <ul>
-                        <li>
-                            <a style="text-decoration: none;"  href="#">our team</a>
-                        </li>
-                        <li>
-                            <a style="text-decoration: none;"  href="#">case studies</a>
-                        </li>
-                        <li>
-                            <a style="text-decoration: none;"  href="#">newsroom</a>
-                        </li>
-                        <li>
-                            <a style="text-decoration: none;"  href="#">careers</a>
-                        </li>
-                        <li>
-                            <a style="text-decoration: none;"  href="#">contact us</a>
-                        </li>
+                        <li><a href="mailto:exchang@gmail.com"><img src="{{asset('assets/images/mail_icon.png')}}" alt="#" />exchang@gmail.com</a></li>
+                        <li><a href="tel:exchang@gmail.com"><img src="{{asset('assets/images/phone_icon.png')}}" alt="#" />+7123569847</a></li>
+                        <li><a class="join_bt" href="#">Join us</a></li>
                     </ul>
-                    <div class="lang-and-social-buttons">
-                        <ul>
-                            <li>
-                                <a style="text-decoration: none;"  href="#">
-                                    <i class="fa fa-facebook"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a style="text-decoration: none;"  href="#">
-                                    <i class="fa fa-twitter"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a style="text-decoration: none;"  href="#">
-                                    <i class="fa fa-linkedin"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a style="text-decoration: none;"  href="#">
-                                    <i class="fa fa-google-plus"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a style="text-decoration: none;"  href="#">
-                                    <i class="fa fa-instagram"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
                 </div>
             </div>
         </div>
-    </div> --}}
-    <!-- Top bar end -->
-    <!-- Main bar start -->
-    <div class="main-bar">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 main-bar-content">
-                    <!-- Logo start -->
-                    <a style="text-decoration: none;"  href="/" title="Walton" class="site-logo">
-                        <div class="logo-img">
-                            <img src="{{asset('assets/images/logo.png')}}" alt="Walton">
-                        </div>
-                        <div class="name-and-tagline">
-                            <div class="name">Lagaster</div>
-                            <div class="tagline">Website solutions </div>
-                        </div>
-                    </a>
-                    <!-- Logo end -->
-                    <div class="contacts-and-button">
-                        <!-- Contacts start -->
-                        <div class="header-contacts">
-                            <div class="header-contacts-item hidden-md hidden-sm hidden-xs">
-                                <div class="title">
-                                    <span class="wicon-iconmonstr-mail-thin"></span> Drop us a mail</div>
-                                <div class="content">
-                                    <a href="mailto:info@lagaster.com" style="text-decoration: none;">info@lagaster.com</a>
-                                </div>
-                            </div>
-                            <div class="header-contacts-item hidden-sm hidden-xs">
-                                <div class="title">
-                                    <span class="wicon-iconmonstr-phone-thin"></span> Give us a call</div>
-                                <div class="content"><a style="text-decoration: none;"  href="tel:1 (860) 729-1526">1 (860) 729-1526</a></div>
-                            </div>
-                            <div class="header-contacts-item">
-                                <div class="title">
-                                    <span class="wicon-iconmonstr-location-pin-thin"></span> Juja</div>
-                                <div class="content">1064 Maxwell Street</div>
-                            </div>
-                        </div>
-                        <!-- Contacts end -->
-                        <!-- Button start -->
-                        <a style="text-decoration: none;"  href="/contact-us" class="btn btn-primary">Contact Us</a>
-                        <!-- Button end -->
-                    </div>
-                </div>
-            </div>
-        </div>
+
     </div>
-    <!-- Main bar end -->
-
-    <!-- Menu bar start -->
-    <div id="sticked-bar" class="menu-bar">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 menu-bar-content">
-                    <!-- Memu start -->
-                    <button data-pushbar-target="left" class="hidden-lg">
-      <i class="fa fa-bars"></i>
-    </button>
-                    <nav id="site-menu" class="site-menu hidden-sm hidden-xs hidden-md">
-                        <ul>
-                            <li class="active">
-                                <a style="text-decoration: none;"  href="/">home</a>
-
-                            </li>
-                            <li>
-                                <a style="text-decoration: none;"  href="#">Lagaster</a>
-                                <ul>
-
-                                    <li>
-                                        <a style="text-decoration: none;"  href="/about">about </a>
-                                    </li>
-
-                                    <li>
-                                        <a style="text-decoration: none;"  href="/contact-us">contacts</a>
-                                    </li>
-                                    <li>
-                                        <a style="text-decoration: none;"  href="/faq">faq</a>
-                                    </li>
-                                    <li>
-                                        <a style="text-decoration: none;"  href="/services">services</a>
-
-                                    </li>
-
-                                </ul>
-                            </li>
-                            <li>
-                                <a style="text-decoration: none;"  href="/services">services</a>
-
-                            </li>
-                            <li>
-                                <a style="text-decoration: none;"  href="/portfolio">portfolio</a>
-
-                            </li>
-                            <li>
-                            <a style="text-decoration: none;"  href="/bloghome">blog</a>
-
-                            </li>
-                            <li>
-                                <a style="text-decoration: none;"  href="/contact-us">contacts</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <!-- Memu end -->
-                    <!-- Search start -->
-                    <form class="search-form">
-                        <input type="search" placeholder="Search here...">
-                        <button type="submit">
-        <span class="wicon-iconmonstr-search-thin"></span>
-      </button>
-                    </form>
-                    <!-- Search end -->
-                </div>
+    <div class="header_bottom">
+      <div class="container">
+        <div class="col-sm-12">
+            <div class="menu_orange_section" style="background: #ff880e;">
+               <nav class="navbar header-nav navbar-expand-lg">
+                 <div class="menu_section">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd" aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
+                <ul class="navbar-nav">
+                    <li><a class="nav-link active" href="{{ route('index') }}">Home</a></li>
+                    <li><a class="nav-link" href="{{ route('about') }}">About</a></li>
+                    <li><a class="nav-link" href="{{ route('portfolio') }}">Portfolio</a></li>
+                    <li><a class="nav-link" href="{{ route('services') }}">Services</a></li>
+                    <li><a class="nav-link" href="{{ route('blog.home') }}">News</a></li>
+                    <li><a class="nav-link" href="{{ route('contact-us') }}">Contact</a></li>
+                </ul>
+            </div>
+                 </div>
+             </nav>
+             <div class="search-box">
+                <input type="text" class="search-txt" placeholder="Search">
+                <a class="search-btn">
+                    <img src="{{asset('assets/images/search_icon.png')}}" alt="#" />
+                </a>
+            </div>
             </div>
         </div>
+      </div>
     </div>
-    <!-- Menu bar end -->
+
 </header>

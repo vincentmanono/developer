@@ -1,191 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- Basic -->
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,800" rel="stylesheet"> -->
 
-    @yield('title')
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-@yield('metatag')
-    <link rel="stylesheet" href="{{ asset('assets/css/vendor.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/style-1.css') }}" id="template-skin">
+    <!-- Site Metas -->
+    <title>Exchange Currency - Responsive HTML5 Template</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    {{--  slider  --}}
-    <style>
-        * {box-sizing: border-box}
-        body {font-family: Verdana, sans-serif; margin:0}
-        .mySlides {display: none}
-        img {vertical-align: middle;}
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="#" />
 
-        /* Slideshow container */
-        .slideshow-container {
-          max-width: 1300px;
-          position: relative;
-          margin: auto;
-        }
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}" />
+    <!-- Pogo Slider CSS -->
+    <link rel="stylesheet" href="{{ asset('assets/css/pogo-slider.min.css') }}" />
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}" />
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}" />
 
-        /* Next & previous buttons */
-        .prev, .next {
-          cursor: pointer;
-          position: absolute;
-          top: 50%;
-          width: auto;
-          padding: 16px;
-          margin-top: -22px;
-          color: white;
-          font-weight: bold;
-          font-size: 18px;
-          transition: 0.6s ease;
-          border-radius: 0 3px 3px 0;
-          user-select: none;
-        }
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
-        /* Position the "next button" to the right */
-        .next {
-          right: 0;
-          border-radius: 3px 0 0 3px;
-        }
-
-        /* On hover, add a black background color with a little bit see-through */
-        .prev:hover, .next:hover {
-          background-color: rgba(0,0,0,0.8);
-        }
-
-        /* Caption text */
-        .text {
-          color: #f2f2f2;
-          font-size: 15px;
-          padding: 8px 12px;
-          position: absolute;
-          bottom: 8px;
-          width: 100%;
-          text-align: center;
-        }
-
-        /* Number text (1/3 etc) */
-        .numbertext {
-          color: #f2f2f2;
-          font-size: 12px;
-          padding: 8px 12px;
-          position: absolute;
-          top: 0;
-        }
-
-        /* The dots/bullets/indicators */
-        .dot {
-          cursor: pointer;
-          height: 15px;
-          width: 15px;
-          margin: 0 2px;
-          background-color: #bbb;
-          border-radius: 50%;
-          display: inline-block;
-          transition: background-color 0.6s ease;
-        }
-
-        .active, .dot:hover {
-          background-color: #717171;
-        }
-
-        /* Fading animation */
-        .fade {
-          -webkit-animation-name: fade;
-          -webkit-animation-duration: 1.5s;
-          animation-name: fade;
-          animation-duration: 1.5s;
-        }
-
-        @-webkit-keyframes fade {
-          from {opacity: .4}
-          to {opacity: 1}
-        }
-
-        @keyframes fade {
-          from {opacity: .4}
-          to {opacity: 1}
-        }
-
-        /* On smaller screens, decrease text size */
-        @media only screen and (max-width: 300px) {
-          .prev, .next,.text {font-size: 11px}
-        }
-        </style>
-    {{--  end of slider  --}}
 </head>
 
-<body>
-    <!-- Preload start -->
-    <!-- Preload end -->
-    <!-- Settings start -->
+<body id="home" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
 
-    <!-- Settings end -->
-    <!-- To the top start -->
-    <div id="to-the-top" class="to-the-top">
-        <a href="#">
-            <i class="fa fa-long-arrow-up"></i>
-        </a>
-    </div>
-    <!-- To the top end -->
-    <!-- Mobile menu start -->
-    <aside id="offcanvas-menu" data-pushbar-id="left" class="pushbar from_left">
-        <h4 class="title">
-            <span>Site Menu</span>
-            <span data-pushbar-close> </span>
-        </h4>
-    </aside>
-    <!-- Mobile menu end -->
-    <div id="page" class="page">
-        <div id="content-wrapper" class="content-wrapper">
-            <div class="content-wrapper-inner">
-                <!-- Header start -->
-               @include('includes.header')
-                <!-- Header end -->
-                <!-- Homepage slider start -->
-            {{-- body --}}
-            @yield('content')
-            {{-- end body --}}
-            <!-- Footer start -->
-           @include('includes.footer')
-            <!-- Footer end -->
+    <!-- Start header -->
+    @include('includes.header')
+    <!-- End header -->
+    {{--  content  --}}
+        @yield('content')
+    {{--  end of content  --}}
+    <!-- Start Footer -->
+    @include('includes.footer')
+    <!-- End Footer -->
+
+    <div class="footer_bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="crp">© Copyrights 2019 design by html.design</p>
+                </div>
+            </div>
         </div>
     </div>
 
-    {{--  script slider  --}}
+    <a href="#" id="scroll-to-top" class="hvr-radial-out"><i class="fa fa-angle-up"></i></a>
 
-<script>
-    var slideIndex = 1;
-    showSlides(slideIndex);
+    <!-- ALL JS FILES -->
+    <script src="{{ asset('assets/js/jquery.min.js') }}"></script>
+	<script src="{{ asset('assets/js/popper.min.js') }}"></script>
+    <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
+    <!-- ALL PLUGINS -->
+    <script src="{{ asset('assets/jquery.magnific-popup.min.js') }}js/"></script>
+    <script src="{{ asset('assets/') }}js/jquery.pogo-slider.min.js"></script>
+    <script src="{{ asset('assets/js/slider-index.js') }}"></script>
+    <script src="{{ asset('assets/js/smoothscroll.js') }}"></script>
+    <script src="{{ asset('assets/js/form-validator.min.js') }}"></script>
+    <script src="{{ asset('assets/js/contact-form-script.js') }}"></script>
+    <script src="{{ asset('assets/js/isotope.min.js') }}"></script>
+    <script src="{{ asset('assets/js/images-loded.min.js') }}"></script>
+    <script src="{{ asset('assets/js/custom.js') }}"></script>
+	<script>
+	/* counter js */
 
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
+(function ($) {
+	$.fn.countTo = function (options) {
+		options = options || {};
 
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
+		return $(this).each(function () {
+			// set options for current element
+			var settings = $.extend({}, $.fn.countTo.defaults, {
+				from:            $(this).data('from'),
+				to:              $(this).data('to'),
+				speed:           $(this).data('speed'),
+				refreshInterval: $(this).data('refresh-interval'),
+				decimals:        $(this).data('decimals')
+			}, options);
 
-    function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("dot");
-      if (n > slides.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";
-      dots[slideIndex-1].className += " active";
-    }
-    </script>
-    {{--  end scrpipt slider  --}}
-    <script src="{{ asset('assets/js/vendor.js') }}"></script>
-    <script src="{{ asset('assets/js/framework.js') }}"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpVQEdCmd9aY_-N6920-wilfScyBwS-Lw&amp;callback=initMap"></script>
-    <script src="{{ asset('assets/js/template.js') }}"></script>
+			// how many times to update the value, and how much to increment the value on each update
+			var loops = Math.ceil(settings.speed / settings.refreshInterval),
+				increment = (settings.to - settings.from) / loops;
+
+			// references & variables that will change with each update
+			var self = this,
+				$self = $(this),
+				loopCount = 0,
+				value = settings.from,
+				data = $self.data('countTo') || {};
+
+			$self.data('countTo', data);
+
+			// if an existing interval can be found, clear it first
+			if (data.interval) {
+				clearInterval(data.interval);
+			}
+			data.interval = setInterval(updateTimer, settings.refreshInterval);
+
+			// initialize the element with the starting value
+			render(value);
+
+			function updateTimer() {
+				value += increment;
+				loopCount++;
+
+				render(value);
+
+				if (typeof(settings.onUpdate) == 'function') {
+					settings.onUpdate.call(self, value);
+				}
+
+				if (loopCount >= loops) {
+					// remove the interval
+					$self.removeData('countTo');
+					clearInterval(data.interval);
+					value = settings.to;
+
+					if (typeof(settings.onComplete) == 'function') {
+						settings.onComplete.call(self, value);
+					}
+				}
+			}
+
+			function render(value) {
+				var formattedValue = settings.formatter.call(self, value, settings);
+				$self.html(formattedValue);
+			}
+		});
+	};
+
+	$.fn.countTo.defaults = {
+		from: 0,               // the number the element should start at
+		to: 0,                 // the number the element should end at
+		speed: 1000,           // how long it should take to count between the target numbers
+		refreshInterval: 100,  // how often the element should be updated
+		decimals: 0,           // the number of decimal places to show
+		formatter: formatter,  // handler for formatting the value before rendering
+		onUpdate: null,        // callback method for every time the element is updated
+		onComplete: null       // callback method for when the element finishes updating
+	};
+
+	function formatter(value, settings) {
+		return value.toFixed(settings.decimals);
+	}
+}(jQuery));
+
+jQuery(function ($) {
+  // custom formatting example
+  $('.count-number').data('countToOptions', {
+	formatter: function (value, options) {
+	  return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+	}
+  });
+
+  // start all the timers
+  $('.timer').each(count);
+
+  function count(options) {
+	var $this = $(this);
+	options = $.extend({}, options || {}, $this.data('countToOptions') || {});
+	$this.countTo(options);
+  }
+});
+	</script>
 </body>
+
 </html>

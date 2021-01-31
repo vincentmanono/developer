@@ -1,105 +1,127 @@
 @extends('layouts.mainapp')
 @section('content')
 
-<div style="background-image: url('assets/images/big-images/4.jpg')">
 
-    <div class="content-section  page-titlebar">
-      <div class="container">
-
-
+<!-- Start Banner -->
+<div class="section inner_page_banner">
+    <div class="container">
         <div class="row">
-          <div class="col-lg-12">
-            <h1 style="color: white">Portfolio</h1>
-            <ol class="breadcrumb">
-              <li>
-                <a style="text-decoration: none;"  href="/">Home</a>
-              </li>
-              <li>
-                <a style="text-decoration: none;"  href="/portfolio">Portfolio</a>
-              </li>
-
-            </ol>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-       <!-- Page content start -->
-       <div class="content-section">
-        <div class="container">
-          <!-- Portfolio filter start -->
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="button-group filter-button-group">
-                <label data-filter="*" style="margin-left: 45%">Our Projects</label>
-
-              </div>
-            </div>
-          </div>
-          <!-- Portfolio filter end -->
-          <div class="row">
-            <div class="grid">
-              @foreach ($portfolios as $portfolio)
-
-              <div class="col-xs-12 col-sm-6 col-md-4 grid-item automotive">
-                <div class="recent-cases-item v2 mtl portfolio">
-                  <figure>
-
-                   <a  href="{{$portfolio->url}}"> <img src="/storage/portfolio/{{$portfolio->image}}"   alt="lagaster" ></a>
-                  </figure>
-                  <div class="details">
-                    <p class="title">
-                      <a style="text-decoration: none;"   href="{{$portfolio->url}}">{{$portfolio->title}}</a>
-                    </p>
-                <p class="text-decor-1"><a href="{{$portfolio->url}}" style="text-decoration: none">Visit</a></p>
-                  </div>
+            <div class="col-md-12">
+                <div class="banner_title">
+                    <h3>News</h3>
                 </div>
-              </div>
-
-
-
-              @endforeach
-
-
             </div>
-
-          </div>
-          <div style="margin-left: 30%">
-
-            {{$portfolios->links()}}
-            </div>
-          <div class="row">
-            <div class="col-lg-12">
-
-            </div>
-          </div>
         </div>
-      </div>
-      <!-- Page content end -->
-      <!-- CTA start -->
-      <div class="content-section image-bg image-bg-8 cta v3">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12 cta-v3-content">
-              <div class="content">
-                <p class="text-1">our mission is to</p>
-                <p class="text-2">boost your revenue & profit</p>
-                <p>We help our clients grow their revenue & profits. Faster, better and sustainably than anyone else.</p>
-              </div>
-              <p class="right">
-                <a style="text-decoration: none;"  href="#" class="btn btn-1">
-                  <i class="fa fa-file"></i> get a quotation</a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- CTA end -->
     </div>
+</div>
+<!-- End Banner -->
+
+<!-- section -->
+<div class="section layout_padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="full">
+                    <div class="heading_main text_align_center">
+                       <h2><span class="theme_color"></span>News</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="full news_blog">
+                   <img class="img-responsive" src="images/b1.png" alt="#" />
+                   <div class="overlay"><a class="main_bt transparent" href="#">View</a></div>
+                   <div class="blog_details">
+                     <h3>Bitcoin News</h3>
+                     <p>pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                   </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="full news_blog">
+                    <img class="img-responsive" src="images/b2.png" alt="#" />
+                    <div class="overlay"><a class="main_bt transparent" href="#">View</a></div>
+                   <div class="blog_details">
+                     <h3>Ethereum News</h3>
+                     <p>pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                   </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="full news_blog">
+                    <img class="img-responsive" src="images/b3.png" alt="#" />
+                    <div class="overlay"><a class="main_bt transparent" href="#">View</a></div>
+                   <div class="blog_details">
+                     <h3>Light News</h3>
+                     <p>pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                   </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="full news_blog">
+                   <img class="img-responsive" src="images/b1.png" alt="#" />
+                   <div class="overlay"><a class="main_bt transparent" href="#">View</a></div>
+                   <div class="blog_details">
+                     <h3>Bitcoin News</h3>
+                     <p>pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                   </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="full news_blog">
+                    <img class="img-responsive" src="images/b2.png" alt="#" />
+                    <div class="overlay"><a class="main_bt transparent" href="#">View</a></div>
+                   <div class="blog_details">
+                     <h3>Ethereum News</h3>
+                     <p>pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                   </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="full news_blog">
+                    <img class="img-responsive" src="images/b3.png" alt="#" />
+                    <div class="overlay"><a class="main_bt transparent" href="#">View</a></div>
+                   <div class="blog_details">
+                     <h3>Light News</h3>
+                     <p>pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                   </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="full news_blog">
+                   <img class="img-responsive" src="images/b1.png" alt="#" />
+                   <div class="overlay"><a class="main_bt transparent" href="#">View</a></div>
+                   <div class="blog_details">
+                     <h3>Bitcoin News</h3>
+                     <p>pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                   </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="full news_blog">
+                    <img class="img-responsive" src="images/b2.png" alt="#" />
+                    <div class="overlay"><a class="main_bt transparent" href="#">View</a></div>
+                   <div class="blog_details">
+                     <h3>Ethereum News</h3>
+                     <p>pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                   </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="full news_blog">
+                    <img class="img-responsive" src="images/b3.png" alt="#" />
+                    <div class="overlay"><a class="main_bt transparent" href="#">View</a></div>
+                   <div class="blog_details">
+                     <h3>Light News</h3>
+                     <p>pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                   </div>
+                </div>
+            </div>
+         </div>
+    </div>
+</div>
+<!-- end section -->
 
 @endsection
-@section('title')
-<title>Portfolio|Lagaster Website Developers</title>
-@endsection
-@section('metatag')

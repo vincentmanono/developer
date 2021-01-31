@@ -1,78 +1,56 @@
-<footer class="site-footer site-footer-1">
+<footer class="footer-box">
     <div class="container">
-        <div class="row site-footer-content">
-            <div class="col-lg-4 col-md-4 site-footer-logo">
-                <div>
-                    <!-- Logo start -->
-                    <a href="index.html" title="Walton" class="site-logo">
-                        <div class="logo-img">
-                            <img src="assets/images/logo.png" alt="Walton">
+        <div class="row">
+           <div class="col-md-12 white_fonts">
+                <div class="row">
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <div class="full">
+                            <img class="img-responsive" src="{{asset('assets/images/footer_logo.png')}}" alt="#" />
                         </div>
-                        <div class="name-and-tagline">
-                            <div class="name">Lagaster</div>
-                            <div class="tagline">Website solutions </div>                       </div>
-                    </a>
-                    <!-- Logo end -->
-                    <p>Lagaster is a Website development company that is
-                         focused on providing user-friendly, customized,
-                         affordable and the best website designs. Over the
-                          past few years Lagaster has managed to develop top
-                           of the arch websites and offering best website
-                            development services. Our reputation in website development
-                             has grown as we dedicate ourselves to meet our client needs.
-                    </p>
-                </div>
-                <div>
-                    {{-- @include('messages') --}}
-                    <label for="">Subscribe to our newsletter</label>
-                <form action="{{route('subscribe.store')}}" method="post">
-                        @csrf
-                        @method('POST')
-                        <input type="text" placeholder="Enter your email address" required name="email" id="">
-                        <button type="submit" class="btn  btn-sm btn-primary ">Subscribe</button>
-                    </form>
-                </div>
-            </div>
-            <div class="col-md-3 col-md-push-1">
-                <div class="widget widget-contacts">
-                    <h4 class="widget-title">Contact Us</h4>
-                    <div class="widget-content">
-                        <p class="title text-heading">Lagaster Web Developers</p>
-                        <p class="address">1064 Maxwell Street
-                            <br>Windsor, CT 06095</p>
-                        <p class="phone">1 (860) 729-1526</p>
-                        <p class="email">
-                            <a href="mailto:info@lagaster.com" style="text-decoration: none;">info@lagaster.com</a>
-                        </p>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <div class="full">
+                            <h3>Quick Links</h3>
+                        </div>
+                        <div class="full">
+                            <ul class="menu_footer">
+                                <li><a href="home.html">> Home</a></li>
+                                <li><a href="about.html">> About</a></li>
+                                <li><a href="exchange.html">> Exchange</a></li>
+                                <li><a href="services.html">> Services</a></li>
+                                <li><a href="new.html">> New</a></li>
+                                <li><a href="contact.html">> Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <div class="full">
+                            <div class="footer_blog full white_fonts">
+                         <h3>Newsletter</h3>
+                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                         <div class="newsletter_form">
+                            <form action="index.html">
+                               <input type="email" placeholder="Your Email" name="#" required="">
+                               <button>Submit</button>
+                            </form>
+                         </div>
+                     </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <div class="full">
+                            <div class="footer_blog full white_fonts">
+                         <h3>Contact us</h3>
+                         <ul class="full">
+                           <li><img src="{{asset('assets/images/i5.png')}}"><span>London 145<br>United Kingdom</span></li>
+                           <li><img src="{{asset('assets/images/i6.png')}}"><span>demo@gmail.com</span></li>
+                           <li><img src="{{asset('assets/images/i7.png')}}"><span>+12586954775</span></li>
+                         </ul>
+                     </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-md-push-1">
-                <div class="widget widget-follow">
-                    <h4 class="widget-title">follow us</h4>
-                    <div class="widget-content">
-                        <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-                        <p class="links">
-                            <a href="#">
-                                <i class="fa fa-facebook"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fa fa-twitter"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fa fa-linkedin"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fa fa-google-plus"></i>
-                            </a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
+         </div>
     </div>
-
-    <p style="text-align: center"> Copyright @ {{date("Y")}}
-        <a href="https://www.lagaster.com" style="text-decoration: none;">lagaster.com</a></p>
-
 </footer>
