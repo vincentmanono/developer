@@ -31,8 +31,9 @@ class PageController extends Controller
     }
     public function singleblog($blog)
     {
-        $blog = Blog::where('slug', $blog)->first();
-        $topFiveBlog = Blog::latest()->paginate(5);
+        $blog = Blog::where('slug', $blog)->with("comments")->first();
+        $topFiveBlog = Blog::latest()->with("user")->withCount(["comments"])->paginate(5);
+        // return $blog;
         return view("client.singleBlog", compact("blog", "topFiveBlog"));
     }
     public function blogmore($blogmore_slug)

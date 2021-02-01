@@ -18,11 +18,12 @@ Route::get('/portfolio', 'PageController@portfolio')->name('portfolio');
 Route::get('/contact-us', 'PageController@contact')->name('contact-us');
 Route::get('/faq', 'PageController@faq')->name('faq');
 Route::post('/contact', 'ContactController@store')->name('contact.post');
-Route::post('/comment', 'CommentController@store')->name('comment.post');
+
 
 Route::group(['prefix' => 'news'], function () {
     Route::get('/blogs', 'PageController@blog')->name('blog.home');
     Route::get('/blog/{slug}', 'PageController@singleblog')->name('blog.single');
+    Route::post('/blog/{slug}/comment-add', 'CommentController@store')->name('comment.post');
 });
 
 Route::get('/blogmore/{slug}', 'PageController@blogmore')->name('blogmore.show');
