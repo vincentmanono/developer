@@ -66,8 +66,8 @@
 	<script src="{{ asset('assets/js/popper.min.js') }}"></script>
     <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
     <!-- ALL PLUGINS -->
-    <script src="{{ asset('assets/jquery.magnific-popup.min.js') }}js/"></script>
-    <script src="{{ asset('assets/') }}js/jquery.pogo-slider.min.js"></script>
+    <script src="{{ asset('assets/js/jquery.magnific-popup.min.js') }}"></script>
+    <script src="{{ asset('assets/js/jquery.pogo-slider.min.js') }}"></script>
     <script src="{{ asset('assets/js/slider-index.js') }}"></script>
     <script src="{{ asset('assets/js/smoothscroll.js') }}"></script>
     <script src="{{ asset('assets/js/form-validator.min.js') }}"></script>
