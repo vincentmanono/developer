@@ -29,6 +29,12 @@ Route::group(['prefix' => 'news'], function () {
 Route::get('/blogmore/{slug}', 'PageController@blogmore')->name('blogmore.show');
 Route::post('/newsletter', 'PageController@newsletter')->name('newsletter.store');
 Route::get('/services', 'PageController@services')->name('services');
+Route::group(['prefix' => 'services'], function () {
+    Route::get('website-development-at-lagaster', function () {
+        return view('client.services.website');
+    })->name('website-development');
+});
+
 Route::post('/footer', 'PageController@footer')->name('footer');
 Route::post('subscribe', 'SubscriberController@store')->name('subscribe.store');
 
