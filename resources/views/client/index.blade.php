@@ -7,7 +7,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="pogoSlider" id="js-main-slider">
-                <div class="pogoSlider-slide" style="background-image:url(images/slide_img.png);">
+                <div class="pogoSlider-slide" style="background-image:url('assets/images/slider.jpg');">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12">
@@ -20,7 +20,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="pogoSlider-slide" style="background-image:url(images/slide_img.png);">
+                <div class="pogoSlider-slide" style="background-image:url('/assets/images/slider.jpg');">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12">
