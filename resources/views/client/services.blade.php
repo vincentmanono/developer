@@ -50,10 +50,16 @@
                     </div>
                 </div>
                 <div class="card col-md-3 col-sm-6 col-xs-12">
-                    <img class="card-img-top" src="/assets/images/s2.png" alt="">
+                    <a href="{{ route('network-management') }}">
+                        <img class="card-img-top" src="/assets/images/s2.png" alt="">
+
+                    </a>
 
                     <div class="card-body">
-                        <h5 class="card-title">Network Engineering</h5>
+                        <a href="{{ route('network-management') }}">
+                            <h5 class="card-title">Network Engineering</h5>
+                        </a>
+
                         <p class="card-text">
                             At Lagaster we deal with network related issues.
                             We design, install and support advanced solutions
@@ -65,10 +71,12 @@
                     </div>
                 </div>
                 <div class="card col-md-3 col-sm-6 col-xs-12">
-                    <img class="card-img-top" src="/assets/images/s2.png" alt="">
+                    <a href="{{ route('Graphic-Design') }}"><img class="card-img-top" src="/assets/images/s2.png"
+                            alt=""></a>
+
 
                     <div class="card-body">
-                        <h5 class="card-title">Graphic Design</h5>
+                        <h5 class="card-title"><a href="{{ route('Graphic-Design') }}">Graphic Design</a> </h5>
                         <p class=" card-text">We offer Graphic Design Kenya.
                             Ourskilled and creative team of professional graphic designers in Kenya will
                             design the best graphics for your project,
@@ -78,9 +86,12 @@
                     </div>
                 </div>
                 <div class="card col-md-3 col-sm-6 col-xs-12">
-                    <img class="card-img-top" src="/assets/images/s2.png" alt="">
+                    <a href="{{ route('application-development') }}"><img class="card-img-top" src="/assets/images/s2.png"
+                            alt=""></a>
+
                     <div class="card-body">
-                        <h5 class="card-title">Android Application Development</h5>
+                        <h5 class="card-title"><a href="{{ route('application-development') }}">Android Application
+                                Development</a></h5>
                         <p class="card-text">
                             We develop user-friendly Android Apps using latest
                             technology in the market whilst following industry standards.

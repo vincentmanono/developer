@@ -33,6 +33,15 @@ Route::group(['prefix' => 'services'], function () {
     Route::get('website-development-at-lagaster', function () {
         return view('client.services.website');
     })->name('website-development');
+    Route::get('network-configuration-management-at-lagaster', function () {
+        return view('client.services.network');
+    })->name('network-management');
+    Route::get('graphic-design-at-lagaster', function () {
+        return view('client.services.graphic-design');
+    })->name('Graphic-Design');
+    Route::get('application-development-at-lagaster', function () {
+        return view('client.services.android');
+    })->name("application-development");
 });
 
 Route::post('/footer', 'PageController@footer')->name('footer');
