@@ -17,6 +17,7 @@
         </div>
 
     </div>  --}}
+    @include('messages')
     <div class="header_bottom">
       <div class="container">
         <div class="col-sm-12">
@@ -52,3 +53,4 @@
     </div>
 
 </header>
+
