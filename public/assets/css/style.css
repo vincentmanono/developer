@@ -848,7 +848,9 @@ a.navbar-brand {
     width: 100%;
     padding-top: 60px;
     min-height: 240px;
-    background: #111;
+    background-image: url("/assets/images/who.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 200%;
 }
 
 .about-box {

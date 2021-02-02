@@ -8,7 +8,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="banner_title">
-                    <h3>News</h3>
+                    <h3><span class="theme_color">Portfolio</span> </h3>
                 </div>
             </div>
         </div>
@@ -23,103 +23,29 @@
             <div class="col-md-12">
                 <div class="full">
                     <div class="heading_main text_align_center">
-                       <h2><span class="theme_color"></span>News</h2>
+                       <h2><span class="theme_color">Our</span> Portfolio</h2>
                     </div>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="full news_blog">
-                   <img class="img-responsive" src="images/b1.png" alt="#" />
-                   <div class="overlay"><a class="main_bt transparent" href="#">View</a></div>
-                   <div class="blog_details">
-                     <h3>Bitcoin News</h3>
-                     <p>pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                   </div>
+            @foreach ($portfolios as $portfolio)
+
+           <a href="{{ $portfolio->url }}">
+            <div class="col-md-4 col-sm-6 col-xs-12" >
+                <div >
+                  <div>
+                      <img height="140%" width="90%" src="{{ asset('assets/images/$portfolio->image') }}" alt="">
+                      <h4>{{ $portfolio->title }}</h4> <br>
+                      <h6>
+                        {{ $portfolio->description }}
+                      </h6>
+                  </div>
                 </div>
+           </a>
             </div>
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="full news_blog">
-                    <img class="img-responsive" src="images/b2.png" alt="#" />
-                    <div class="overlay"><a class="main_bt transparent" href="#">View</a></div>
-                   <div class="blog_details">
-                     <h3>Ethereum News</h3>
-                     <p>pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                   </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="full news_blog">
-                    <img class="img-responsive" src="images/b3.png" alt="#" />
-                    <div class="overlay"><a class="main_bt transparent" href="#">View</a></div>
-                   <div class="blog_details">
-                     <h3>Light News</h3>
-                     <p>pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                   </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="full news_blog">
-                   <img class="img-responsive" src="images/b1.png" alt="#" />
-                   <div class="overlay"><a class="main_bt transparent" href="#">View</a></div>
-                   <div class="blog_details">
-                     <h3>Bitcoin News</h3>
-                     <p>pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                   </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="full news_blog">
-                    <img class="img-responsive" src="images/b2.png" alt="#" />
-                    <div class="overlay"><a class="main_bt transparent" href="#">View</a></div>
-                   <div class="blog_details">
-                     <h3>Ethereum News</h3>
-                     <p>pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                   </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="full news_blog">
-                    <img class="img-responsive" src="images/b3.png" alt="#" />
-                    <div class="overlay"><a class="main_bt transparent" href="#">View</a></div>
-                   <div class="blog_details">
-                     <h3>Light News</h3>
-                     <p>pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                   </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="full news_blog">
-                   <img class="img-responsive" src="images/b1.png" alt="#" />
-                   <div class="overlay"><a class="main_bt transparent" href="#">View</a></div>
-                   <div class="blog_details">
-                     <h3>Bitcoin News</h3>
-                     <p>pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                   </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="full news_blog">
-                    <img class="img-responsive" src="images/b2.png" alt="#" />
-                    <div class="overlay"><a class="main_bt transparent" href="#">View</a></div>
-                   <div class="blog_details">
-                     <h3>Ethereum News</h3>
-                     <p>pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                   </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="full news_blog">
-                    <img class="img-responsive" src="images/b3.png" alt="#" />
-                    <div class="overlay"><a class="main_bt transparent" href="#">View</a></div>
-                   <div class="blog_details">
-                     <h3>Light News</h3>
-                     <p>pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                   </div>
-                </div>
-            </div>
-         </div>
+            @endforeach
+        </div>
     </div>
 </div>
 <!-- end section -->
