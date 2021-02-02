@@ -12,9 +12,11 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="slide_text white_fonts">
-                                    <h3>Progress & Success<br><strong>Currency</strong></h3>
+                                    <h4><strong>Professional <span class="theme_color">website </span>Developers</strong></h4>br
+                                    <h1>Get professionals who can,
+                                        develop for you the best website.</h1>
                                     <br>
-                                    <a class="start_exchange_bt" href="exchange.html">Start Exchange ></a>
+                                    <a class="start_exchange_bt" href="{{ route('contact-us') }}"> <h4> <span class="theme_color">Contact</span></h4> </a>
                                 </div>
                             </div>
                         </div>
@@ -25,9 +27,12 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="slide_text white_fonts">
-                                    <h3>Progress & Success<br><strong>Currency</strong></h3>
+                                    <h4><strong>Outstanding <span class="theme_color"> Website</span> Development</strong></h4>
                                     <br>
-                                    <a class="start_exchange_bt" href="exchange.html">Start Exchange ></a>
+                                    <h1>
+                                        At Lagaster, we design responsive website pages
+                                        that will promote your business and idea.</h1>
+                                    <a class="start_exchange_bt" href="{{ route('about') }}"><h4><span class="theme_color">Read More</span></h4> </a>
                                 </div>
                             </div>
                         </div>
@@ -46,70 +51,23 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="full text_align_right_img">
-                    <img src="{{asset('assets/images/img1.png')}}" alt="#" />
+                    <img height="90%" width="120%" src="{{asset('assets/images/welcome.jpg')}}" alt="#" />
                 </div>
             </div>
             <div class="col-md-6 layout_padding">
                 <div class="full paddding_left_15">
                     <div class="heading_main text_align_left">
-                       <h2><span class="theme_color">Welcome</span> To Exchange</h2>
+                       <h2><span class="theme_color">Welcome</span> To Lagaster</h2>
                     </div>
                 </div>
                 <div class="full paddding_left_15">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                    <p>Welcome to Lagaster Website Developers. <br>
+                        At Lagaster, our people transform your idea into an amazing website that suits your needs. We challenge the status quo by developing professional websites.
+
+                        Our website developer team is one of possibilities where each website developer is empowered to achieve success on their own terms. And together as website developers we are shaping the future of your business in a digital world.</p>
                 </div>
                 <div class="full paddding_left_15">
-                    <a class="main_bt" href="#">About more ></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- end section -->
-<!-- section -->
-<div class="section layout_padding">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="full">
-                    <div class="heading_main text_align_center">
-                       <h2><span class="theme_color"></span>Services</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="full services_blog">
-                   <img class="img-responsive" src="{{asset('assets/images/s1.png')}}" alt="#" />
-                   <h4>Safe & Secure</h4>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="full services_blog">
-                    <img class="img-responsive" src="{{asset('assets/images/s2.png')}}" alt="#" />
-                    <h4>Mobile Apps</h4>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="full services_blog">
-                    <img class="img-responsive" src="{{asset('assets/images/s3.png')}}" alt="#" />
-                    <h4>Wallet</h4>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="full services_blog">
-                    <img class="img-responsive" src="{{asset('assets/images/s4.png')}}" alt="#" />
-                    <h4>Experts Support</h4>
-                </div>
-            </div>
-        </div>
-        <div class="row margin-top_30">
-            <div class="col-sm-12">
-                <div class="full">
-                    <div class="center">
-                        <a class="main_bt" href="#">About more ></a>
-                    </div>
+                    <a class="main_bt" href="{{ route('about') }}">About more ></a>
                 </div>
             </div>
         </div>
@@ -122,23 +80,71 @@
         <div class="row">
             <div class="col-md-6" style="background: #fff;">
                 <div class="full text_align_right_img">
-                    <img src="{{asset('assets/images/img2.png')}}" alt="#" />
+                    <img src="{{asset('assets/images/who.jpg')}}" alt="#" />
                 </div>
             </div>
             <div class="col-md-6 layout_padding">
                 <div class="full paddding_left_15">
                     <div class="heading_main text_align_left">
-                       <h2><span class="theme_color">Apply for</span> Exchange</h2>
+                       <h2><span class="theme_color">Who we</span> Are</h2>
                     </div>
                 </div>
                 <div class="full paddding_left_15">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                    <p>
+                        BEST IN WEBSITE DEVELOPMENT <br>
+                        Lagaster is a Website development company that is focused on providing user-friendly, customized, affordable and the best website designs. Over the past few years Lagaster has managed to develop top of the arch websites and offering unspeakable website development services. Our reputation in website development has grown as we dedicate ourselves to meet our client needs.
+
+                        When you join Lagaster, you will realise our website developers work differently. We believe when creative website developers come together, we can achieve amazing website development. Make it happen.</p>
                 </div>
                 <div class="full paddding_left_15">
-                    <a class="main_bt" href="#">Exchange ></a>
+                    <a class="main_bt" href="{{ route('services') }}">Learn More ></a>
                 </div>
             </div>
         </div>
+    </div>
+</div>
+<!-- end section -->
+<hr />
+<!-- section -->
+<div class="section layout_padding">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="full">
+                    <div style="padding-left:40%" class="heading_main text_align_left">
+                        <h2><span class="theme_color">Our</span> Services</h2>
+                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="full services_blog">
+                   <img class="img-responsive" src="{{asset('assets/images/optimize.png')}}" alt="website development" />
+                   <h4>Website SEO</h4>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="full services_blog">
+                    <img class="img-responsive" src="{{asset('assets/images/mobile.jpg')}}" alt="#" />
+                    <h4>Apps Development</h4>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="full services_blog">
+                    <img class="img-responsive"  src="{{asset('assets/images/webd.png')}}" alt="#" />
+                    <h4>Web Development</h4>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="full services_blog">
+                    <img class="img-responsive"  src="{{asset('assets/images/graphic.jpg')}}" alt="graphic design" />
+                    <h4>Graphic Design</h4>
+                </div>
+            </div>
+        </div>
+     <hr>
+
     </div>
 </div>
 <!-- end section -->
@@ -149,118 +155,113 @@
             <div class="col-md-6">
                 <div class="full paddding_left_15">
                     <div class="heading_main text_align_left">
-                       <h2>About</h2>
+                       <h2> <span class="theme_color">Website</span> Development</h2>
                     </div>
                 </div>
                 <div class="full paddding_left_15">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                    <p>With an experienced team consisting of the best website designers and website developers in Kenya, we consider Lagaster to be the best creative company in Kenya when it comes to web development,Search engine optimisation (SEO), web hosting, website design, web consultancy, domain registration and online digital branding
+
+                        Browser Compatible  SEO Friendly  ECommerce Ready  Simple Clean Code</p>
                 </div>
                 <div class="full paddding_left_15">
-                    <a class="main_bt" href="#">Read More ></a>
+                    <a class="main_bt" href="{{ route('about') }}">Read More ></a>
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="full text_align_right_img">
-                    <img src="{{asset('assets/images/img3.png')}}" alt="#" />
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- end section -->
-<!-- section -->
-<div class="section layout_padding padding_top_0">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="full">
-                    <div class="heading_main text_align_center">
-                       <h2><span class="theme_color"></span>News</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="full news_blog">
-                   <img class="img-responsive" src="{{asset('assets/images/b1.png')}}" alt="#" />
-                   <div class="overlay"><a class="main_bt transparent" href="#">View</a></div>
-                   <div class="blog_details">
-                     <h3>Bitcoin News</h3>
-                     <p>pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                   </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="full news_blog">
-                    <img class="img-responsive" src="{{asset('assets/images/b2.png')}}" alt="#" />
-                    <div class="overlay"><a class="main_bt transparent" href="#">View</a></div>
-                   <div class="blog_details">
-                     <h3>Ethereum News</h3>
-                     <p>pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                   </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="full news_blog">
-                    <img class="img-responsive" src="{{asset('assets/images/b3.png')}}" alt="#" />
-                    <div class="overlay"><a class="main_bt transparent" href="#">View</a></div>
-                   <div class="blog_details">
-                     <h3>Light News</h3>
-                     <p>pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                   </div>
-                </div>
-            </div>
-         </div>
-    </div>
-</div>
-<!-- end section -->
-<!-- section -->
-<div class="section layout_padding padding_top_0">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="full">
-                    <div class="heading_main text_align_center">
-                       <h2><span class="theme_color"></span>Contact</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- end section -->
-<!-- contact_form -->
-<div class="section contact_form">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 col-sm-12 offset-lg-3">
-                <div class="full">
-                    <form class="contact_form_inner" action="#">
-                        <fieldset>
-                            <div class="field">
-                                <input type="text" name="name" placeholder="Your name" />
-                            </div>
-                            <div class="field">
-                                <input type="email" name="email" placeholder="Email" />
-                            </div>
-                            <div class="field">
-                                <input type="text" name="phone_no" placeholder="Phone number" />
-                            </div>
-                            <div class="field">
-                                <textarea placeholder="Message"></textarea>
-                            </div>
-                            <div class="field center">
-                                <button>SEND</button>
-                            </div>
-                        </fieldset>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- end contact_form -->
-<!-- end section -->
 
+                    <img height="100%" width="100%" src="{{asset('assets/images/site.jpg')}}" alt="#" />
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end section -->
+<!-- section -->
+<div class="section layout_padding padding_top_0">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="full">
+                    <div class="heading_main text_align_center">
+                       <h2><span class="theme_color">Why </span>Choose Us</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row" >
+            <div class="col-md-4 col-sm-6 col-xs-12" >
+                <div >
+                  <div>
+                      <img height="140%" width="90%" src="{{ asset('assets/images/optimize.png') }}" alt="">
+                      <h4>Website Optimization</h4> <br>
+                      <h6>
+                        At Lagaster we develop websites that our customers love and keep coming back. Optimization helps in google search ranking.
+                      </h6>
+                  </div>
+                </div>
+            </div>
+              <div class="col-md-4 col-sm-6 col-xs-12" >
+                <div >
+                  <div>
+                      <img  height="140%" width="90%" src="{{ asset('assets/images/qos.jpg') }}" alt="">
+                      <h4>Quality of Service</h4> <br>
+                      <h6>
+                        At Lagaster, quality is remembered long after the price is forgotten.We guarantee you the best website designs development.
+                      </h6>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div >
+                  <div>
+                      <img  height="140%" width="90%" src="{{ asset('assets/images/websecurity.png') }}" alt="">
+                      <h4>Website Security</h4> <br>
+                      <h6>
+                        We develop websites that are free from vulnerabilities like malware, SQL injection or DDos attacks and well suited for security analysys.
+                      </h6>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row" >
+            <div class="col-md-4 col-sm-6 col-xs-12" >
+                <div >
+                  <div>
+                      <img  height="140%" width="90%" src="{{ asset('assets/images/price.png') }}" alt="">
+                      <h4>Affordable Pricing</h4> <br>
+                      <h6>
+                        As you may have guessed, we are extremely affordable.
+                      </h6>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12" >
+                <div >
+                  <div>
+                      <img  height="140%" width="90%" src="{{ asset('assets/images/techs.jpg') }}" alt="">
+                      <h4>24/7 Technical Support</h4> <br>
+                      <h6>
+                        We are just a phone call away. Our technical team is available 24/7 to serve you.
+                      </h6>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div >
+                  <div>
+                      <img  height="140%" width="90%" src="{{ asset('assets/images/graphic.jpg') }}" alt="">
+                      <h4>Website Optimization</h4> <br>
+                      <h6>
+                        At Lagaster we develop websites that our customers love and keep coming back. Optimization helps in google search ranking.
+                      </h6>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- end section -->
 @endsection

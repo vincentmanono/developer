@@ -43,7 +43,7 @@
                          <h3>Contact us</h3>
                          <ul class="full">
                            <li><img src="{{asset('assets/images/i5.png')}}"><span>London 145<br>United Kingdom</span></li>
-                           <li><img src="{{asset('assets/images/i6.png')}}"><span>demo@gmail.com</span></li>
+                           <li><img src="{{asset('assets/images/i6.png')}}"><span>info@lagaster.com</span></li>
                            <li><img src="{{asset('assets/images/i7.png')}}"><span>+12586954775</span></li>
                          </ul>
                      </div>
