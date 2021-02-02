@@ -34,30 +34,18 @@ class CommentController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request,  $slug)
     {
 
-        $this->validate($request,[
-'name'=>['required'],
-'email'=>['email','required'],
-'body'=>['required'],
-'blog_id'=>['required']
+        $this->validate($request, [
+            'name' => ['required'],
+            'email' => ['email', 'required'],
+            'body' => ["required"]
         ]);
+        $blog = Blog::where('slug', $slug)->first();
 
-
-
-        $post = new Comment();
-
-        $post->name =$request->name;
-        $post->email =$request->email;
-        $post->body =$request->body;
-        $post->blog_id = $request->blog_id;
-
-        $validate= $post->save();
-
-        if($validate){
-            return redirect()->back()->with('success','Your comment has been added successfully');
-        }
+        $blog->comments()->create($request->all());
+        return redirect()->back()->with('success', 'Your comment has been added successfully');
     }
 
     /**
@@ -103,11 +91,11 @@ class CommentController extends Controller
     public function destroy($id)
     {
 
-        $delete = Comment::where('id',$id)->first();
+        $delete = Comment::where('id', $id)->first();
         $delete->delete();
 
-        if($delete){
-            return redirect()->back()->with('success','you have successfuly deleted the comment');
+        if ($delete) {
+            return redirect()->back()->with('success', 'you have successfuly deleted the comment');
         }
     }
 }
