@@ -38,7 +38,7 @@
             <div class="row">
 
                 <div class="card col-md-3 col-sm-6 col-xs-12">
-                    <img class="card-img-top" src="/assets/images/s2.png" alt="">
+                    <img class="card-img-top" src="/assets/images/webd.png" alt="Website Development">
 
                     <div class="card-body">
                         <h5 class="card-title"> <a href="{{ route('website-development') }}">Website Development</a> </h5>
@@ -51,7 +51,7 @@
                 </div>
                 <div class="card col-md-3 col-sm-6 col-xs-12">
                     <a href="{{ route('network-management') }}">
-                        <img class="card-img-top" src="/assets/images/s2.png" alt="">
+                        <img class="card-img-top" src="/assets/images/service_02.jpg" alt="Network Engineering">
 
                     </a>
 
@@ -71,7 +71,7 @@
                     </div>
                 </div>
                 <div class="card col-md-3 col-sm-6 col-xs-12">
-                    <a href="{{ route('Graphic-Design') }}"><img class="card-img-top" src="/assets/images/s2.png"
+                    <a href="{{ route('Graphic-Design') }}"><img class="card-img-top" src="/assets/images/service_03.jpg"
                             alt=""></a>
 
 
@@ -86,8 +86,8 @@
                     </div>
                 </div>
                 <div class="card col-md-3 col-sm-6 col-xs-12">
-                    <a href="{{ route('application-development') }}"><img class="card-img-top" src="/assets/images/s2.png"
-                            alt=""></a>
+                    <a href="{{ route('application-development') }}"><img class="card-img-top"
+                            src="/assets/images/mobile.jpg" alt=""></a>
 
                     <div class="card-body">
                         <h5 class="card-title"><a href="{{ route('application-development') }}">Android Application
@@ -111,7 +111,7 @@
                 <div class="col-sm-12">
                     <div class="full">
                         <div class="center">
-                            <a class="main_bt" href="#">See More ></a>
+                            <a class="main_bt" href="{{ route('about') }}">See More ></a>
                         </div>
                     </div>
                 </div>

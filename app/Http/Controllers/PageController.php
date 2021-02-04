@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Blog;
 use App\Contact;
 use App\Subscriber;
-use App\portfolio;
+use App\Portfolio;
 use Illuminate\Http\Request;
 use PhpParser\Node\Expr\Cast\String_;
 
@@ -52,7 +52,8 @@ class PageController extends Controller
     public function portfolio()
     {
 
-        $portfolios = Portfolio::orderBy('id', 'Desc')->paginate(9);
+        $portfolios =   Portfolio::latest()->paginate(9);
+
         return view('client.portfolio', compact('portfolios'));
     }
     public function services()
