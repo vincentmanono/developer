@@ -1,4 +1,10 @@
 @extends('layouts.mainapp')
+
+@section('title')
+
+Lagaster | Best Website Developers| Web Design in Kenya
+
+@endsection
 @section('content')
 
 

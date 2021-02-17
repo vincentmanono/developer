@@ -1,4 +1,7 @@
 @extends('layouts.mainapp')
+@section('title')
+    Website Development | Website Developers in Kenya | Best Website Developers in Africa
+@endsection
 @section('content')
 
     <!-- Start Banner -->

@@ -1,4 +1,7 @@
 @extends('layouts.mainapp')
+@section('title')
+     About Us | Lagaster| Website Developers
+@endsection
 @section('content')
 
 
@@ -8,7 +11,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="banner_title">
-                    <h3>About us</h3>
+                    <h3><span class="theme_color">About Us</span> </h3>
                 </div>
             </div>
         </div>

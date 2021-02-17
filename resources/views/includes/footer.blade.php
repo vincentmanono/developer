@@ -1,11 +1,11 @@
 <footer class="footer-box">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-md-12 white_fonts">
-                <div class="row">
+                <div class="row" >
                     <div class="col-sm-6 col-md-6 col-lg-3">
                         <div class="full">
-                            <h6>
+                            <h6 style="text-align: justify">
                                 Lagaster is a Website development company that is focused on providing user-friendly,
                                 customized, affordable and the best website designs. Over the past few years Lagaster
                                 has managed to develop top of the arch websites and offering best website development
@@ -22,9 +22,7 @@
                             <ul class="menu_footer">
                                 <li><a href="{{ route('home') }}">> Home</a></li>
                                 <li><a href="{{ route('about') }}">> About</a></li>
-                                <li><a href="{{ route('portfolio') }}">> Portfolio</a></li>
-                                <li><a href="{{ route('services') }}">> Services</a></li>
-                                <li><a href="{{ route('blog.home') }}">> New</a></li>
+                                <li><a href="{{ route('faq') }}">> FAQ</a></li>
                                 <li><a href="{{ route('contact-us') }}">> Contact</a></li>
                             </ul>
                         </div>
@@ -65,7 +63,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-12">
+        <div class="col-12" style="background-color: rgb(0, 0, 0)">
             <p style="color: aliceblue; margin-left:40%" class="crp">© Copyrights @ {{ date('Y') }} Lagaster</p>
         </div>
 

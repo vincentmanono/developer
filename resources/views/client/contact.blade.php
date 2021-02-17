@@ -1,13 +1,16 @@
 @extends('layouts.mainapp')
+@section('title')
+    Contact Us| Lagaster| Best Website Design in Africa
+@endsection
 @section('content')
 
     <!-- Start Banner -->
-    <div class="section inner_page_banner">
+      <div class="section inner_page_banner">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="banner_title">
-                        <h3>Contact</h3>
+                        <h3><span class="theme_color "> Contact</span> </h3>
                     </div>
                 </div>
             </div>
@@ -77,7 +80,7 @@
                                 <div class="field">
                                     <textarea name="message" placeholder="Message"></textarea>
                                 </div>
-                                <div class="field center">
+                                <div class=" center">
                                     <button type="submit">SEND</button>
                                 </div>
                             </fieldset>

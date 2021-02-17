@@ -1,4 +1,7 @@
 @extends('layouts.mainapp')
+@section('title')
+     Blogs | Lagaster | Web Design in Kenya
+@endsection
 @section('content')
 
 
@@ -8,7 +11,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="banner_title">
-                        <h3>News</h3>
+                        <h3><span class="theme_color">News</span> </h3>
                     </div>
                 </div>
             </div>

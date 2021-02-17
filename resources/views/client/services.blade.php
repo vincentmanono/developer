@@ -1,4 +1,7 @@
 @extends('layouts.mainapp')
+@section('title')
+    Services | Lagaster | Website development services in Kenya | Graphic Design | Netowork Engineering | Android Application Development
+@endsection
 @section('content')
 
     <!-- Start Banner -->
@@ -7,7 +10,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="banner_title">
-                        <h3>Services</h3>
+                        <h3><span class="theme_color">Services</span> </h3>
                     </div>
                 </div>
             </div>

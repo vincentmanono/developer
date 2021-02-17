@@ -24,7 +24,7 @@
     <div class="header_bottom">
         <div class="container">
             <div class="col-sm-12">
-                <div class="menu_orange_section" style="background: #ff880e;">
+                <div class="menu_orange_section" style="background:  rgb(22, 82, 247);">
                     <nav class="navbar header-nav navbar-expand-lg">
                         <div class="menu_section">
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd"
@@ -36,11 +36,12 @@
                             <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
                                 <ul class="navbar-nav">
                                     <li><a class="nav-link active" href="{{ route('index') }}">Home</a></li>
-                                    <li><a class="nav-link" href="{{ route('about') }}">About</a></li>
-                                    <li><a class="nav-link" href="{{ route('portfolio') }}">Portfolio</a></li>
-                                    <li><a class="nav-link" href="{{ route('services') }}">Services</a></li>
-                                    <li><a class="nav-link" href="{{ route('blog.home') }}">News</a></li>
-                                    <li><a class="nav-link" href="{{ route('contact-us') }}">Contact</a></li>
+                                    <li><a class="nav-link active" href="{{ route('about') }}">About</a></li>
+                                    <li><a class="nav-link active" href="{{ route('portfolio') }}">Portfolio</a></li>
+                                    <li><a class="nav-link active" href="{{ route('services') }}">Services</a></li>
+                                    <li><a class="nav-link active" href="{{ route('blog.home') }}">News</a></li>
+                                    <li><a class="nav-link active" href="{{ route('contact-us') }}">Contact</a></li>
+                                    <li><a class="nav-link active" href="{{ route('faq') }}"></a>FAQ</li>
                                 </ul>
                             </div>
                         </div>

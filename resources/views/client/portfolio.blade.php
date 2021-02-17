@@ -1,4 +1,7 @@
 @extends('layouts.mainapp')
+@section('title')
+    Portfolio | Lagaster Portfolio| Best Website Development in Kenya| Website developers in East Africa
+@endsection
 @section('content')
 
 

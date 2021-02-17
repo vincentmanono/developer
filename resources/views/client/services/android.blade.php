@@ -1,4 +1,7 @@
 @extends('layouts.mainapp')
+@section('title')
+   Mobile Application Development | Best Mobile Application Developers in Kenya
+@endsection
 @section('content')
 
     <!-- Start Banner -->

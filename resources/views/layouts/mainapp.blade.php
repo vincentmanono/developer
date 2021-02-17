@@ -10,10 +10,11 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <!-- Site Metas -->
-    <title>Exchange Currency - Responsive HTML5 Template</title>
+    <title>@yield('title')</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
+
 
     <!-- Site Icons -->
     <link rel="shortcut icon" href="#" type="image/x-icon" />
@@ -29,6 +30,8 @@
     <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}" />
+
+
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -66,6 +69,8 @@
     <script src="{{ asset('assets/js/isotope.min.js') }}"></script>
     <script src="{{ asset('assets/js/images-loded.min.js') }}"></script>
     <script src="{{ asset('assets/js/custom.js') }}"></script>
+
+
 	<script>
 	/* counter js */
 
@@ -168,6 +173,25 @@ jQuery(function ($) {
   }
 });
 	</script>
-</body>
+
+    {{--  faq script  --}}
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+        </script>
+{{--  end of faq script  --}}
+    </body>
 
 </html>

@@ -1,4 +1,9 @@
 @extends('layouts.mainapp')
+
+@section('title')
+    Graphic Design | Best Graphic designers in Kenya | Graphic design in Kenya
+@endsection
+
 @section('content')
 
     <!-- Start Banner -->

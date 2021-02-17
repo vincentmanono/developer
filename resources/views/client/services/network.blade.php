@@ -1,4 +1,7 @@
 @extends('layouts.mainapp')
+@section('title')
+    Netoworking Services| Network Installation in Kenya| Network Configuration in Kenya
+@endsection
 @section('content')
 
     <!-- Start Banner -->

@@ -1,4 +1,7 @@
 @extends('layouts.mainapp')
+@section('title')
+    Single-Blog | Lagaster Website Blogs| Best Website Developers in East Africa
+@endsection
 @section('content')
 
 

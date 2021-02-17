@@ -330,7 +330,7 @@ button:focus {
 
 a:hover,
 a:focus {
-    color: #ff880e;
+    color: rgb(22, 82, 247);
     text-decoration: underline;
 }
 
@@ -358,7 +358,7 @@ a:focus {
 }
 
 a.join_bt {
-    background: #ff880e;
+    background: rgb(22, 82, 247);
     width: 180px;
     text-align: center;
     height: 38px;
@@ -491,7 +491,7 @@ a.navbar-brand {
     display: block;
     right: 0;
     content: "";
-    background: #ff880e;
+    background: rgb(22, 82, 247);
     height: 60px;
     position: absolute;
     top: 0;
@@ -590,7 +590,8 @@ a.navbar-brand {
 }
 
 .theme_color {
-    color: #ff880e;
+    /* color: #ff880e; */
+    color: rgb(22, 82, 247);
 }
 
 .menu_orange_section {
@@ -605,7 +606,7 @@ a.navbar-brand {
     position: relative;
     content: "";
     display: block;
-    background: #ff880e;
+    background: rgb(22, 82, 247);
     left: -35px;
     transform: skew(30deg);
 }
@@ -617,7 +618,7 @@ a.navbar-brand {
     text-align: center;
     line-height: 55px;
     border: solid blue 1px;
-    /* border: solid #ff880e 1px; */
+    /* border: solid  rgb(22, 82, 247) 1px; */
     font-size: 18px;
     margin-top: 10px;
     background: #fff;
@@ -722,7 +723,7 @@ a.navbar-brand {
 }
 
 .pogoSlider-nav-btn--selected {
-    background: #ff880e !important;
+    background: rgb(22, 82, 247) !important;
 }
 
 .pogoSlider--navBottom .pogoSlider-nav {
@@ -771,11 +772,13 @@ a.navbar-brand {
 .start_exchange_bt {
     border: solid #fff 1px;
     color: #fff;
-    padding: 7px 25px;
+    padding: 7px 5px;
     float: left;
     width: 220px;
     text-align: center;
+    background-color: whitesmoke;
     font-size: 20px;
+    border-radius: 5px;
     font-weight: 300;
 }
 
@@ -981,7 +984,7 @@ a.navbar-brand {
     left: 0;
     right: 0;
     bottom: 0;
-    background: #d66c0b;
+    background: rgb(22, 82, 247);
     border-radius: 100%;
     -webkit-transform: scale(0);
     transform: scale(0);
@@ -1780,7 +1783,7 @@ select.form-control:not([size]):not([multiple]) {
 
 .menu_footer li a:hover,
 .menu_footer li a:focus {
-    color: #d66c0b !important;
+    color: rgb(22, 82, 247) !important;
 }
 
 .menu_footer li {
@@ -1788,8 +1791,8 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .footer-box {
-    background: #3a1e02;
-    padding: 50px 0;
+    background: #6b6a6a;
+    padding: 10px 0;
 }
 
 .footer-box .footer-company-name {
@@ -1803,7 +1806,7 @@ select.form-control:not([size]):not([multiple]) {
 
 footer.footer-box h3 {
     font-size: 30px;
-    border-bottom: solid #d66c0b 4px;
+    border-bottom: solid rgb(22, 82, 247) 4px;
     margin-bottom: 15px;
 }
 
@@ -1813,7 +1816,7 @@ footer.footer-box h3 {
 
 footer.footer-box h3 {
     font-size: 30px;
-    border-bottom: solid #d66c0b 4px;
+    border-bottom: solid rgb(22, 82, 247) 4px;
     margin-bottom: 25px;
 }
 
@@ -1966,7 +1969,7 @@ p {
 .heading_main h2::after {
     width: 250px;
     height: 8px;
-    background: #ff880e;
+    background: rgb(22, 82, 247);
     content: "";
     display: block;
     transform: skew(-30deg);
@@ -2158,7 +2161,7 @@ ul.social_icon li {
 }
 
 .newsletter_form button {
-    background: #d66c0b;
+    background: rgb(22, 82, 247);
     color: #fff;
     border: none;
     font-size: 14px;
@@ -2205,7 +2208,7 @@ ul.social_icon li {
     position: absolute;
     left: 0;
     bottom: 0;
-    background: #ff880e;
+    background: rgb(22, 82, 247);
     padding: 15px 0 5px;
     text-align: center;
     transition: ease all 0.25s;
@@ -2310,7 +2313,7 @@ ul.bottom_menu li {
 }
 
 .contact_form {
-    background: url('../images/mobile.jpg');
+    background: url('../images/site.jpg');
     background-size: cover;
     background-position: center center;
     min-height: 650px;
@@ -2319,23 +2322,24 @@ ul.bottom_menu li {
 
 .field input {
     width: 100%;
-    background: #0e0606;
+    background: #ffffff;
     min-height: 65px;
     border: none;
     margin: 15px 0;
-    color: #fff;
+    color: rgb(5, 5, 5);
     padding: 0 25px;
     font-size: 17px;
     font-weight: 300;
+    border-radius: 5px;
 }
 
 .field textarea {
     width: 100%;
-    background: #0e0606;
+    background: #ffffff;
     min-height: 120px;
     border: none;
     margin: 15px 0;
-    color: #fff;
+    color: rgb(0, 0, 0);
     padding: 25px;
     font-size: 17px;
     font-weight: 300;
@@ -2355,5 +2359,33 @@ ul.bottom_menu li {
 .contact_form_inner button:hover,
 .contact_form_inner button:focus {
     color: #fff;
-    background: #050000;
+    background: #828af3;
+}
+
+
+/* faq css */
+
+.collapsible {
+    background-color: rgb(22, 82, 247);
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    margin: 2%;
+}
+
+.active,
+.collapsible:hover {
+    background-color: #555;
+}
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
 }
