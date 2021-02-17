@@ -72,7 +72,7 @@
         @csrf
         @method('DELETE')
 
-        <button type="submit" class="btn btn-danger" style="float: right; margin-right:2%;">Delete</button>
+        <button type="submit" onclick="return confirm('Are you sure you want to delete this record?');" class="btn btn-danger" style="float: right; margin-right:2%;">Delete</button>
 
     </form>
   </div>

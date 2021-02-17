@@ -19,7 +19,7 @@ Lagaster | Best Website Developers| Web Design in Kenya
                                 <div class="col-md-12">
                                     <div class="slide_text white_fonts">
                                         <h4><strong>Professional <span class="theme_color">website
-                                                </span>Developers</strong></h4>br
+                                                </span>Developers</strong></h4><br>
                                         <h1>Get professionals who can,
                                             develop for you the best website.</h1>
                                         <br>

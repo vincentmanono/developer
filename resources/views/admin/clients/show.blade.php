@@ -145,7 +145,7 @@
                <form action="{{route('clients.destroy',$client->id)}}" method="POST">
                 @csrf
                 @method('DELETE')
-                    <button href="#" class="btn  btn-danger">Delete</button>
+                    <button href="#" onclick="return confirm('Are you sure you want to delete this record?');" class="btn  btn-danger">Delete</button>
                </form>
 
                </div>

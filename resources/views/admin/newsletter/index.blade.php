@@ -54,7 +54,7 @@
                 @foreach ($newsletters as $newsletter)
                 <tr>
                     <td>{{$newsletter->id}}</td>
-                    <td><a href="{{$newsletter->email}}">{{$newsletter->email}}</a></td>
+                    <td><a href="mailto:{{$newsletter->email}}">{{$newsletter->email}}</a></td>
                     <td>{{$newsletter->created_at}}</td>
 
                 <td><a href="#" class="btn btn-sm btn-primary">Read more</a></td>

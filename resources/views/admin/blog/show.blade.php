@@ -42,9 +42,9 @@
       <div class="card-header">
         <h3 class="card-title">
 
-    <button class="btn btn-primary " href="{{route('blog.edit',$blog->slug)}}" type="submit"> Edit Blog</button>
+    <a class="btn btn-primary " href="{{route('blog.edit',$blog->slug)}}" type="submit"> Edit Blog</a>
 <div style="float:right;">
-    <button class="btn btn-success " style="margin-left: 5%" href="{{route('blog.edit',$blog->slug)}}" type="submit"> Back</button></a>
+    <a class="btn btn-success " style="margin-left: 5%" href="{{route('blog.edit',$blog->slug)}}" type="submit"> Back</a>
 
 </div>
 
@@ -56,7 +56,7 @@
     @method("DELETE")
     @csrf
     <div class="modal-footer">
-        <button type="submit" class="btn btn-danger btn-sm" style="float:right">Delete</button>
+        <button type="submit" onclick="return confirm('Are you sure you want to delete this item?');" class="btn btn-danger btn-sm" style="float:right">Delete</button>
     </div>
 </form>
 
@@ -126,7 +126,7 @@
     @csrf
         @method('DELETE')
 
-      <button type="submit" class="btn btn-sm btn-danger">Delete</button>
+      <button type="submit" onclick="return confirm('Are you sure you want to delete this item?');" class="btn btn-sm btn-danger">Delete</button>
 
     </form>
    </p>
