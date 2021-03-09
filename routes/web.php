@@ -47,11 +47,10 @@ Route::group(['prefix' => 'services'], function () {
 Route::post('/footer', 'PageController@footer')->name('footer');
 Route::post('subscribe', 'SubscriberController@store')->name('subscribe.store');
 
-Auth::routes();
 
-// Auth::routes([
-//     'register'=>false
-// ]);
+Auth::routes([
+    'register'=>false
+]);
 
 
 
