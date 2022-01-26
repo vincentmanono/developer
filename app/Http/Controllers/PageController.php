@@ -68,4 +68,10 @@ class PageController extends Controller
     {
         return view('client.faq');
     }
+    public function policies()
+    {
+        
+        return view('client.policies') ;
+    }
+
 }

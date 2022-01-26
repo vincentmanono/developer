@@ -23,6 +23,7 @@
                                 <li><a href="{{ route('home') }}">> Home</a></li>
                                 <li><a href="{{ route('about') }}">> About</a></li>
                                 <li><a href="{{ route('faq') }}">> FAQ</a></li>
+                                <li><a href="{{ route('policies') }}">> Terms and conditions</a></li>
                                 <li><a href="{{ route('contact-us') }}">> Contact</a></li>
                             </ul>
                         </div>
@@ -51,7 +52,7 @@
                                 <ul class="full">
                                     <li><img src="{{ asset('assets/images/i5.png') }}"><span>Juja<br>Thika Kiambu</span>
                                     </li>
-                                    <li><img src="{{ asset('assets/images/i6.png') }}"><span>info@lagaster.com</span>
+                                    <li><img src="{{ asset('assets/images/i6.png') }}"><span>info@lagaster.org</span>
                                     </li>
                                     {{-- <li><img
                                             src="{{ asset('assets/images/i7.png') }}"><span></span></li>
